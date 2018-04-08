@@ -1,9 +1,10 @@
 /* i_cache.v
-* Author: Pravin P. Prabhu
-* Last Revision: 1/5/11
+* Author: Pravin P. Prabhu, Zinsser Zhang
+* Last Revision: 04/28/2017
 * Abstract:
 *	Provides caching of instructions from imem for quick access. Note that this
 * is a read only cache, and thus self-modifying code is not supported.
+* All addresses used in this scope are word addresses (32-bit/4-byte aligned)
 */
 module i_cache	#(	parameter DATA_WIDTH = 32,
 					parameter TAG_WIDTH = 14,
@@ -17,11 +18,11 @@ module i_cache	#(	parameter DATA_WIDTH = 32,
 					
 					// Requests
 					input i_Valid,
-					input [TAG_WIDTH+INDEX_WIDTH+BLOCK_OFFSET_WIDTH:0] i_Address,
+					input [TAG_WIDTH+INDEX_WIDTH+BLOCK_OFFSET_WIDTH-1:0] i_Address,
 					
 					// DMEM Transaction
-					output reg o_MEM_Valid,						// If request to DMEM is valid
-					output reg [TAG_WIDTH+INDEX_WIDTH+BLOCK_OFFSET_WIDTH:0] o_MEM_Address,	// Address request to DMEM
+					output reg o_MEM_Valid,						// If request to MEM is valid
+					output reg [TAG_WIDTH+INDEX_WIDTH+BLOCK_OFFSET_WIDTH-1:0] o_MEM_Address,	// Address request to MEM
 					input i_MEM_Valid,						// If data from main mem is valid
 					input i_MEM_Last,							// If main mem is sending the last piece of data
 					input [DATA_WIDTH-1:0] i_MEM_Data,		// Data from main mem
@@ -121,7 +122,7 @@ module i_cache	#(	parameter DATA_WIDTH = 32,
 			begin
 				// Submit our request.
 				o_MEM_Valid <= TRUE;
-				o_MEM_Address <= {r_i_Tag,r_i_Index,{BLOCK_OFFSET_WIDTH{1'b0}},1'b0};
+				o_MEM_Address <= {r_i_Tag,r_i_Index,{BLOCK_OFFSET_WIDTH{1'b0}}};
 				
 				// Mem is communicating?
 				if( i_MEM_Valid )

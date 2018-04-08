@@ -1,11 +1,12 @@
 /* decoder.v
-* Author: Pravin P. Prabhu
-* Last Revision: 1/5/11
+* Author: Pravin P. Prabhu, and Zinsser Zhang
+* Last Revision: 04/28/2017
 * Abstract:
 *	Provides decoding of instructions to control signals.
+* All addresses used in this scope are word addresses (32-bit/4-byte aligned)
 */
 module decoder	#(
-					parameter ADDRESS_WIDTH = 32,
+					parameter ADDRESS_WIDTH = 21,
 					parameter DATA_WIDTH = 32,
 					parameter REG_ADDRESS_WIDTH = 5,
 					parameter ALUCTL_WIDTH = 8,
@@ -478,7 +479,7 @@ module decoder	#(
 			o_Uses_RT <= TRUE;
 			o_RT_Addr <= i_Instruction[20:16];
 			o_ALUCTL <= ALUCTL_BEQ;
-			o_Branch_Target <= i_PC + 22'd1 + {{(ADDRESS_WIDTH-16){i_Instruction[15]}},i_Instruction[15:0]};
+			o_Branch_Target <= i_PC + 21'd1 + {{(ADDRESS_WIDTH-16){i_Instruction[15]}},i_Instruction[15:0]};
 			if( !i_Stall && DEBUG )
 				$display("%x: %x (Branch on Equal)",i_PC,i_Instruction);
 		end
@@ -492,7 +493,7 @@ module decoder	#(
 			o_Uses_RT <= TRUE;
 			o_RT_Addr <= i_Instruction[20:16];			
 			o_ALUCTL <= ALUCTL_BNE;
-			o_Branch_Target <= i_PC + 22'd1 + {{(ADDRESS_WIDTH-16){i_Instruction[15]}},i_Instruction[15:0]};
+			o_Branch_Target <= i_PC + 21'd1 + {{(ADDRESS_WIDTH-16){i_Instruction[15]}},i_Instruction[15:0]};
 			if( !i_Stall && DEBUG )
 				$display("%x: %x (Branch on Not Equal)",i_PC,i_Instruction);
 		end
@@ -506,7 +507,7 @@ module decoder	#(
 			o_Uses_RT <= TRUE;
 			o_RT_Addr <= i_Instruction[20:16];			
 			o_ALUCTL <= ALUCTL_BLEZ;
-			o_Branch_Target <= i_PC + 22'd1 + {{(ADDRESS_WIDTH-16){i_Instruction[15]}},i_Instruction[15:0]};
+			o_Branch_Target <= i_PC + 21'd1 + {{(ADDRESS_WIDTH-16){i_Instruction[15]}},i_Instruction[15:0]};
 			if( !i_Stall && DEBUG )
 				$display("%x: %x (Branch on Less or Equal)",i_PC,i_Instruction);
 		end
@@ -532,7 +533,7 @@ module decoder	#(
 					$display("%x: %x (Branch on Less or Equal)",i_PC,i_Instruction);
 			end
 			//o_ALUCTL <= i_Instruction[16]? ALUCTL_BGEZ: ALUCTL_BLTZ;  // 1 <=> bgez : 0 <=> bltz	
-			o_Branch_Target <= i_PC + 22'd1 + {{(ADDRESS_WIDTH-16){i_Instruction[15]}},i_Instruction[15:0]};		
+			o_Branch_Target <= i_PC + 21'd1 + {{(ADDRESS_WIDTH-16){i_Instruction[15]}},i_Instruction[15:0]};		
 		end
 		
 		6'h07:  //bgtz
@@ -544,7 +545,7 @@ module decoder	#(
 			o_Uses_RT <= TRUE;
 			o_RT_Addr <= i_Instruction[20:16];			
 			o_ALUCTL <= ALUCTL_BGTZ;
-			o_Branch_Target <= i_PC + 22'd1 + {{(ADDRESS_WIDTH-16){i_Instruction[15]}},i_Instruction[15:0]};
+			o_Branch_Target <= i_PC + 21'd1 + {{(ADDRESS_WIDTH-16){i_Instruction[15]}},i_Instruction[15:0]};
 			if( !i_Stall && DEBUG )
 				$display("%x: %x (Branch on Greater)",i_PC,i_Instruction);
 		end				
@@ -555,7 +556,7 @@ module decoder	#(
 			o_Uses_ALU <= TRUE;
 			o_ALUCTL <= ALUCTL_J;
 			//o_Branch_Target <= {i_PC[31:26],i_Instruction[25:0]};
-			o_Branch_Target <= i_Instruction[21:0];
+			o_Branch_Target <= i_Instruction[20:0];
 			if( !i_Stall && DEBUG )
 				$display("%x: %x (Jump)",i_PC,i_Instruction);
 		end
@@ -566,7 +567,7 @@ module decoder	#(
 			o_Uses_ALU <= TRUE;
 			o_ALUCTL <= ALUCTL_JAL;
 			//o_Branch_Target <= {i_PC[31:26],i_Instruction[25:0]};
-			o_Branch_Target <= i_Instruction[21:0];
+			o_Branch_Target <= i_Instruction[20:0];
 			o_Uses_Immediate <= TRUE;
 			o_Immediate <= (i_PC + 2);
 			o_Writes_Back <= TRUE;

@@ -1,5 +1,5 @@
 /* d_cache.v
-* Sam Chan, Tony Medeiros, Dean Tullsen, Todor Mollov, and Pravin Prabhu
+* Sam Chan, Tony Medeiros, Dean Tullsen, Todor Mollov, Pravin Prabhu, Zinsser Zhang
 * Abstract:
 *	This is code for a direct-mapped cache, with 16-byte lines and 512 lines, for 
 *    an 8 KB DM cache.   16-byte cache lines are formed via four one-word (four byte)
@@ -11,6 +11,7 @@
 *    changing the line size is very messy since it changes the number of banks.
 *  If someone wants to clean this up (e.g., paramterize the number of banks), please
 *    let me know.
+* All addresses used in this scope are word addresses (32-bit/4-byte aligned).
 */
 
 module d_cache	#(	
@@ -37,7 +38,7 @@ module d_cache	#(
 					// Mem Transaction
 					output reg o_MEM_Valid,
 					output reg o_MEM_Read_Write_n,
-					output reg [(TAG_WIDTH+INDEX_WIDTH+BLOCK_OFFSET_WIDTH):0] o_MEM_Address,	// output 2-byte aligned addresses
+					output reg [(TAG_WIDTH+INDEX_WIDTH+BLOCK_OFFSET_WIDTH)-1:0] o_MEM_Address,
 					output reg [DATA_WIDTH-1:0] o_MEM_Data,
 					input i_MEM_Valid,
 					input i_MEM_Data_Read,
@@ -240,14 +241,14 @@ always @(posedge i_Clk or negedge i_Reset_n)
 							Gen_Count <= 0;
 							State <= STATE_POPULATE;
 							o_MEM_Read_Write_n <= READ;
-							o_MEM_Address <= {i_Tag,i_Index,{BLOCK_OFFSET_WIDTH+1{1'b0}}};
+							o_MEM_Address <= {i_Tag,i_Index,{BLOCK_OFFSET_WIDTH{1'b0}}};
 							if(debug)
 								$display("read miss on address %x", i_Address);
 						end else if(Dirty_Array[i_Index]) begin
 							//if its dirty write it to mem before populating!
 							Gen_Count <= 0;
 							State <= STATE_WRITEOUT;
-							o_MEM_Address <= {Tag_Array[i_Index],i_Index,{BLOCK_OFFSET_WIDTH+1{1'b0}}};	
+							o_MEM_Address <= {Tag_Array[i_Index],i_Index,{BLOCK_OFFSET_WIDTH{1'b0}}};	
 							if(debug)
 								$display("write miss %x to %x", i_Write_Data, i_Address);
 						end
@@ -270,7 +271,7 @@ always @(posedge i_Clk or negedge i_Reset_n)
 							Gen_Count <= 0;
 							State <= STATE_POPULATE;
 							o_MEM_Valid <= TRUE;
-							o_MEM_Address <= {r_i_Tag,r_i_Index,{BLOCK_OFFSET_WIDTH+1{1'b0}}};
+							o_MEM_Address <= {r_i_Tag,r_i_Index,{BLOCK_OFFSET_WIDTH{1'b0}}};
 							o_MEM_Read_Write_n <= READ;								
 							Dirty_Array[r_i_Index] <= FALSE;	// Cache line was cleaned
 						end else begin

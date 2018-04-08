@@ -1,6 +1,6 @@
 /* hazard_detection_unit.v
-* Author: Pravin P. Prabhu
-* Last Revision: 1/5/11
+* Author: Pravin P. Prabhu, and Zinsser Zhang
+* Last Revision: 04/28/2017
 * Abstract:
 *	Contains all of the nightmarish logic for determining when the processor
 * should stall, and how it should stall. You are not expected to understand this.
@@ -14,9 +14,8 @@ module hazard_detection_unit	#(	parameter DATA_WIDTH=32,
 								input i_Reset_n,
 							
 								//==============================================
-								// Info about processor's overall state
-								input i_FlashLoader_Done,						// Whether the flashloader has completed operation yet or not
-								input i_Done,										// Whether we have observed the 'done' signal or not
+								// External stall issued by top level
+								input i_External_Stall,
 							
 								//==============================================
 								// Hazard in DECODE?
@@ -78,7 +77,7 @@ module hazard_detection_unit	#(	parameter DATA_WIDTH=32,
 	localparam TRUE = 1'b1;
 	
 		// Internal wiring
-	wire Executing = i_FlashLoader_Done && !i_Done;			// If 1, then we are currently executing code.
+	wire Executing = !i_External_Stall;			// If 1, then we are currently executing code.
 
 			// Registers for latching branches during stall periods
 	reg r_Branch_IF_Hazard_Smash;							// If 1, then we must smash the next inst coming out of IF -- there was a branch while it was busy.

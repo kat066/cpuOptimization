@@ -1,8 +1,11 @@
-CSE148 Baseline Design v1.2 (1/11/11)
-by Pravin Prabhu & Todor Mollov
+CSE148 Baseline Design v1.3 (04/29/2017)
+by Pravin Prabhu & Todor Mollov & Zinsser Zhang
 
 //==============================================================================
 Changelog:
+(04/29/2017)v1.3 released
+        - Extracted mips_core from other FPGA related components
+
 (1/11/11)	v1.2 released
 		- Now completely implementable in hardware!
 		- Renamed some top-level signals to more closely match H&P
