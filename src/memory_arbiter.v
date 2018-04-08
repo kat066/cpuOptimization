@@ -89,7 +89,10 @@ module memory_arbiter	#(	parameter DATA_WIDTH=32,
 					NextState <= STATE_READY;
 			end
 		endcase
+	end
 
+	always @(*)
+	begin
 		o_CORE_Valid <= FALSE;
 		o_CORE_Data_Read <= FALSE;
 		o_CORE_Last <= FALSE;

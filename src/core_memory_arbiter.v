@@ -18,14 +18,14 @@ module core_memory_arbiter	#(	parameter DATA_WIDTH=32,
 							// General
 							input i_Clk,
 							input i_Reset_n,
-							
+
 							// Requests to/from IMEM - Assume we always read
 							input i_IMEM_Valid,						// If IMEM request is valid
 							input [ADDRESS_WIDTH-1:0] i_IMEM_Address,		// IMEM request addr.
 							output reg o_IMEM_Valid,
 							output reg o_IMEM_Last,
 							output reg [DATA_WIDTH-1:0] o_IMEM_Data,
-							
+
 							// Requests to/from DMEM
 							input i_DMEM_Valid,
 							input i_DMEM_Read_Write_n,
@@ -35,34 +35,34 @@ module core_memory_arbiter	#(	parameter DATA_WIDTH=32,
 							output reg o_DMEM_Data_Read,
 							output reg o_DMEM_Last,
 							output reg [DATA_WIDTH-1:0] o_DMEM_Data,
-							
+
 							// Interface to outside of the core
 							output reg o_MEM_Valid,
 							output reg [ADDRESS_WIDTH-1:0] o_MEM_Address,
 							output reg o_MEM_Read_Write_n,
-							
+
 								// Write data interface
 							output reg [DATA_WIDTH-1:0] o_MEM_Data,
 							input i_MEM_Data_Read,
-							
+
 								// Read data interface
 							input [DATA_WIDTH-1:0] i_MEM_Data,
 							input i_MEM_Valid,
-							
+
 							input i_MEM_Last				// If we're on the last piece of the transaction
 						);
-	
+
 	// Consts
 	localparam TRUE = 1'b1;
 	localparam FALSE = 1'b0;
 	localparam READ = 1'b1;
-	localparam WRITE = 1'b0;	
-	
+	localparam WRITE = 1'b0;
+
 	// State of the arbiter
 	localparam STATE_READY = 4'd0;
 	localparam STATE_SERVICING_IMEM = 4'd1;
 	localparam STATE_SERVICING_DMEM = 4'd2;
-	
+
 	reg [3:0] State;
 	reg [3:0] NextState;
 
@@ -90,7 +90,10 @@ module core_memory_arbiter	#(	parameter DATA_WIDTH=32,
 					NextState <= STATE_READY;
 			end
 		endcase
+	end
 
+	always @(*)
+	begin
 		o_IMEM_Valid <= FALSE;
 		o_IMEM_Last <= FALSE;
 		o_IMEM_Data <= {32{1'bx}};
@@ -110,7 +113,7 @@ module core_memory_arbiter	#(	parameter DATA_WIDTH=32,
 			o_MEM_Read_Write_n <= READ;
 			o_IMEM_Valid <= i_MEM_Valid;
 			o_IMEM_Last <= i_MEM_Last;
-			o_IMEM_Data <= i_MEM_Data;			
+			o_IMEM_Data <= i_MEM_Data;
 		end
 		else if (State == STATE_SERVICING_DMEM || NextState == STATE_SERVICING_DMEM)
 		begin
@@ -124,15 +127,15 @@ module core_memory_arbiter	#(	parameter DATA_WIDTH=32,
 			o_DMEM_Data <= i_MEM_Data;
 		end
 	end
-	
+
 	// State driver
 	always @(posedge i_Clk or negedge i_Reset_n)
 	begin
 		if( !i_Reset_n )
-			// Defaults			
-			State <= STATE_READY;	
+			// Defaults
+			State <= STATE_READY;
 		else
 			State <= NextState;
 	end
-		
+
 endmodule
