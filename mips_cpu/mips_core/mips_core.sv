@@ -15,12 +15,12 @@ module mips_core (
 	input rst_n,  // Asynchronous reset active low
 
 	// Memory interfaces
-	mem_read_ifc  i_cache_read,
-	mem_write_ifc d_cache_write,
-	mem_read_ifc  d_cache_read,
+	mem_read_ifc.request  i_cache_read,
+	mem_write_ifc.request d_cache_write,
+	mem_read_ifc.request  d_cache_read,
 
 	// Outputs for Done Flag
-	pass_done_ifc pass_done
+	pass_done_ifc.out pass_done
 );
 	// Set DEBUG to 1 to enable trace dump.
 	localparam DEBUG = 0;
@@ -100,6 +100,11 @@ module mips_core (
 
 		.out          (if_i_cache_output)
 	);
+	// If you want to change the line size and total size of instruction cache,
+	// uncomment the following two lines and change the parameter.
+
+	// defparam D_CACHE.INDEX_WIDTH = 9,
+	// 	D_CACHE.BLOCK_OFFSET_WIDTH = 2;
 
 	// ========================================================================
 	// ==== IF to DEC
@@ -214,6 +219,11 @@ module mips_core (
 		.mem_read(d_cache_read),
 		.mem_write(d_cache_write)
 	);
+	// If you want to change the line size and total size of data cache,
+	// uncomment the following two lines and change the parameter.
+
+	// defparam D_CACHE.INDEX_WIDTH = 9,
+	// 	D_CACHE.BLOCK_OFFSET_WIDTH = 2;
 
 	mem_stage_glue MEM_STAGE_GLUE (
 		.i_d_cache_output      (mem_d_cache_output),
@@ -259,6 +269,10 @@ module mips_core (
 		.m2w_hc,
 		.load_pc
 	);
+
+	// xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+	// xxxx Debug and statistic collect logic (Not synthesizable)
+	// xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 	integer pcfile;
 	integer wbfile;
@@ -316,5 +330,4 @@ module mips_core (
 			end
 		end
 	end
-
 endmodule

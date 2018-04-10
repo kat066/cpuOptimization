@@ -1,3 +1,11 @@
+/*
+ * testbench.sv
+ * Author: Zinsser Zhang
+ * Last Revision: 04/08/2018
+ *
+ * This is the simulation testbench. It connects mips_cpu to a sdram model, and
+ * generates top-level input clock and signals.
+ */
 `timescale 1 ns / 1 ps
 `include "mips_cpu.svh"
 
@@ -59,11 +67,11 @@ module testbench ();
 	initial
 	begin
 		CLOCK_50 = 1'b0;
-		SW[0] = 1'b0;	// Hard reset
-		SW[1] = 1'b0;	// Soft reset
+		SW[0] = 1'b0;						// Hard reset
+		SW[1] = 1'b0;						// Soft reset
 
-		repeat (10) @(posedge CLOCK_50);
-		SW[0] = 1'b1;	// Release hard reset
+		repeat (10) @(posedge CLOCK_50);	// Wait for 10 cycles
+		SW[0] = 1'b1;						// Release hard reset
 
 		/*
 		 * Memory controller is set to wait 1us after a hard reset for the
@@ -71,7 +79,7 @@ module testbench ();
 		 * Wait 2us before releasing the soft reset.
 		 */
 		#2000 @(posedge DUT.clk);
-		// Hack binary code into sdram's bank0.
+		// Hack binary code into sdram's bank0. Please change the path
 		$readmemh("C:/path_to_project/hexfiles/nqueens.16bit.bank0.hex", SDR.Bank0);
 		$readmemh("C:/path_to_project/hexfiles/nqueens.16bit.bank1.hex", SDR.Bank1);
 		// Release soft reset
@@ -84,6 +92,7 @@ module testbench ();
 		 */
 		$stop;
 
+		// Wait for the mips_core to report a fail or done MTC0 instruction
 		wait(DUT.pass_done.code == MTC0_FAIL || DUT.pass_done.code == MTC0_DONE);
 		$stop;
 	end

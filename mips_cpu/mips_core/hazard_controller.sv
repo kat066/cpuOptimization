@@ -1,3 +1,16 @@
+/*
+ * hazard_controller.sv
+ * Author: Zinsser Zhang
+ * Last Revision: 04/08/2018
+ *
+ * hazard_controller collect feedbacks from each stage and detect whether there
+ * are hazards in the pipeline. If so, it generate control signals to stall or
+ * flush each stage. It also contains a branch_controller, which talks to
+ * a branch predictor to make a prediction when a branch instruction is decoded.
+ *
+ * See wiki page "Hazards" for details.
+ * See wiki page "Branch and Jump" for details of branch and jump instructions.
+ */
 `include "mips_core.svh"
 
 module hazard_controller (
@@ -5,26 +18,26 @@ module hazard_controller (
 	input rst_n,  // Asynchronous reset active low
 
 	// Feedback from IF
-	cache_output_ifc if_i_cache_output,
+	cache_output_ifc.in if_i_cache_output,
 	// Feedback from DEC
-	pc_ifc dec_pc,
+	pc_ifc.in dec_pc,
 	branch_decoded_ifc.hazard dec_branch_decoded,
 	// Feedback from EX
-	pc_ifc ex_pc,
+	pc_ifc.in ex_pc,
 	input lw_hazard,
-	branch_result_ifc ex_branch_result,
+	branch_result_ifc.in ex_branch_result,
 	// Feedback from MEM
 	input mem_done,
 
 	// Hazard control output
-	hazard_control_ifc i2i_hc,
-	hazard_control_ifc i2d_hc,
-	hazard_control_ifc d2e_hc,
-	hazard_control_ifc e2m_hc,
-	hazard_control_ifc m2w_hc,
+	hazard_control_ifc.out i2i_hc,
+	hazard_control_ifc.out i2d_hc,
+	hazard_control_ifc.out d2e_hc,
+	hazard_control_ifc.out e2m_hc,
+	hazard_control_ifc.out m2w_hc,
 
 	// Load pc output
-	load_pc_ifc load_pc
+	load_pc_ifc.out load_pc
 );
 
 	branch_controller BRANCH_CONTROLLER (
@@ -35,7 +48,7 @@ module hazard_controller (
 		.ex_branch_result
 	);
 
-	// 6 hazards
+	// We have total 6 potential hazards
 	logic ic_miss;			// I cache miss
 	logic ds_miss;			// Delay slot miss
 	logic dec_overload;		// Branch predict taken or Jump

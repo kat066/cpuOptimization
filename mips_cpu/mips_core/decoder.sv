@@ -1,3 +1,14 @@
+/*
+ * decoder.sv
+ * Author: Zinsser Zhang
+ * Last Revision: 04/08/2018
+ *
+ * Decoder decode an instruction to control signals.
+ *
+ * See wiki page "Branch and Jump" for details about branch/jump instructions.
+ * See wiki page "Handle Register Zero" for deatils about instructions reading
+ * from or writing to register zero.
+ */
 `include "mips_core.svh"
 
 interface decoder_output_ifc ();
@@ -22,17 +33,25 @@ interface decoder_output_ifc ();
 
 	logic uses_rw;
 	mips_core_pkg::MipsReg rw_addr;
+
+	modport in  (input valid, alu_ctl, is_branch, is_jump, is_jump_reg,
+		branch_target, is_mem_access, mem_action, uses_rs, rs_addr, uses_rt,
+		rt_addr, uses_immediate, immediate, uses_rw, rw_addr);
+	modport out (output valid, alu_ctl, is_branch, is_jump, is_jump_reg,
+		branch_target, is_mem_access, mem_action, uses_rs, rs_addr, uses_rt,
+		rt_addr, uses_immediate, immediate, uses_rw, rw_addr);
 endinterface
 
 module decoder (
-	pc_ifc i_pc,
-	cache_output_ifc i_inst,
+	pc_ifc.in i_pc,
+	cache_output_ifc.in i_inst,
 
-	decoder_output_ifc out
+	decoder_output_ifc.out out
 );
 
 	task uses_rs;
 		begin
+			// Only set uses_rs if it is not register zero
 			out.uses_rs <= |i_inst.data[25:21];
 			out.rs_addr <= mips_core_pkg::MipsReg'(i_inst.data[25:21]);
 		end
@@ -40,6 +59,7 @@ module decoder (
 
 	task uses_rt;
 		begin
+			// Only set uses_rt if it is not register zero
 			out.uses_rt <= |i_inst.data[20:16];
 			out.rt_addr <= mips_core_pkg::MipsReg'(i_inst.data[20:16]);
 		end
@@ -48,6 +68,7 @@ module decoder (
 	task route_rt_to_rs;
 		begin
 			// Rerouting rt to rs for sll, srl, sra
+			// Only set uses_rs if it is not register zero
 			out.uses_rs <= |i_inst.data[20:16];
 			out.rs_addr <= mips_core_pkg::MipsReg'(i_inst.data[20:16]);
 		end
@@ -76,6 +97,7 @@ module decoder (
 	task uses_rw_raw;
 		input [4:0] rw;
 		begin
+			// Only set uses_rw if it is not register zero
 			out.uses_rw <= |rw;
 			out.rw_addr <= mips_core_pkg::MipsReg'(rw);
 		end
@@ -125,7 +147,7 @@ module decoder (
 
 	always_comb
 	begin
-		// Set defaults to avoid latch inference
+		// Set defaults to nop
 		out.valid <= i_inst.valid;
 		out.alu_ctl <= ALUCTL_NOP;
 		out.is_branch <= 1'b0;

@@ -1,26 +1,39 @@
+/*
+ * branch_controller.sv
+ * Author: Pravin P. Prabhu, Zinsser Zhang
+ * Last Revision: 04/08/2018
+ *
+ * Provides forwarding support to the pipeline (i.e. instructions that have
+ * completed in later stages can have their results forwarded to newer
+ * instructions that require them -- this improves performance by resolving
+ * data dependencies without requiring a stall).
+ *
+ * See wiki page "Systemverilop Primer" section tasks for a potential bug in
+ * this unit caused by using tasks incorrectly (due to sensitivity list)
+ */
 `include "mips_core.svh"
 
 module forward_unit (
 	// Input from decoder
-	decoder_output_ifc decoded,
-	reg_file_output_ifc reg_data,
+	decoder_output_ifc.in decoded,
+	reg_file_output_ifc.in reg_data,
 
 	// Feedback from EX stage
-	alu_pass_through_ifc ex_ctl,
-	alu_output_ifc ex_data,
+	alu_pass_through_ifc.in ex_ctl,
+	alu_output_ifc.in ex_data,
 
 	// Feedback from MEM stage
-	write_back_ifc mem,
+	write_back_ifc.in mem,
 
 	// Feedback from WB stage
-	write_back_ifc wb,
+	write_back_ifc.in wb,
 
 	// Output
-	reg_file_output_ifc out,
+	reg_file_output_ifc.out out,
 	output logic o_lw_hazard
 );
 
-	task forward_rs;
+	task check_forward_rs;
 		input logic uses_rs;
 		input mips_core_pkg::MipsReg rs_addr;
 
@@ -33,7 +46,7 @@ module forward_unit (
 		end
 	endtask
 
-	task forward_rt;
+	task check_forward_rt;
 		input logic uses_rt;
 		input mips_core_pkg::MipsReg rt_addr;
 
@@ -46,7 +59,7 @@ module forward_unit (
 		end
 	endtask
 
-	task forward;
+	task check_forward;
 		input logic uses_rs;
 		input logic uses_rt;
 		input mips_core_pkg::MipsReg rs_addr;
@@ -56,8 +69,8 @@ module forward_unit (
 		input mips_core_pkg::MipsReg r_source;
 		input logic [`DATA_WIDTH - 1 : 0] d_source;
 		begin
-			forward_rs(uses_rs, rs_addr, condition, r_source, d_source);
-			forward_rt(uses_rt, rt_addr, condition, r_source, d_source);
+			check_forward_rs(uses_rs, rs_addr, condition, r_source, d_source);
+			check_forward_rt(uses_rt, rt_addr, condition, r_source, d_source);
 		end
 	endtask
 
@@ -67,17 +80,17 @@ module forward_unit (
 		out.rt_data <= reg_data.rt_data;
 
 		// Forward WB stage
-		forward(decoded.uses_rs, decoded.uses_rt,
+		check_forward(decoded.uses_rs, decoded.uses_rt,
 			decoded.rs_addr, decoded.rt_addr,
 			wb.uses_rw, wb.rw_addr, wb.rw_data);
 
 		// Forward MEM stage
-		forward(decoded.uses_rs, decoded.uses_rt,
+		check_forward(decoded.uses_rs, decoded.uses_rt,
 			decoded.rs_addr, decoded.rt_addr,
 			mem.uses_rw, mem.rw_addr, mem.rw_data);
 
 		// Forward EX stage
-		forward(decoded.uses_rs, decoded.uses_rt,
+		check_forward(decoded.uses_rs, decoded.uses_rt,
 			decoded.rs_addr, decoded.rt_addr,
 			ex_data.valid & ex_ctl.uses_rw & ~ex_ctl.is_mem_access,
 			ex_ctl.rw_addr, ex_data.result);

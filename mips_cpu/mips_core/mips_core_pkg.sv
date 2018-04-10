@@ -1,3 +1,13 @@
+/*
+ * mips_core_pkg.sv
+ * Author: Zinsser Zhang
+ * Last Revision: 04/09/2018
+ *
+ * This package defines all the enum types used across different units within
+ * mips_core.
+ *
+ * See wiki page "Systemverilog Primer" section package and enum for details.
+ */
 package mips_core_pkg;
 
 typedef enum logic [4:0] {

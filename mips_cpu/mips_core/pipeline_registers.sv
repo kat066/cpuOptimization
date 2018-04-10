@@ -1,14 +1,29 @@
+/*
+ * pipeline_registers.sv
+ * Author: Zinsser Zhang
+ * Last Revision: 04/09/2018
+ *
+ * These are the pipeline registers between each two adjacent stages. All
+ * pipeline registers are pure registers except for pr_e2m. pr_e2m needs to pass
+ * through and select for addr_next signal. The reason is that we are using
+ * synchronous BRAM to implement asynchronous d_cache.
+ *
+ * See wiki page "Synchronous Caches" for details.
+ */
 `include "mips_core.svh"
 
 module pr_i2d (
 	input clk,    // Clock
 	input rst_n,  // Asynchronous reset active low
 
-	hazard_control_ifc i_hc,
+	hazard_control_ifc.in i_hc,
 
 	// Pipelined interfaces
-	pc_ifc i_pc, o_pc,
-	cache_output_ifc i_inst, o_inst
+	pc_ifc.in  i_pc,
+	pc_ifc.out o_pc,
+
+	cache_output_ifc.in  i_inst,
+	cache_output_ifc.out o_inst
 );
 
 	always_ff @(posedge clk or negedge rst_n)
@@ -44,12 +59,16 @@ module pr_d2e (
 	input clk,    // Clock
 	input rst_n,  // Asynchronous reset active low
 
-	hazard_control_ifc i_hc,
+	hazard_control_ifc.in i_hc,
 
 	// Pipelined interfaces
-	pc_ifc i_pc, o_pc,
-	alu_input_ifc i_alu_input, o_alu_input,
-	alu_pass_through_ifc i_alu_pass_through, o_alu_pass_through
+	pc_ifc.in  i_pc,
+	pc_ifc.out o_pc,
+
+	alu_input_ifc.in  i_alu_input,
+	alu_input_ifc.out o_alu_input,
+	alu_pass_through_ifc.in  i_alu_pass_through,
+	alu_pass_through_ifc.out o_alu_pass_through
 );
 
 	always_ff @(posedge clk or negedge rst_n)
@@ -133,14 +152,15 @@ module pr_e2m (
 	input clk,    // Clock
 	input rst_n,  // Asynchronous reset active low
 
-	hazard_control_ifc i_hc,
+	hazard_control_ifc.in i_hc,
 
 	// Pipelined interfaces
-	pc_ifc i_pc, o_pc,
-	d_cache_input_ifc i_d_cache_input,
-	d_cache_input_ifc o_d_cache_input,
-	d_cache_pass_through_ifc i_d_cache_pass_through,
-	d_cache_pass_through_ifc o_d_cache_pass_through
+	pc_ifc.in  i_pc,
+	pc_ifc.out o_pc,
+	d_cache_input_ifc.in  i_d_cache_input,
+	d_cache_input_ifc.out o_d_cache_input,
+	d_cache_pass_through_ifc.in  i_d_cache_pass_through,
+	d_cache_pass_through_ifc.out o_d_cache_pass_through
 );
 	// Does not register addr_next. See d_cache for details.
 	always_comb
@@ -208,10 +228,11 @@ module pr_m2w (
 	input clk,    // Clock
 	input rst_n,  // Asynchronous reset active low
 
-	hazard_control_ifc i_hc,
+	hazard_control_ifc.in i_hc,
 
 	// Pipelined interfaces
-	write_back_ifc i_wb, o_wb
+	write_back_ifc.in  i_wb,
+	write_back_ifc.out o_wb
 );
 
 	always_ff @(posedge clk or negedge rst_n)

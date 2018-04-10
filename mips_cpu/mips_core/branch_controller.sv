@@ -1,3 +1,13 @@
+/*
+ * branch_controller.sv
+ * Author: Zinsser Zhang
+ * Last Revision: 04/08/2018
+ *
+ * branch_controller is a bridge between branch predictor to hazard controller.
+ * Two simple predictors are also provided as examples.
+ *
+ * See wiki page "Branch and Jump" for details.
+ */
 `include "mips_core.svh"
 
 module branch_controller (
@@ -5,12 +15,12 @@ module branch_controller (
 	input rst_n,  // Asynchronous reset active low
 
 	// Request
-	pc_ifc dec_pc,
+	pc_ifc.in dec_pc,
 	branch_decoded_ifc.hazard dec_branch_decoded,
 
 	// Feedback
-	pc_ifc ex_pc,
-	branch_result_ifc ex_branch_result
+	pc_ifc.in ex_pc,
+	branch_result_ifc.in ex_branch_result
 );
 	logic request_prediction;
 

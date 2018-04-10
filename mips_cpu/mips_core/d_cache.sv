@@ -1,3 +1,27 @@
+/*
+ * d_cache.sv
+ * Author: Zinsser Zhang
+ * Last Revision: 04/08/2018
+ *
+ * This is a direct-mapped data cache. Line size and depth (number of lines) are
+ * set via INDEX_WIDTH and BLOCK_OFFSET_WIDTH parameters. Notice that line size
+ * means number of words (each consist of 32 bit) in a line. Because all
+ * addresses in mips_core are 26 byte addresses, so the sum of TAG_WIDTH,
+ * INDEX_WIDTH and BLOCK_OFFSET_WIDTH is `ADDR_WIDTH - 2.
+ *
+ * Typical line sizes are from 2 words to 16 words. The memory interfaces only
+ * support up to 16 words line size.
+ *
+ * Because we need a hit latency of 1 cycle, we need an asynchronous read port,
+ * i.e. data is ready during the same cycle when address is calculated. However,
+ * FPGA on-chip block rams only support synchronous read, i.e. data is ready
+ * the cycle after the address is calculated. Due to this conflict, we need to
+ * read from the banks on the clock edge at the beginning of the cycle. As a
+ * result, we need the both the registered version of address and a
+ * non-registered version of address (which will be registered in BRAM).
+ *
+ * See wiki page "Synchronous Caches" for details.
+ */
 `include "mips_core.svh"
 
 interface d_cache_input_ifc ();
@@ -6,33 +30,36 @@ interface d_cache_input_ifc ();
 	logic [`ADDR_WIDTH - 1 : 0] addr;
 	logic [`ADDR_WIDTH - 1 : 0] addr_next;
 	logic [`DATA_WIDTH - 1 : 0] data;
+
+	modport in  (input valid, mem_action, addr, addr_next, data);
+	modport out (output valid, mem_action, addr, addr_next, data);
 endinterface
 
-module d_cache (
+module d_cache #(
+	parameter INDEX_WIDTH = 9,
+	parameter BLOCK_OFFSET_WIDTH = 2
+	)(
+	// General signals
 	input clk,    // Clock
 	input rst_n,  // Asynchronous reset active low
 
 	// Request
-	d_cache_input_ifc in,
+	d_cache_input_ifc.in in,
 
 	// Response
-	cache_output_ifc out,
+	cache_output_ifc.out out,
 
 	// Memory interfaces
-	mem_read_ifc mem_read,
-	mem_write_ifc mem_write
+	mem_read_ifc.request mem_read,
+	mem_write_ifc.request mem_write
 );
-
-	localparam TAG_WIDTH = 13;
-	localparam INDEX_WIDTH = 9;
-	localparam BLOCK_OFFSET_WIDTH = 2;
-
+	localparam TAG_WIDTH = `ADDR_WIDTH - INDEX_WIDTH - BLOCK_OFFSET_WIDTH - 2;
 	localparam LINE_SIZE = 1 << BLOCK_OFFSET_WIDTH;
 	localparam DEPTH = 1 << INDEX_WIDTH;
 
 	// Check if the parameters are set correctly
 	generate
-		if(TAG_WIDTH + INDEX_WIDTH + BLOCK_OFFSET_WIDTH + 2 != `ADDR_WIDTH)
+		if(TAG_WIDTH <= 0 || LINE_SIZE > 16)
 		begin
 			INVALID_D_CACHE_PARAM invalid_d_cache_param ();
 		end
@@ -172,9 +199,9 @@ module d_cache (
 	always_comb
 	begin
 		databank_we <= '0;
-		if (mem_read.user_available)
+		if (mem_read.user_available)				// We are refilling data
 			databank_we <= databank_select;
-		else if (hit & (in.mem_action == WRITE))
+		else if (hit & (in.mem_action == WRITE))	// We are storing a word
 			databank_we[i_block_offset] <= 1'b1;
 	end
 
@@ -310,47 +337,5 @@ module d_cache (
 				end
 			endcase
 		end
-	end
-endmodule
-
-module d_cache_databank #(parameter INDEX_WIDTH = 9)(
-	input clk,    // Clock
-	input i_we,
-	input logic [`DATA_WIDTH - 1 : 0] i_wdata,
-	input logic [INDEX_WIDTH - 1 : 0] i_waddr, i_raddr,
-	output logic [`DATA_WIDTH - 1 : 0] o_rdata
-);
-	localparam DEPTH = 1 << INDEX_WIDTH;
-
-	logic [`DATA_WIDTH - 1 : 0] data [DEPTH];
-
-	always_ff @(posedge clk)
-	begin
-		o_rdata <= data[i_raddr];
-		if (i_we)
-			data[i_waddr] <= i_wdata;
-		if (i_we & (i_raddr == i_waddr))
-			o_rdata <= i_wdata;
-	end
-endmodule
-
-module d_cache_tagbank #(parameter TAG_WIDTH = 13, parameter INDEX_WIDTH = 9)(
-	input clk,    // Clock
-	input i_we,
-	input logic [TAG_WIDTH - 1 : 0] i_wdata,
-	input logic [INDEX_WIDTH - 1 : 0] i_waddr, i_raddr,
-	output logic [TAG_WIDTH - 1 : 0] o_rdata
-);
-	localparam DEPTH = 1 << INDEX_WIDTH;
-
-	logic [TAG_WIDTH - 1 : 0] data [DEPTH];
-
-	always_ff @(posedge clk)
-	begin
-		o_rdata <= data[i_raddr];
-		if (i_we)
-			data[i_waddr] <= i_wdata;
-		if (i_we & (i_raddr == i_waddr))
-			o_rdata <= i_wdata;
 	end
 endmodule

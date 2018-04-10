@@ -1,3 +1,15 @@
+/*
+ * alu.sv
+ * Author: Pravin P. Prabhu & Zinsser Zhang
+ * Last Revision: 04/08/2018
+ *
+ * Defines the input and output interface of arithmetic logic unit in execution
+ * stage. Implement the alu which can do arithmetic calculations and branch
+ * resolution.
+ *
+ * It is also reponsible for reporting customized MTC0 instructions
+ * to pass_done interface. See wiki page "Pass Done Interface" for details.
+ */
 `include "mips_core.svh"
 
 interface alu_input_ifc ();
@@ -5,18 +17,24 @@ interface alu_input_ifc ();
 	mips_core_pkg::AluCtl alu_ctl;
 	logic signed [`DATA_WIDTH - 1 : 0] op1;
 	logic signed [`DATA_WIDTH - 1 : 0] op2;
+
+	modport in  (input valid, alu_ctl, op1, op2);
+	modport out (output valid, alu_ctl, op1, op2);
 endinterface
 
 interface alu_output_ifc ();
 	logic valid;
 	logic [`DATA_WIDTH - 1 : 0] result;
 	mips_core_pkg::BranchOutcome branch_outcome;
+
+	modport in  (input valid, result, branch_outcome);
+	modport out (output valid, result, branch_outcome);
 endinterface
 
 module alu (
-	alu_input_ifc in,
-	alu_output_ifc out,
-	pass_done_ifc pass_done
+	alu_input_ifc.in in,
+	alu_output_ifc.out out,
+	pass_done_ifc.out pass_done
 );
 
 	always_comb
