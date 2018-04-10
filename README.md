@@ -1,9 +1,5 @@
-#CSE 148 Baseline version 2.0
-##Release v2.0 04/06/2018 Zinsser Zhang
+#CSE 148 Baseline version 2.1
+##Release v2.1 04/10/2018 Zinsser Zhang
 
-This is the first release of version 2.0. There are only minimum comments in the
-code. I will be releasing a new version very soon. Please refer to
-
-		doc/walk_through.txt
-
-for instructions to play around the design really quick.
+Please refer to the wiki page **Walkthrough** for instructions to play around the design really quick.
+Detailed documentations can be found in the wiki of this repository.
