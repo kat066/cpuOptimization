@@ -30,6 +30,7 @@ module branch_controller (
 
 		.i_req_valid     (request_prediction),
 		.i_req_pc        (dec_pc.pc),
+		.i_req_target    (dec_branch_decoded.target)
 		.o_req_prediction(dec_branch_decoded.prediction),
 
 		.i_fb_valid      (ex_branch_result.valid),
@@ -55,6 +56,7 @@ module branch_predictor_always_not_taken (
 	// Request
 	input logic i_req_valid,
 	input logic [`ADDR_WIDTH - 1 : 0] i_req_pc,
+	input logic [`ADDR_WIDTH - 1 : 0] i_req_target,
 	output mips_core_pkg::BranchOutcome o_req_prediction,
 
 	// Feedback
@@ -78,6 +80,7 @@ module branch_predictor_2bit (
 	// Request
 	input logic i_req_valid,
 	input logic [`ADDR_WIDTH - 1 : 0] i_req_pc,
+	input logic [`ADDR_WIDTH - 1 : 0] i_req_target,
 	output mips_core_pkg::BranchOutcome o_req_prediction,
 
 	// Feedback
