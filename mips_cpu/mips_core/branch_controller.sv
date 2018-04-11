@@ -30,7 +30,7 @@ module branch_controller (
 
 		.i_req_valid     (request_prediction),
 		.i_req_pc        (dec_pc.pc),
-		.i_req_target    (dec_branch_decoded.target)
+		.i_req_target    (dec_branch_decoded.target),
 		.o_req_prediction(dec_branch_decoded.prediction),
 
 		.i_fb_valid      (ex_branch_result.valid),
