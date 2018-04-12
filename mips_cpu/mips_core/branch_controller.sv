@@ -42,7 +42,8 @@ module branch_controller (
 	always_comb
 	begin
 		request_prediction = dec_branch_decoded.valid & ~dec_branch_decoded.is_jump;
-		dec_branch_decoded.target_post_predict = dec_branch_decoded.prediction
+		dec_branch_decoded.recovery_target =
+			(dec_branch_decoded.prediction == TAKEN)
 			? dec_pc.pc + `ADDR_WIDTH'd8
 			: dec_branch_decoded.target;
 	end

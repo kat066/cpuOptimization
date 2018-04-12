@@ -85,7 +85,7 @@ module pr_d2e (
 
 			o_alu_pass_through.is_branch <= 1'b0;
 			o_alu_pass_through.prediction <= NOT_TAKEN;
-			o_alu_pass_through.branch_target <= '0;
+			o_alu_pass_through.recovery_target <= '0;
 
 			o_alu_pass_through.is_mem_access <= 1'b0;
 			o_alu_pass_through.mem_action <= READ;
@@ -111,7 +111,7 @@ module pr_d2e (
 
 					o_alu_pass_through.is_branch <= 1'b0;
 					o_alu_pass_through.prediction <= NOT_TAKEN;
-					o_alu_pass_through.branch_target <= '0;
+					o_alu_pass_through.recovery_target <= '0;
 
 					o_alu_pass_through.is_mem_access <= 1'b0;
 					o_alu_pass_through.mem_action <= READ;
@@ -133,7 +133,7 @@ module pr_d2e (
 
 					o_alu_pass_through.is_branch <= i_alu_pass_through.is_branch;
 					o_alu_pass_through.prediction <= i_alu_pass_through.prediction;
-					o_alu_pass_through.branch_target <= i_alu_pass_through.branch_target;
+					o_alu_pass_through.recovery_target <= i_alu_pass_through.recovery_target;
 
 					o_alu_pass_through.is_mem_access <= i_alu_pass_through.is_mem_access;
 					o_alu_pass_through.mem_action <= i_alu_pass_through.mem_action;

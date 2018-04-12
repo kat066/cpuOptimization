@@ -38,7 +38,7 @@ module decode_stage_glue (
 
 		o_alu_pass_through.is_branch =     i_decoded.is_branch & ~i_decoded.is_jump;
 		o_alu_pass_through.prediction =    branch_decoded.prediction;
-		o_alu_pass_through.branch_target = branch_decoded.target_post_predict;
+		o_alu_pass_through.recovery_target = branch_decoded.recovery_target;
 
 		o_alu_pass_through.is_mem_access = i_decoded.is_mem_access;
 		o_alu_pass_through.mem_action =    i_decoded.mem_action;
@@ -65,7 +65,7 @@ module ex_stage_glue (
 			& i_alu_pass_through.is_branch;
 		o_branch_result.prediction = i_alu_pass_through.prediction;
 		o_branch_result.outcome =    i_alu_output.branch_outcome;
-		o_branch_result.target =     i_alu_pass_through.branch_target;
+		o_branch_result.recovery_target =     i_alu_pass_through.recovery_target;
 
 		o_d_cache_input.valid =      i_alu_pass_through.is_mem_access;
 		o_d_cache_input.mem_action = i_alu_pass_through.mem_action;

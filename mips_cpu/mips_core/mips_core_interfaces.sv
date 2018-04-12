@@ -38,18 +38,18 @@ interface branch_decoded_ifc ();
 	logic [`ADDR_WIDTH - 1 : 0] target;
 
 	mips_core_pkg::BranchOutcome prediction;
-	logic [`ADDR_WIDTH - 1 : 0] target_post_predict;
+	logic [`ADDR_WIDTH - 1 : 0] recovery_target;
 
 	modport decode (output valid, is_jump, target,
-		input prediction, target_post_predict);
-	modport hazard (output prediction, target_post_predict,
+		input prediction, recovery_target);
+	modport hazard (output prediction, recovery_target,
 		input valid, is_jump, target);
 endinterface
 
 interface alu_pass_through_ifc ();
 	logic is_branch;
 	mips_core_pkg::BranchOutcome prediction;
-	logic [`ADDR_WIDTH - 1 : 0] branch_target;
+	logic [`ADDR_WIDTH - 1 : 0] recovery_target;
 
 	logic is_mem_access;
 	mips_core_pkg::MemAccessType mem_action;
@@ -58,9 +58,9 @@ interface alu_pass_through_ifc ();
 	logic uses_rw;
 	mips_core_pkg::MipsReg rw_addr;
 
-	modport in  (input is_branch, prediction, branch_target, is_mem_access,
+	modport in  (input is_branch, prediction, recovery_target, is_mem_access,
 		mem_action, sw_data, uses_rw, rw_addr);
-	modport out (output is_branch, prediction, branch_target, is_mem_access,
+	modport out (output is_branch, prediction, recovery_target, is_mem_access,
 		mem_action, sw_data, uses_rw, rw_addr);
 endinterface
 
@@ -68,10 +68,10 @@ interface branch_result_ifc ();
 	logic valid;
 	mips_core_pkg::BranchOutcome prediction;
 	mips_core_pkg::BranchOutcome outcome;
-	logic [`ADDR_WIDTH - 1 : 0] target;
+	logic [`ADDR_WIDTH - 1 : 0] recovery_target;
 
-	modport in  (input valid, prediction, outcome, target);
-	modport out (output valid, prediction, outcome, target);
+	modport in  (input valid, prediction, outcome, recovery_target);
+	modport out (output valid, prediction, outcome, recovery_target);
 endinterface
 
 interface d_cache_pass_through_ifc ();

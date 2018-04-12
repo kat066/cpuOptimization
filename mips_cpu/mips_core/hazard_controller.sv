@@ -173,7 +173,7 @@ module hazard_controller (
 		if (dec_overload)
 			load_pc.new_pc = dec_branch_decoded.target;
 		else
-			load_pc.new_pc = ex_branch_result.target;
+			load_pc.new_pc = ex_branch_result.recovery_target;
 	end
 
 endmodule
