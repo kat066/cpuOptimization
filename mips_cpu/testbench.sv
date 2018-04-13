@@ -94,6 +94,8 @@ module testbench ();
 
 		// Wait for the mips_core to report a fail or done MTC0 instruction
 		wait(DUT.pass_done.code == MTC0_FAIL || DUT.pass_done.code == MTC0_DONE);
+		$display("%m (%t) #Instructions = %d, #Cycles = %d",
+			$time, DUT.MIPS_CORE.num_instructions, DUT.MIPS_CORE.num_cycles);
 		$stop;
 	end
 endmodule
