@@ -29,14 +29,14 @@ module decode_stage_glue (
 			? i_decoded.immediate
 			: i_reg_data.rt_data;
 
-		branch_decoded.valid =   i_decoded.is_branch;
+		branch_decoded.valid =   i_decoded.is_branch_jump;
 		branch_decoded.is_jump = i_decoded.is_jump;
 		branch_decoded.target =  i_decoded.is_jump_reg
 			? i_reg_data.rs_data[`ADDR_WIDTH - 1 : 0]
 			: i_decoded.branch_target;
 
 
-		o_alu_pass_through.is_branch =     i_decoded.is_branch & ~i_decoded.is_jump;
+		o_alu_pass_through.is_branch =     i_decoded.is_branch_jump & ~i_decoded.is_jump;
 		o_alu_pass_through.prediction =    branch_decoded.prediction;
 		o_alu_pass_through.recovery_target = branch_decoded.recovery_target;
 

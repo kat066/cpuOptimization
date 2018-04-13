@@ -80,8 +80,8 @@ module testbench ();
 		 */
 		#2000 @(posedge DUT.clk);
 		// Hack binary code into sdram's bank0. Please change the path
-		$readmemh("C:/path_to_project/hexfiles/nqueens.16bit.bank0.hex", SDR.Bank0);
-		$readmemh("C:/path_to_project/hexfiles/nqueens.16bit.bank1.hex", SDR.Bank1);
+		$readmemh("../../../hexfiles/nqueens.16bit.bank0.hex", SDR.Bank0);
+		$readmemh("../../../hexfiles/nqueens.16bit.bank1.hex", SDR.Bank1);
 		// Release soft reset
 		SW[1] = 1'b1;
 

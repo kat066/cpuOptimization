@@ -14,7 +14,7 @@
 interface decoder_output_ifc ();
 	logic valid;
 	mips_core_pkg::AluCtl alu_ctl;
-	logic is_branch;
+	logic is_branch_jump;
 	logic is_jump;
 	logic is_jump_reg;
 	logic [`ADDR_WIDTH - 1 : 0] branch_target;
@@ -34,10 +34,10 @@ interface decoder_output_ifc ();
 	logic uses_rw;
 	mips_core_pkg::MipsReg rw_addr;
 
-	modport in  (input valid, alu_ctl, is_branch, is_jump, is_jump_reg,
+	modport in  (input valid, alu_ctl, is_branch_jump, is_jump, is_jump_reg,
 		branch_target, is_mem_access, mem_action, uses_rs, rs_addr, uses_rt,
 		rt_addr, uses_immediate, immediate, uses_rw, rw_addr);
-	modport out (output valid, alu_ctl, is_branch, is_jump, is_jump_reg,
+	modport out (output valid, alu_ctl, is_branch_jump, is_jump, is_jump_reg,
 		branch_target, is_mem_access, mem_action, uses_rs, rs_addr, uses_rt,
 		rt_addr, uses_immediate, immediate, uses_rw, rw_addr);
 endinterface
@@ -150,7 +150,7 @@ module decoder (
 		// Set defaults to nop
 		out.valid <= i_inst.valid;
 		out.alu_ctl <= ALUCTL_NOP;
-		out.is_branch <= 1'b0;
+		out.is_branch_jump <= 1'b0;
 		out.is_jump <= 1'b0;
 		out.is_jump_reg <= 1'b0;
 		out.branch_target <= '0;
@@ -275,7 +275,7 @@ module decoder (
 						begin
 							out.alu_ctl <= ALUCTL_NOP;	// jr does not use alu
 							uses_rs();
-							out.is_branch <= 1'b1;
+							out.is_branch_jump <= 1'b1;
 							out.is_jump <= 1'b1;
 							out.is_jump_reg <= 1'b1;
 						end
@@ -286,7 +286,7 @@ module decoder (
 							uses_rs();
 							uses_rw_raw(ra);	// jalr always write to ra (31)
 							uses_immediate_raw(32'(unsigned'(i_pc.pc)) + 8);
-							out.is_branch <= 1'b1;
+							out.is_branch_jump <= 1'b1;
 							out.is_jump <= 1'b1;
 							out.is_jump_reg <= 1'b1;
 						end
@@ -377,7 +377,7 @@ module decoder (
 					out.alu_ctl <= ALUCTL_BEQ;
 					uses_rs();
 					uses_rt();
-					out.is_branch <= 1'b1;
+					out.is_branch_jump <= 1'b1;
 					out.branch_target <= i_pc.pc + `ADDR_WIDTH'd4 + `ADDR_WIDTH'(signed'(i_inst.data[15:0]) << 2);
 				end
 
@@ -386,7 +386,7 @@ module decoder (
 					out.alu_ctl <= ALUCTL_BNE;
 					uses_rs();
 					uses_rt();
-					out.is_branch <= 1'b1;
+					out.is_branch_jump <= 1'b1;
 					out.branch_target <= i_pc.pc + `ADDR_WIDTH'd4 + `ADDR_WIDTH'(signed'(i_inst.data[15:0]) << 2);
 				end
 
@@ -395,7 +395,7 @@ module decoder (
 					out.alu_ctl <= ALUCTL_BLEZ;
 					uses_rs();
 					uses_rt();
-					out.is_branch <= 1'b1;
+					out.is_branch_jump <= 1'b1;
 					out.branch_target <= i_pc.pc + `ADDR_WIDTH'd4 + `ADDR_WIDTH'(signed'(i_inst.data[15:0]) << 2);
 				end
 
@@ -407,7 +407,7 @@ module decoder (
 						out.alu_ctl <= ALUCTL_BLTZ;
 					uses_rs();
 					uses_rt();
-					out.is_branch <= 1'b1;
+					out.is_branch_jump <= 1'b1;
 					out.branch_target <= i_pc.pc + `ADDR_WIDTH'd4 + `ADDR_WIDTH'(signed'(i_inst.data[15:0]) << 2);
 				end
 
@@ -416,14 +416,14 @@ module decoder (
 					out.alu_ctl <= ALUCTL_BGTZ;
 					uses_rs();
 					uses_rt();
-					out.is_branch <= 1'b1;
+					out.is_branch_jump <= 1'b1;
 					out.branch_target <= i_pc.pc + `ADDR_WIDTH'd4 + `ADDR_WIDTH'(signed'(i_inst.data[15:0]) << 2);
 				end
 
 				6'h02:  // j
 				begin
 					out.alu_ctl <= ALUCTL_NOP;	// jr does not use alu
-					out.is_branch <= 1'b1;
+					out.is_branch_jump <= 1'b1;
 					out.is_jump <= 1'b1;
 					out.branch_target <= {i_inst.data[`ADDR_WIDTH - 3: 0], 2'b00};
 				end
@@ -433,7 +433,7 @@ module decoder (
 					out.alu_ctl <= ALUCTL_OR;
 					uses_rw_raw(ra);	// jal always write to ra (31)
 					uses_immediate_raw(32'(unsigned'(i_pc.pc)) + 8);
-					out.is_branch <= 1'b1;
+					out.is_branch_jump <= 1'b1;
 					out.is_jump <= 1'b1;
 					out.branch_target <= {i_inst.data[`ADDR_WIDTH - 3: 0], 2'b00};
 				end
