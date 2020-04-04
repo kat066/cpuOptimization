@@ -33,13 +33,17 @@ interface decoder_output_ifc ();
 
 	logic uses_rw;
 	mips_core_pkg::MipsReg rw_addr;
+	
+	logic is_ll;
+	logic is_sc;
+	logic is_sw;
 
 	modport in  (input valid, alu_ctl, is_branch_jump, is_jump, is_jump_reg,
 		branch_target, is_mem_access, mem_action, uses_rs, rs_addr, uses_rt,
-		rt_addr, uses_immediate, immediate, uses_rw, rw_addr);
+		rt_addr, uses_immediate, immediate, uses_rw, rw_addr, is_ll, is_sc, is_sw);
 	modport out (output valid, alu_ctl, is_branch_jump, is_jump, is_jump_reg,
 		branch_target, is_mem_access, mem_action, uses_rs, rs_addr, uses_rt,
-		rt_addr, uses_immediate, immediate, uses_rw, rw_addr);
+		rt_addr, uses_immediate, immediate, uses_rw, rw_addr, is_ll, is_sc, is_sw);
 endinterface
 
 module decoder (
@@ -168,7 +172,11 @@ module decoder (
 
 		out.uses_rw <= 1'b0;
 		out.rw_addr <= zero;
-
+		
+		out.is_ll <= 1'b0;
+		out.is_sc <= 1'b0;
+		out.is_sw <= 1'b0;
+		
 		if (i_inst.valid)
 		begin
 			case(i_inst.data[31:26])
@@ -486,10 +494,29 @@ module decoder (
 				begin
 					out.alu_ctl <= ALUCTL_ADD;
 					out.is_mem_access <= 1'b1;
+					out.is_sw <= 1'b1;
 					out.mem_action <= WRITE;
 					uses_rs();
 					uses_rt();
 					uses_immediate_signed_extend();
+				end
+				
+				6'h30: //ll
+				begin
+					out.alu_ctl <= ALUCTL_ADD;
+					out.is_mem_access <= 1'b1;
+					out.is_ll <= 1'b1;
+					out.mem_action <= READ;
+					signed_extend_itype();
+				end
+				
+				6'h38: //sc
+				begin
+					out.alu_ctl <= ALUCTL_ADD;
+					out.is_mem_access <= 1'b1;
+					out.is_sc <= 1'b1;
+					out.mem_action <= WRITE;
+					signed_extend_itype();
 				end
 
 				6'h10:  //mtc0

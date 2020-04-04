@@ -81,6 +81,9 @@ module pr_d2e (
 			o_alu_input.alu_ctl <= ALUCTL_NOP;
 			o_alu_input.op1 <= '0;
 			o_alu_input.op2 <= '0;
+			o_alu_input.is_ll <= '0;
+   		o_alu_input.is_sc <= '0;
+			o_alu_input.is_sw <= '0;
 
 
 			o_alu_pass_through.is_branch <= 1'b0;
@@ -107,6 +110,9 @@ module pr_d2e (
 					o_alu_input.alu_ctl <= ALUCTL_NOP;
 					o_alu_input.op1 <= '0;
 					o_alu_input.op2 <= '0;
+					o_alu_input.is_ll <= '0;
+					o_alu_input.is_sc <= '0;
+					o_alu_input.is_sw <= '0;
 
 
 					o_alu_pass_through.is_branch <= 1'b0;
@@ -129,7 +135,9 @@ module pr_d2e (
 					o_alu_input.alu_ctl <= i_alu_input.alu_ctl;
 					o_alu_input.op1 <= i_alu_input.op1;
 					o_alu_input.op2 <= i_alu_input.op2;
-
+					o_alu_input.is_ll <= i_alu_input.is_ll;
+					o_alu_input.is_sc <= i_alu_input.is_sc;					
+					o_alu_input.is_sw <= i_alu_input.is_sw;	
 
 					o_alu_pass_through.is_branch <= i_alu_pass_through.is_branch;
 					o_alu_pass_through.prediction <= i_alu_pass_through.prediction;

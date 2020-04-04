@@ -86,4 +86,10 @@ typedef enum logic {
 	TAKEN
 } BranchOutcome;
 
+typedef enum logic [1:0] {
+	NOT_ATOMIC,
+	ATOMIC_FAIL,
+	ATOMIC_PASS
+}	AtomicStatus;
+
 endpackage

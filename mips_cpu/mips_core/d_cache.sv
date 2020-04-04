@@ -30,6 +30,7 @@ interface d_cache_input_ifc ();
 	logic [`ADDR_WIDTH - 1 : 0] addr;
 	logic [`ADDR_WIDTH - 1 : 0] addr_next;
 	logic [`DATA_WIDTH - 1 : 0] data;
+	
 
 	modport in  (input valid, mem_action, addr, addr_next, data);
 	modport out (output valid, mem_action, addr, addr_next, data);
@@ -42,6 +43,9 @@ module d_cache #(
 	// General signals
 	input clk,    // Clock
 	input rst_n,  // Asynchronous reset active low
+	
+	//Input from LLSC module
+	llsc_output_ifc.in llsc_mem_in,
 
 	// Request
 	d_cache_input_ifc.in in,
@@ -201,7 +205,7 @@ module d_cache #(
 		databank_we <= '0;
 		if (mem_read.user_available)				// We are refilling data
 			databank_we <= databank_select;
-		else if (hit & (in.mem_action == WRITE))	// We are storing a word
+		else if (hit & (in.mem_action == WRITE) && (llsc_mem_in.atomic != ATOMIC_FAIL))	// We are storing a word
 			databank_we[i_block_offset] <= 1'b1;
 	end
 
@@ -238,7 +242,7 @@ module d_cache #(
 	always_comb
 	begin
 		out.valid = hit;
-		out.data = databank_rdata[i_block_offset];
+		out.data = (llsc_mem_in.atomic == ATOMIC_PASS) ? 32'b1 : (llsc_mem_in.atomic == ATOMIC_FAIL) ? 32'b0 : databank_rdata[i_block_offset];
 	end
 
 	always_comb

@@ -50,12 +50,14 @@ module mips_core (
 
 	// |||| EX Stage
 	alu_output_ifc ex_alu_output();
+	llsc_input_ifc ex_llsc_input();
 	branch_result_ifc ex_branch_result();
 	d_cache_input_ifc ex_d_cache_input();
 	d_cache_pass_through_ifc ex_d_cache_pass_through();
 
 	// ==== EX to MEM
 	pc_ifc e2m_pc();
+	llsc_output_ifc llsc_mem_output();	
 	d_cache_input_ifc e2m_d_cache_input();
 	d_cache_pass_through_ifc e2m_d_cache_pass_through();
 
@@ -182,11 +184,18 @@ module mips_core (
 		.out(ex_alu_output),
 		.pass_done
 	);
+	
+	llsc_module LLSC_mod(
+	.clk(clk),   	
+	.i_llsc(ex_llsc_input),
+	.o_llsc(llsc_mem_output)
+);
+
 
 	ex_stage_glue EX_STAGE_GLUE (
 		.i_alu_output           (ex_alu_output),
 		.i_alu_pass_through     (d2e_alu_pass_through),
-
+		.o_llsc_input           (ex_llsc_input),
 		.o_branch_result        (ex_branch_result),
 		.o_d_cache_input        (ex_d_cache_input),
 		.o_d_cache_pass_through (ex_d_cache_pass_through)
@@ -215,7 +224,7 @@ module mips_core (
 
 		.in(e2m_d_cache_input),
 		.out(mem_d_cache_output),
-
+		.llsc_mem_in(llsc_mem_output),
 		.mem_read(d_cache_read),
 		.mem_write(d_cache_write)
 	);

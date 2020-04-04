@@ -17,18 +17,25 @@ interface alu_input_ifc ();
 	mips_core_pkg::AluCtl alu_ctl;
 	logic signed [`DATA_WIDTH - 1 : 0] op1;
 	logic signed [`DATA_WIDTH - 1 : 0] op2;
+	logic is_ll;
+	logic is_sc;
+	logic is_sw;
 
-	modport in  (input valid, alu_ctl, op1, op2);
-	modport out (output valid, alu_ctl, op1, op2);
+	modport in  (input valid, alu_ctl, op1, op2, is_ll, is_sc, is_sw);
+	modport out (output valid, alu_ctl, op1, op2, is_ll, is_sc, is_sw);
 endinterface
 
 interface alu_output_ifc ();
 	logic valid;
 	logic [`DATA_WIDTH - 1 : 0] result;
 	mips_core_pkg::BranchOutcome branch_outcome;
+	logic is_ll;
+	logic is_sc;
+	logic is_sw;
 
-	modport in  (input valid, result, branch_outcome);
-	modport out (output valid, result, branch_outcome);
+
+	modport in  (input valid, result, branch_outcome, is_ll, is_sc, is_sw);
+	modport out (output valid, result, branch_outcome, is_ll, is_sc, is_sw);
 endinterface
 
 module alu (
@@ -42,13 +49,21 @@ module alu (
 		out.valid <= 1'b0;
 		out.result <= '0;
 		out.branch_outcome <= NOT_TAKEN;
+		
+		out.is_ll <= 1'b0;
+		out.is_sc <= 1'b0;
+		out.is_sw <= 1'b0;
+		
 		pass_done.value <= '0;
 		pass_done.code <= MTC0_NOOP;
 
 		if (in.valid)
 		begin
 			out.valid <= 1'b1;
-
+			out.is_ll <= in.is_ll;
+			out.is_sc <= in.is_sc;
+			out.is_sw <= in.is_sw;
+			
 			case (in.alu_ctl)
 				ALUCTL_NOP:  out.result <= '0;
 				ALUCTL_ADD:  out.result <= in.op1 + in.op2;

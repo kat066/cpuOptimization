@@ -26,8 +26,12 @@ module decode_stage_glue (
 		o_alu_input.alu_ctl = i_decoded.alu_ctl;
 		o_alu_input.op1 =     i_reg_data.rs_data;
 		o_alu_input.op2 =     i_decoded.uses_immediate
-			? i_decoded.immediate
-			: i_reg_data.rt_data;
+									? i_decoded.immediate
+									: i_reg_data.rt_data;
+		o_alu_input.is_ll =   i_decoded.is_ll;
+		o_alu_input.is_sc =   i_decoded.is_sc;
+		o_alu_input.is_sw =   i_decoded.is_sw;
+		
 
 		branch_decoded.valid =   i_decoded.is_branch_jump;
 		branch_decoded.is_jump = i_decoded.is_jump;
@@ -53,7 +57,8 @@ endmodule
 module ex_stage_glue (
 	alu_output_ifc.in i_alu_output,
 	alu_pass_through_ifc.in i_alu_pass_through,
-
+	
+	llsc_input_ifc.out o_llsc_input,
 	branch_result_ifc.out o_branch_result,
 	d_cache_input_ifc.out o_d_cache_input,
 	d_cache_pass_through_ifc.out o_d_cache_pass_through
@@ -61,6 +66,11 @@ module ex_stage_glue (
 
 	always_comb
 	begin
+		o_llsc_input.is_sw = i_alu_output.is_sw;
+		o_llsc_input.lladdr_wr = i_alu_output.is_ll;
+		o_llsc_input.is_sc = i_alu_output.is_sc;
+		o_llsc_input.wr_reg_val = {6'b0,i_alu_output.result[`ADDR_WIDTH - 1 : 0]};
+		
 		o_branch_result.valid = i_alu_output.valid
 			& i_alu_pass_through.is_branch;
 		o_branch_result.prediction = i_alu_pass_through.prediction;
@@ -83,7 +93,7 @@ endmodule
 module mem_stage_glue (
 	cache_output_ifc.in i_d_cache_output,
 	d_cache_pass_through_ifc.in i_d_cache_pass_through,
-
+	
 	output logic o_done,
 	write_back_ifc.out o_write_back
 );
