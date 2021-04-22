@@ -49,7 +49,7 @@ endinterface
 module decoder (
 	pc_ifc.in i_pc,
 	cache_output_ifc.in i_inst,
-
+	register_alias_table_ifc.in  register_alias, 
 	decoder_output_ifc.out out
 );
 

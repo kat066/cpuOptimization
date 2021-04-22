@@ -1,0 +1,1615 @@
+# Reading pref.tcl
+# ERROR: No extended dataflow license exists
+# do mips_cpu_run_msim_rtl_systemverilog.do
+# if ![file isdirectory mips_cpu_iputf_libs] {
+# 	file mkdir mips_cpu_iputf_libs
+# }
+# 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+###### Libraries for IPUTF cores 
+# vlib mips_cpu_iputf_libs/error_adapter_0
+# ** Warning: (vlib-34) Library already exists at "mips_cpu_iputf_libs/error_adapter_0".
+# vmap error_adapter_0 ./mips_cpu_iputf_libs/error_adapter_0
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap error_adapter_0 ./mips_cpu_iputf_libs/error_adapter_0 
+# Modifying modelsim.ini
+# vlib mips_cpu_iputf_libs/avalon_st_adapter
+# ** Warning: (vlib-34) Library already exists at "mips_cpu_iputf_libs/avalon_st_adapter".
+# vmap avalon_st_adapter ./mips_cpu_iputf_libs/avalon_st_adapter
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap avalon_st_adapter ./mips_cpu_iputf_libs/avalon_st_adapter 
+# Modifying modelsim.ini
+# vlib mips_cpu_iputf_libs/sdram_controller_s1_rsp_width_adapter
+# ** Warning: (vlib-34) Library already exists at "mips_cpu_iputf_libs/sdram_controller_s1_rsp_width_adapter".
+# vmap sdram_controller_s1_rsp_width_adapter ./mips_cpu_iputf_libs/sdram_controller_s1_rsp_width_adapter
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap sdram_controller_s1_rsp_width_adapter ./mips_cpu_iputf_libs/sdram_controller_s1_rsp_width_adapter 
+# Modifying modelsim.ini
+# vlib mips_cpu_iputf_libs/rsp_mux
+# ** Warning: (vlib-34) Library already exists at "mips_cpu_iputf_libs/rsp_mux".
+# vmap rsp_mux ./mips_cpu_iputf_libs/rsp_mux
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap rsp_mux ./mips_cpu_iputf_libs/rsp_mux 
+# Modifying modelsim.ini
+# vlib mips_cpu_iputf_libs/rsp_demux
+# ** Warning: (vlib-34) Library already exists at "mips_cpu_iputf_libs/rsp_demux".
+# vmap rsp_demux ./mips_cpu_iputf_libs/rsp_demux
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap rsp_demux ./mips_cpu_iputf_libs/rsp_demux 
+# Modifying modelsim.ini
+# vlib mips_cpu_iputf_libs/cmd_mux
+# ** Warning: (vlib-34) Library already exists at "mips_cpu_iputf_libs/cmd_mux".
+# vmap cmd_mux ./mips_cpu_iputf_libs/cmd_mux
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap cmd_mux ./mips_cpu_iputf_libs/cmd_mux 
+# Modifying modelsim.ini
+# vlib mips_cpu_iputf_libs/cmd_demux
+# ** Warning: (vlib-34) Library already exists at "mips_cpu_iputf_libs/cmd_demux".
+# vmap cmd_demux ./mips_cpu_iputf_libs/cmd_demux
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap cmd_demux ./mips_cpu_iputf_libs/cmd_demux 
+# Modifying modelsim.ini
+# vlib mips_cpu_iputf_libs/sdram_controller_s1_burst_adapter
+# ** Warning: (vlib-34) Library already exists at "mips_cpu_iputf_libs/sdram_controller_s1_burst_adapter".
+# vmap sdram_controller_s1_burst_adapter ./mips_cpu_iputf_libs/sdram_controller_s1_burst_adapter
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap sdram_controller_s1_burst_adapter ./mips_cpu_iputf_libs/sdram_controller_s1_burst_adapter 
+# Modifying modelsim.ini
+# vlib mips_cpu_iputf_libs/router_003
+# ** Warning: (vlib-34) Library already exists at "mips_cpu_iputf_libs/router_003".
+# vmap router_003 ./mips_cpu_iputf_libs/router_003
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap router_003 ./mips_cpu_iputf_libs/router_003 
+# Modifying modelsim.ini
+# vlib mips_cpu_iputf_libs/router
+# ** Warning: (vlib-34) Library already exists at "mips_cpu_iputf_libs/router".
+# vmap router ./mips_cpu_iputf_libs/router
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap router ./mips_cpu_iputf_libs/router 
+# Modifying modelsim.ini
+# vlib mips_cpu_iputf_libs/sdram_controller_s1_agent_rsp_fifo
+# ** Warning: (vlib-34) Library already exists at "mips_cpu_iputf_libs/sdram_controller_s1_agent_rsp_fifo".
+# vmap sdram_controller_s1_agent_rsp_fifo ./mips_cpu_iputf_libs/sdram_controller_s1_agent_rsp_fifo
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap sdram_controller_s1_agent_rsp_fifo ./mips_cpu_iputf_libs/sdram_controller_s1_agent_rsp_fifo 
+# Modifying modelsim.ini
+# vlib mips_cpu_iputf_libs/sdram_controller_s1_agent
+# ** Warning: (vlib-34) Library already exists at "mips_cpu_iputf_libs/sdram_controller_s1_agent".
+# vmap sdram_controller_s1_agent ./mips_cpu_iputf_libs/sdram_controller_s1_agent
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap sdram_controller_s1_agent ./mips_cpu_iputf_libs/sdram_controller_s1_agent 
+# Modifying modelsim.ini
+# vlib mips_cpu_iputf_libs/d_cache_read_avalon_master_agent
+# ** Warning: (vlib-34) Library already exists at "mips_cpu_iputf_libs/d_cache_read_avalon_master_agent".
+# vmap d_cache_read_avalon_master_agent ./mips_cpu_iputf_libs/d_cache_read_avalon_master_agent
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap d_cache_read_avalon_master_agent ./mips_cpu_iputf_libs/d_cache_read_avalon_master_agent 
+# Modifying modelsim.ini
+# vlib mips_cpu_iputf_libs/sdram_controller_s1_translator
+# ** Warning: (vlib-34) Library already exists at "mips_cpu_iputf_libs/sdram_controller_s1_translator".
+# vmap sdram_controller_s1_translator ./mips_cpu_iputf_libs/sdram_controller_s1_translator
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap sdram_controller_s1_translator ./mips_cpu_iputf_libs/sdram_controller_s1_translator 
+# Modifying modelsim.ini
+# vlib mips_cpu_iputf_libs/d_cache_read_avalon_master_translator
+# ** Warning: (vlib-34) Library already exists at "mips_cpu_iputf_libs/d_cache_read_avalon_master_translator".
+# vmap d_cache_read_avalon_master_translator ./mips_cpu_iputf_libs/d_cache_read_avalon_master_translator
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap d_cache_read_avalon_master_translator ./mips_cpu_iputf_libs/d_cache_read_avalon_master_translator 
+# Modifying modelsim.ini
+# vlib mips_cpu_iputf_libs/rst_controller
+# ** Warning: (vlib-34) Library already exists at "mips_cpu_iputf_libs/rst_controller".
+# vmap rst_controller ./mips_cpu_iputf_libs/rst_controller
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap rst_controller ./mips_cpu_iputf_libs/rst_controller 
+# Modifying modelsim.ini
+# vlib mips_cpu_iputf_libs/mm_interconnect_0
+# ** Warning: (vlib-34) Library already exists at "mips_cpu_iputf_libs/mm_interconnect_0".
+# vmap mm_interconnect_0 ./mips_cpu_iputf_libs/mm_interconnect_0
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap mm_interconnect_0 ./mips_cpu_iputf_libs/mm_interconnect_0 
+# Modifying modelsim.ini
+# vlib mips_cpu_iputf_libs/sdram_controller
+# ** Warning: (vlib-34) Library already exists at "mips_cpu_iputf_libs/sdram_controller".
+# vmap sdram_controller ./mips_cpu_iputf_libs/sdram_controller
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap sdram_controller ./mips_cpu_iputf_libs/sdram_controller 
+# Modifying modelsim.ini
+# vlib mips_cpu_iputf_libs/pll_0
+# ** Warning: (vlib-34) Library already exists at "mips_cpu_iputf_libs/pll_0".
+# vmap pll_0 ./mips_cpu_iputf_libs/pll_0
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap pll_0 ./mips_cpu_iputf_libs/pll_0 
+# Modifying modelsim.ini
+# vlib mips_cpu_iputf_libs/d_cache_read
+# ** Warning: (vlib-34) Library already exists at "mips_cpu_iputf_libs/d_cache_read".
+# vmap d_cache_read ./mips_cpu_iputf_libs/d_cache_read
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap d_cache_read ./mips_cpu_iputf_libs/d_cache_read 
+# Modifying modelsim.ini
+###### End libraries for IPUTF cores 
+###### MIF file copy and HDL compilation commands for IPUTF cores 
+# 
+# 
+# vlog -sv "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv" -work error_adapter_0                      
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:56:25 on Apr 21,2021
+# vlog -reportprogress 300 -sv C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv -work error_adapter_0 
+# -- Compiling module sdram_mm_interconnect_0_avalon_st_adapter_error_adapter_0
+# 
+# Top level modules:
+# 	sdram_mm_interconnect_0_avalon_st_adapter_error_adapter_0
+# End time: 15:56:25 on Apr 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog     "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_avalon_st_adapter.v"                  -work avalon_st_adapter                    
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:56:25 on Apr 21,2021
+# vlog -reportprogress 300 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_avalon_st_adapter.v -work avalon_st_adapter 
+# -- Compiling module sdram_mm_interconnect_0_avalon_st_adapter
+# 
+# Top level modules:
+# 	sdram_mm_interconnect_0_avalon_st_adapter
+# End time: 15:56:25 on Apr 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_width_adapter.sv"                               -work sdram_controller_s1_rsp_width_adapter
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:56:25 on Apr 21,2021
+# vlog -reportprogress 300 -sv C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_width_adapter.sv -work sdram_controller_s1_rsp_width_adapter 
+# -- Compiling module altera_merlin_width_adapter
+# 
+# Top level modules:
+# 	altera_merlin_width_adapter
+# End time: 15:56:26 on Apr 21,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_address_alignment.sv"                           -work sdram_controller_s1_rsp_width_adapter
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:56:26 on Apr 21,2021
+# vlog -reportprogress 300 -sv C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_address_alignment.sv -work sdram_controller_s1_rsp_width_adapter 
+# -- Compiling module altera_merlin_address_alignment
+# 
+# Top level modules:
+# 	altera_merlin_address_alignment
+# End time: 15:56:26 on Apr 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_uncompressor.sv"                          -work sdram_controller_s1_rsp_width_adapter
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:56:26 on Apr 21,2021
+# vlog -reportprogress 300 -sv C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_uncompressor.sv -work sdram_controller_s1_rsp_width_adapter 
+# -- Compiling module altera_merlin_burst_uncompressor
+# 
+# Top level modules:
+# 	altera_merlin_burst_uncompressor
+# End time: 15:56:26 on Apr 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_rsp_mux.sv"                           -work rsp_mux                              
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:56:26 on Apr 21,2021
+# vlog -reportprogress 300 -sv C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_rsp_mux.sv -work rsp_mux 
+# -- Compiling module sdram_mm_interconnect_0_rsp_mux
+# 
+# Top level modules:
+# 	sdram_mm_interconnect_0_rsp_mux
+# End time: 15:56:26 on Apr 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_arbitrator.sv"                                  -work rsp_mux                              
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:56:26 on Apr 21,2021
+# vlog -reportprogress 300 -sv C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_arbitrator.sv -work rsp_mux 
+# -- Compiling module altera_merlin_arbitrator
+# -- Compiling module altera_merlin_arb_adder
+# 
+# Top level modules:
+# 	altera_merlin_arbitrator
+# End time: 15:56:26 on Apr 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_rsp_demux.sv"                         -work rsp_demux                            
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:56:26 on Apr 21,2021
+# vlog -reportprogress 300 -sv C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_rsp_demux.sv -work rsp_demux 
+# -- Compiling module sdram_mm_interconnect_0_rsp_demux
+# 
+# Top level modules:
+# 	sdram_mm_interconnect_0_rsp_demux
+# End time: 15:56:26 on Apr 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_cmd_mux.sv"                           -work cmd_mux                              
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:56:26 on Apr 21,2021
+# vlog -reportprogress 300 -sv C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_cmd_mux.sv -work cmd_mux 
+# -- Compiling module sdram_mm_interconnect_0_cmd_mux
+# 
+# Top level modules:
+# 	sdram_mm_interconnect_0_cmd_mux
+# End time: 15:56:26 on Apr 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_arbitrator.sv"                                  -work cmd_mux                              
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:56:26 on Apr 21,2021
+# vlog -reportprogress 300 -sv C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_arbitrator.sv -work cmd_mux 
+# -- Compiling module altera_merlin_arbitrator
+# -- Compiling module altera_merlin_arb_adder
+# 
+# Top level modules:
+# 	altera_merlin_arbitrator
+# End time: 15:56:26 on Apr 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_cmd_demux.sv"                         -work cmd_demux                            
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:56:26 on Apr 21,2021
+# vlog -reportprogress 300 -sv C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_cmd_demux.sv -work cmd_demux 
+# -- Compiling module sdram_mm_interconnect_0_cmd_demux
+# 
+# Top level modules:
+# 	sdram_mm_interconnect_0_cmd_demux
+# End time: 15:56:26 on Apr 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter.sv"                               -work sdram_controller_s1_burst_adapter    
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:56:26 on Apr 21,2021
+# vlog -reportprogress 300 -sv C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter.sv -work sdram_controller_s1_burst_adapter 
+# -- Compiling module altera_merlin_burst_adapter
+# 
+# Top level modules:
+# 	altera_merlin_burst_adapter
+# End time: 15:56:27 on Apr 21,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_uncmpr.sv"                        -work sdram_controller_s1_burst_adapter    
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:56:27 on Apr 21,2021
+# vlog -reportprogress 300 -sv C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_uncmpr.sv -work sdram_controller_s1_burst_adapter 
+# -- Compiling module altera_merlin_burst_adapter_uncompressed_only
+# 
+# Top level modules:
+# 	altera_merlin_burst_adapter_uncompressed_only
+# End time: 15:56:27 on Apr 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_13_1.sv"                          -work sdram_controller_s1_burst_adapter    
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:56:27 on Apr 21,2021
+# vlog -reportprogress 300 -sv C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_13_1.sv -work sdram_controller_s1_burst_adapter 
+# -- Compiling module altera_merlin_burst_adapter_burstwrap_increment
+# -- Compiling module altera_merlin_burst_adapter_adder
+# -- Compiling module altera_merlin_burst_adapter_subtractor
+# -- Compiling module altera_merlin_burst_adapter_min
+# -- Compiling module altera_merlin_burst_adapter_13_1
+# 
+# Top level modules:
+# 	altera_merlin_burst_adapter_13_1
+# End time: 15:56:27 on Apr 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv"                           -work sdram_controller_s1_burst_adapter    
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:56:29 on Apr 21,2021
+# vlog -reportprogress 300 -sv C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv -work sdram_controller_s1_burst_adapter 
+# -- Compiling module altera_merlin_burst_adapter_new
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(500): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(501): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(502): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(503): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(504): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(505): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(506): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(507): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(508): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(509): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(511): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(512): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(513): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(514): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(515): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(516): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(517): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(518): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(519): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(520): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(521): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(522): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(523): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(526): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(527): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(614): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(615): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(616): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(617): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(618): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(619): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(620): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(621): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(622): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(623): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(624): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(625): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(746): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(762): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(860): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(861): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(862): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(863): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(864): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(865): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(866): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(867): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(900): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(901): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(902): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(903): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(940): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(942): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(945): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(947): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1040): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1041): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1042): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1043): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1044): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1045): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1046): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1047): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1048): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1049): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1084): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1085): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1086): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1087): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1088): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1089): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1104): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1106): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1206): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1207): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1208): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1209): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1210): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1211): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1212): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1213): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1214): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1215): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1216): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1256): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1257): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1258): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1259): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1260): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1261): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1291): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1294): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# 
+# Top level modules:
+# 	altera_merlin_burst_adapter_new
+# End time: 15:56:29 on Apr 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 92
+# vlog -sv "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_incr_burst_converter.sv"                               -work sdram_controller_s1_burst_adapter    
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:56:30 on Apr 21,2021
+# vlog -reportprogress 300 -sv C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_incr_burst_converter.sv -work sdram_controller_s1_burst_adapter 
+# -- Compiling module altera_incr_burst_converter
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_incr_burst_converter.sv(266): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_incr_burst_converter.sv(268): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_incr_burst_converter.sv(283): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_incr_burst_converter.sv(285): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# 
+# Top level modules:
+# 	altera_incr_burst_converter
+# End time: 15:56:30 on Apr 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 4
+# vlog -sv "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_wrap_burst_converter.sv"                               -work sdram_controller_s1_burst_adapter    
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:56:30 on Apr 21,2021
+# vlog -reportprogress 300 -sv C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_wrap_burst_converter.sv -work sdram_controller_s1_burst_adapter 
+# -- Compiling module altera_wrap_burst_converter
+# 
+# Top level modules:
+# 	altera_wrap_burst_converter
+# End time: 15:56:30 on Apr 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_default_burst_converter.sv"                            -work sdram_controller_s1_burst_adapter    
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:56:30 on Apr 21,2021
+# vlog -reportprogress 300 -sv C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_default_burst_converter.sv -work sdram_controller_s1_burst_adapter 
+# -- Compiling module altera_default_burst_converter
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_default_burst_converter.sv(102): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# 
+# Top level modules:
+# 	altera_default_burst_converter
+# End time: 15:56:30 on Apr 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# vlog -sv "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_address_alignment.sv"                           -work sdram_controller_s1_burst_adapter    
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:56:30 on Apr 21,2021
+# vlog -reportprogress 300 -sv C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_address_alignment.sv -work sdram_controller_s1_burst_adapter 
+# -- Compiling module altera_merlin_address_alignment
+# 
+# Top level modules:
+# 	altera_merlin_address_alignment
+# End time: 15:56:30 on Apr 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_avalon_st_pipeline_stage.sv"                           -work sdram_controller_s1_burst_adapter    
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:56:30 on Apr 21,2021
+# vlog -reportprogress 300 -sv C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_avalon_st_pipeline_stage.sv -work sdram_controller_s1_burst_adapter 
+# -- Compiling module altera_avalon_st_pipeline_stage
+# 
+# Top level modules:
+# 	altera_avalon_st_pipeline_stage
+# End time: 15:56:30 on Apr 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_avalon_st_pipeline_base.v"                             -work sdram_controller_s1_burst_adapter    
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:56:30 on Apr 21,2021
+# vlog -reportprogress 300 -sv C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_avalon_st_pipeline_base.v -work sdram_controller_s1_burst_adapter 
+# -- Compiling module altera_avalon_st_pipeline_base
+# 
+# Top level modules:
+# 	altera_avalon_st_pipeline_base
+# End time: 15:56:30 on Apr 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_router_003.sv"                        -work router_003                           
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:56:30 on Apr 21,2021
+# vlog -reportprogress 300 -sv C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_router_003.sv -work router_003 
+# -- Compiling module sdram_mm_interconnect_0_router_003_default_decode
+# -- Compiling module sdram_mm_interconnect_0_router_003
+# 
+# Top level modules:
+# 	sdram_mm_interconnect_0_router_003
+# End time: 15:56:30 on Apr 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_router.sv"                            -work router                               
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:56:30 on Apr 21,2021
+# vlog -reportprogress 300 -sv C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_router.sv -work router 
+# -- Compiling module sdram_mm_interconnect_0_router_default_decode
+# -- Compiling module sdram_mm_interconnect_0_router
+# 
+# Top level modules:
+# 	sdram_mm_interconnect_0_router
+# End time: 15:56:30 on Apr 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog     "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_avalon_sc_fifo.v"                                      -work sdram_controller_s1_agent_rsp_fifo   
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:56:30 on Apr 21,2021
+# vlog -reportprogress 300 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_avalon_sc_fifo.v -work sdram_controller_s1_agent_rsp_fifo 
+# -- Compiling module altera_avalon_sc_fifo
+# 
+# Top level modules:
+# 	altera_avalon_sc_fifo
+# End time: 15:56:31 on Apr 21,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_slave_agent.sv"                                 -work sdram_controller_s1_agent            
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:56:31 on Apr 21,2021
+# vlog -reportprogress 300 -sv C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_slave_agent.sv -work sdram_controller_s1_agent 
+# -- Compiling module altera_merlin_slave_agent
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_slave_agent.sv(618): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_slave_agent.sv(488): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_slave_agent.sv(489): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_slave_agent.sv(490): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_slave_agent.sv(491): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_slave_agent.sv(34): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# 
+# Top level modules:
+# 	altera_merlin_slave_agent
+# End time: 15:56:31 on Apr 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 6
+# vlog -sv "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_uncompressor.sv"                          -work sdram_controller_s1_agent            
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:56:31 on Apr 21,2021
+# vlog -reportprogress 300 -sv C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_uncompressor.sv -work sdram_controller_s1_agent 
+# -- Compiling module altera_merlin_burst_uncompressor
+# 
+# Top level modules:
+# 	altera_merlin_burst_uncompressor
+# End time: 15:56:31 on Apr 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_master_agent.sv"                                -work d_cache_read_avalon_master_agent     
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:56:31 on Apr 21,2021
+# vlog -reportprogress 300 -sv C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_master_agent.sv -work d_cache_read_avalon_master_agent 
+# -- Compiling module altera_merlin_master_agent
+# 
+# Top level modules:
+# 	altera_merlin_master_agent
+# End time: 15:56:31 on Apr 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_slave_translator.sv"                            -work sdram_controller_s1_translator       
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:56:31 on Apr 21,2021
+# vlog -reportprogress 300 -sv C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_slave_translator.sv -work sdram_controller_s1_translator 
+# -- Compiling module altera_merlin_slave_translator
+# 
+# Top level modules:
+# 	altera_merlin_slave_translator
+# End time: 15:56:31 on Apr 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_master_translator.sv"                           -work d_cache_read_avalon_master_translator
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:56:31 on Apr 21,2021
+# vlog -reportprogress 300 -sv C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_master_translator.sv -work d_cache_read_avalon_master_translator 
+# -- Compiling module altera_merlin_master_translator
+# 
+# Top level modules:
+# 	altera_merlin_master_translator
+# End time: 15:56:31 on Apr 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog     "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_reset_controller.v"                                    -work rst_controller                       
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:56:31 on Apr 21,2021
+# vlog -reportprogress 300 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_reset_controller.v -work rst_controller 
+# -- Compiling module altera_reset_controller
+# 
+# Top level modules:
+# 	altera_reset_controller
+# End time: 15:56:31 on Apr 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog     "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_reset_synchronizer.v"                                  -work rst_controller                       
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:56:31 on Apr 21,2021
+# vlog -reportprogress 300 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_reset_synchronizer.v -work rst_controller 
+# -- Compiling module altera_reset_synchronizer
+# 
+# Top level modules:
+# 	altera_reset_synchronizer
+# End time: 15:56:31 on Apr 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog     "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0.v"                                    -work mm_interconnect_0                    
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:56:31 on Apr 21,2021
+# vlog -reportprogress 300 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0.v -work mm_interconnect_0 
+# -- Compiling module sdram_mm_interconnect_0
+# 
+# Top level modules:
+# 	sdram_mm_interconnect_0
+# End time: 15:56:31 on Apr 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog     "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_sdram_controller.v"                                     -work sdram_controller                     
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:56:31 on Apr 21,2021
+# vlog -reportprogress 300 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_sdram_controller.v -work sdram_controller 
+# -- Compiling module sdram_sdram_controller_input_efifo_module
+# -- Compiling module sdram_sdram_controller
+# 
+# Top level modules:
+# 	sdram_sdram_controller
+# End time: 15:56:32 on Apr 21,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog     "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_sdram_controller_test_component.v"                      -work sdram_controller                     
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:56:32 on Apr 21,2021
+# vlog -reportprogress 300 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_sdram_controller_test_component.v -work sdram_controller 
+# -- Compiling module sdram_sdram_controller_test_component_ram_module
+# -- Compiling module sdram_sdram_controller_test_component
+# 
+# Top level modules:
+# 	sdram_sdram_controller_test_component
+# End time: 15:56:32 on Apr 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog     "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_pll_0.vo"                                               -work pll_0                                
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:56:32 on Apr 21,2021
+# vlog -reportprogress 300 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_pll_0.vo -work pll_0 
+# -- Compiling module sdram_pll_0
+# 
+# Top level modules:
+# 	sdram_pll_0
+# End time: 15:56:32 on Apr 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog     "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/custom_master.v"                                              -work d_cache_read                         
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:56:32 on Apr 21,2021
+# vlog -reportprogress 300 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/custom_master.v -work d_cache_read 
+# -- Compiling module custom_master
+# 
+# Top level modules:
+# 	custom_master
+# End time: 15:56:32 on Apr 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog     "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/burst_write_master.v"                                         -work d_cache_read                         
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:56:32 on Apr 21,2021
+# vlog -reportprogress 300 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/burst_write_master.v -work d_cache_read 
+# -- Compiling module burst_write_master
+# 
+# Top level modules:
+# 	burst_write_master
+# End time: 15:56:32 on Apr 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog     "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/burst_read_master.v"                                          -work d_cache_read                         
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:56:32 on Apr 21,2021
+# vlog -reportprogress 300 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/burst_read_master.v -work d_cache_read 
+# -- Compiling module burst_read_master
+# 
+# Top level modules:
+# 	burst_read_master
+# End time: 15:56:32 on Apr 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog     "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/write_master.v"                                               -work d_cache_read                         
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:56:32 on Apr 21,2021
+# vlog -reportprogress 300 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/write_master.v -work d_cache_read 
+# -- Compiling module write_master
+# 
+# Top level modules:
+# 	write_master
+# End time: 15:56:32 on Apr 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog     "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/latency_aware_read_master.v"                                  -work d_cache_read                         
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:56:32 on Apr 21,2021
+# vlog -reportprogress 300 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/latency_aware_read_master.v -work d_cache_read 
+# -- Compiling module latency_aware_read_master
+# 
+# Top level modules:
+# 	latency_aware_read_master
+# End time: 15:56:32 on Apr 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog     "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/sdram.v"                                                                                                            
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:56:32 on Apr 21,2021
+# vlog -reportprogress 300 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/sdram.v 
+# -- Compiling module sdram
+# 
+# Top level modules:
+# 	sdram
+# End time: 15:56:32 on Apr 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core {C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/cache_bank.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:56:32 on Apr 21,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core" C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/cache_bank.sv 
+# -- Compiling module cache_bank
+# -- Compiling module cache_bank_core
+# 
+# Top level modules:
+# 	cache_bank
+# End time: 15:56:32 on Apr 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core {C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/mips_core_pkg.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:56:32 on Apr 21,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core" C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/mips_core_pkg.sv 
+# -- Compiling package mips_core_pkg
+# 
+# Top level modules:
+# 	--none--
+# End time: 15:56:33 on Apr 21,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu {C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_cpu_pkg.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:56:33 on Apr 21,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu" C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_cpu_pkg.sv 
+# -- Compiling package mips_cpu_pkg
+# 
+# Top level modules:
+# 	--none--
+# End time: 15:56:33 on Apr 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core {C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/llsc_module.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:56:33 on Apr 21,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core" C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/llsc_module.sv 
+# -- Compiling package llsc_module_sv_unit
+# -- Importing package mips_cpu_pkg
+# -- Importing package mips_core_pkg
+# -- Compiling interface llsc_input_ifc
+# -- Compiling interface llsc_output_ifc
+# -- Compiling module llsc_module
+# 
+# Top level modules:
+# 	llsc_module
+# End time: 15:56:33 on Apr 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core {C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/mips_core_interfaces.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:56:33 on Apr 21,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core" C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/mips_core_interfaces.sv 
+# -- Compiling package mips_core_interfaces_sv_unit
+# -- Importing package mips_cpu_pkg
+# -- Importing package mips_core_pkg
+# -- Compiling interface load_pc_ifc
+# -- Compiling interface pc_ifc
+# -- Compiling interface cache_output_ifc
+# -- Compiling interface branch_decoded_ifc
+# -- Compiling interface alu_pass_through_ifc
+# -- Compiling interface branch_result_ifc
+# -- Compiling interface d_cache_pass_through_ifc
+# -- Compiling interface write_back_ifc
+# -- Compiling interface hazard_control_ifc
+# 
+# Top level modules:
+# 	--none--
+# End time: 15:56:33 on Apr 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu {C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/pass_done_interface.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:56:33 on Apr 21,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu" C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/pass_done_interface.sv 
+# -- Compiling package pass_done_interface_sv_unit
+# -- Importing package mips_cpu_pkg
+# -- Compiling interface pass_done_ifc
+# 
+# Top level modules:
+# 	--none--
+# End time: 15:56:33 on Apr 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu {C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/memory_interfaces.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:56:33 on Apr 21,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu" C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/memory_interfaces.sv 
+# -- Compiling package memory_interfaces_sv_unit
+# -- Importing package mips_cpu_pkg
+# -- Compiling interface mem_write_ifc
+# -- Compiling interface mem_read_ifc
+# 
+# Top level modules:
+# 	--none--
+# End time: 15:56:33 on Apr 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core {C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/i_cache.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:56:33 on Apr 21,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core" C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/i_cache.sv 
+# -- Compiling package i_cache_sv_unit
+# -- Importing package mips_cpu_pkg
+# -- Importing package mips_core_pkg
+# -- Compiling module i_cache
+# 
+# Top level modules:
+# 	i_cache
+# End time: 15:56:33 on Apr 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core {C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/fetch_unit.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:56:33 on Apr 21,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core" C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/fetch_unit.sv 
+# -- Compiling package fetch_unit_sv_unit
+# -- Importing package mips_cpu_pkg
+# -- Importing package mips_core_pkg
+# -- Compiling module fetch_unit
+# 
+# Top level modules:
+# 	fetch_unit
+# End time: 15:56:33 on Apr 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core {C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/decoder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:56:33 on Apr 21,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core" C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/decoder.sv 
+# -- Compiling package decoder_sv_unit
+# -- Importing package mips_cpu_pkg
+# -- Importing package mips_core_pkg
+# -- Compiling interface decoder_output_ifc
+# -- Compiling module decoder
+# 
+# Top level modules:
+# 	decoder
+# End time: 15:56:33 on Apr 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core {C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/d_cache.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:56:33 on Apr 21,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core" C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/d_cache.sv 
+# -- Compiling package d_cache_sv_unit
+# -- Importing package mips_cpu_pkg
+# -- Importing package mips_core_pkg
+# -- Compiling interface d_cache_input_ifc
+# -- Compiling module d_cache
+# 
+# Top level modules:
+# 	d_cache
+# End time: 15:56:33 on Apr 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core {C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/branch_controller.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:56:33 on Apr 21,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core" C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/branch_controller.sv 
+# -- Compiling package branch_controller_sv_unit
+# -- Importing package mips_cpu_pkg
+# -- Importing package mips_core_pkg
+# -- Compiling module branch_controller
+# -- Compiling module branch_predictor_always_not_taken
+# -- Compiling module branch_predictor_always_taken
+# -- Compiling module branch_predictor_backward_taken_forward_not_taken
+# -- Compiling module branch_predictor_2bit
+# 
+# Top level modules:
+# 	branch_controller
+# 	branch_predictor_always_not_taken
+# 	branch_predictor_always_taken
+# 	branch_predictor_2bit
+# End time: 15:56:34 on Apr 21,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core {C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/alu.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:56:34 on Apr 21,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core" C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/alu.sv 
+# -- Compiling package alu_sv_unit
+# -- Importing package mips_cpu_pkg
+# -- Importing package mips_core_pkg
+# -- Compiling interface alu_input_ifc
+# -- Compiling interface alu_output_ifc
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 15:56:34 on Apr 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core {C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/reg_file.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:56:34 on Apr 21,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core" C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/reg_file.sv 
+# -- Compiling package reg_file_sv_unit
+# -- Importing package mips_cpu_pkg
+# -- Importing package mips_core_pkg
+# -- Compiling interface reg_file_output_ifc
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# End time: 15:56:34 on Apr 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core {C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/pipeline_registers.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:56:34 on Apr 21,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core" C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/pipeline_registers.sv 
+# -- Compiling package pipeline_registers_sv_unit
+# -- Importing package mips_cpu_pkg
+# -- Importing package mips_core_pkg
+# -- Compiling module pr_i2d
+# -- Compiling module pr_d2e
+# -- Compiling module pr_e2m
+# -- Compiling module pr_m2w
+# 
+# Top level modules:
+# 	pr_i2d
+# 	pr_d2e
+# 	pr_e2m
+# 	pr_m2w
+# End time: 15:56:34 on Apr 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core {C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/hazard_controller.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:56:34 on Apr 21,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core" C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/hazard_controller.sv 
+# -- Compiling package hazard_controller_sv_unit
+# -- Importing package mips_cpu_pkg
+# -- Importing package mips_core_pkg
+# -- Compiling module hazard_controller
+# 
+# Top level modules:
+# 	hazard_controller
+# End time: 15:56:34 on Apr 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core {C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/glue_circuits.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:56:34 on Apr 21,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core" C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/glue_circuits.sv 
+# -- Compiling package glue_circuits_sv_unit
+# -- Importing package mips_cpu_pkg
+# -- Importing package mips_core_pkg
+# -- Compiling module decode_stage_glue
+# -- Compiling module ex_stage_glue
+# -- Compiling module mem_stage_glue
+# 
+# Top level modules:
+# 	decode_stage_glue
+# 	ex_stage_glue
+# 	mem_stage_glue
+# End time: 15:56:34 on Apr 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core {C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/forward_unit.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:56:34 on Apr 21,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core" C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/forward_unit.sv 
+# -- Compiling package forward_unit_sv_unit
+# -- Importing package mips_cpu_pkg
+# -- Importing package mips_core_pkg
+# -- Compiling module forward_unit
+# 
+# Top level modules:
+# 	forward_unit
+# End time: 15:56:34 on Apr 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core {C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/mips_core.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:56:34 on Apr 21,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core" C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/mips_core.sv 
+# -- Compiling package mips_core_sv_unit
+# -- Importing package mips_cpu_pkg
+# -- Importing package mips_core_pkg
+# -- Compiling module mips_core
+# 
+# Top level modules:
+# 	mips_core
+# End time: 15:56:34 on Apr 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu {C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_cpu.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:56:34 on Apr 21,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu" C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_cpu.sv 
+# -- Compiling package mips_cpu_sv_unit
+# -- Importing package mips_cpu_pkg
+# -- Compiling module mips_cpu
+# 
+# Top level modules:
+# 	mips_cpu
+# End time: 15:56:34 on Apr 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+do C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/wave.do
+do C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/fast_testbench.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:59:05 on Apr 21,2021
+# vlog -reportprogress 300 -work work ../../fast_testbench.sv 
+# -- Compiling package fast_testbench_sv_unit
+# -- Importing package mips_cpu_pkg
+# -- Compiling module fast_testbench
+# 
+# Top level modules:
+# 	fast_testbench
+# End time: 15:59:05 on Apr 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:59:05 on Apr 21,2021
+# vlog -reportprogress 300 -work work ../../fast_sdram.sv 
+# -- Compiling package fast_sdram_sv_unit
+# -- Importing package mips_cpu_pkg
+# -- Compiling module fast_sdram
+# 
+# Top level modules:
+# 	fast_sdram
+# End time: 15:59:05 on Apr 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -t ns -L altera_mf_ver fast_testbench 
+# Start time: 15:59:05 on Apr 21,2021
+# Loading sv_std.std
+# Loading work.mips_cpu_pkg
+# Loading work.fast_testbench_sv_unit
+# Loading work.fast_testbench
+# Loading work.memory_interfaces_sv_unit
+# Loading work.mem_read_ifc
+# Loading work.mem_write_ifc
+# Loading work.pass_done_interface_sv_unit
+# Loading work.pass_done_ifc
+# Loading work.mips_core_pkg
+# Loading work.mips_core_sv_unit
+# Loading work.mips_core
+# Loading work.mips_core_interfaces_sv_unit
+# Loading work.pc_ifc
+# Loading work.cache_output_ifc
+# Loading work.decoder_sv_unit
+# Loading work.decoder_output_ifc
+# Loading work.reg_file_sv_unit
+# Loading work.reg_file_output_ifc
+# Loading work.branch_decoded_ifc
+# Loading work.alu_sv_unit
+# Loading work.alu_input_ifc
+# Loading work.alu_pass_through_ifc
+# Loading work.alu_output_ifc
+# Loading work.llsc_module_sv_unit
+# Loading work.llsc_input_ifc
+# Loading work.branch_result_ifc
+# Loading work.d_cache_sv_unit
+# Loading work.d_cache_input_ifc
+# Loading work.d_cache_pass_through_ifc
+# Loading work.llsc_output_ifc
+# Loading work.write_back_ifc
+# Loading work.hazard_control_ifc
+# Loading work.load_pc_ifc
+# Loading work.fetch_unit_sv_unit
+# Loading work.fetch_unit
+# Loading work.i_cache_sv_unit
+# Loading work.i_cache
+# Loading work.cache_bank
+# Loading work.cache_bank_core
+# Loading work.pipeline_registers_sv_unit
+# Loading work.pr_i2d
+# Loading work.decoder
+# Loading work.reg_file
+# Loading work.forward_unit_sv_unit
+# Loading work.forward_unit
+# Loading work.glue_circuits_sv_unit
+# Loading work.decode_stage_glue
+# Loading work.pr_d2e
+# Loading work.alu
+# Loading work.llsc_module
+# Loading work.ex_stage_glue
+# Loading work.pr_e2m
+# Loading work.d_cache
+# Loading work.mem_stage_glue
+# Loading work.pr_m2w
+# Loading work.hazard_controller_sv_unit
+# Loading work.hazard_controller
+# Loading work.branch_controller_sv_unit
+# Loading work.branch_controller
+# Loading work.branch_predictor_backward_taken_forward_not_taken
+# Loading work.fast_sdram_sv_unit
+# Loading work.fast_sdram
+# Loading altera_mf_ver.scfifo
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'iread_fifo'.  Expected 13, found 8.
+#    Time: 0 ns  Iteration: 0  Instance: /fast_testbench/FAST_SDRAM/iread_fifo File: ../../fast_sdram.sv Line: 66
+# ** Warning: (vsim-3722) ../../fast_sdram.sv(66): [TFMPC] - Missing connection for port 'sclr'.
+# ** Warning: (vsim-3722) ../../fast_sdram.sv(66): [TFMPC] - Missing connection for port 'eccstatus'.
+# ** Warning: (vsim-3722) ../../fast_sdram.sv(66): [TFMPC] - Missing connection for port 'usedw'.
+# ** Warning: (vsim-3722) ../../fast_sdram.sv(66): [TFMPC] - Missing connection for port 'almost_full'.
+# ** Warning: (vsim-3722) ../../fast_sdram.sv(66): [TFMPC] - Missing connection for port 'almost_empty'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'dread_fifo'.  Expected 13, found 8.
+#    Time: 0 ns  Iteration: 0  Instance: /fast_testbench/FAST_SDRAM/dread_fifo File: ../../fast_sdram.sv Line: 88
+# ** Warning: (vsim-3722) ../../fast_sdram.sv(88): [TFMPC] - Missing connection for port 'sclr'.
+# ** Warning: (vsim-3722) ../../fast_sdram.sv(88): [TFMPC] - Missing connection for port 'eccstatus'.
+# ** Warning: (vsim-3722) ../../fast_sdram.sv(88): [TFMPC] - Missing connection for port 'usedw'.
+# ** Warning: (vsim-3722) ../../fast_sdram.sv(88): [TFMPC] - Missing connection for port 'almost_full'.
+# ** Warning: (vsim-3722) ../../fast_sdram.sv(88): [TFMPC] - Missing connection for port 'almost_empty'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'dwrite_fifo'.  Expected 13, found 8.
+#    Time: 0 ns  Iteration: 0  Instance: /fast_testbench/FAST_SDRAM/dwrite_fifo File: ../../fast_sdram.sv Line: 110
+# ** Warning: (vsim-3722) ../../fast_sdram.sv(110): [TFMPC] - Missing connection for port 'sclr'.
+# ** Warning: (vsim-3722) ../../fast_sdram.sv(110): [TFMPC] - Missing connection for port 'eccstatus'.
+# ** Warning: (vsim-3722) ../../fast_sdram.sv(110): [TFMPC] - Missing connection for port 'usedw'.
+# ** Warning: (vsim-3722) ../../fast_sdram.sv(110): [TFMPC] - Missing connection for port 'almost_full'.
+# ** Warning: (vsim-3722) ../../fast_sdram.sv(110): [TFMPC] - Missing connection for port 'almost_empty'.
+run -all
+# ** Note: $stop    : ../../fast_testbench.sv(69)
+#    Time: 95 ns  Iteration: 1  Instance: /fast_testbench
+# Break in Module fast_testbench at ../../fast_testbench.sv line 69
+run -all
+# fast_testbench.MIPS_CORE.ALU (              495085) PASS test 00000001
+# 
+# fast_testbench.MIPS_CORE.ALU (              730625) PASS test 00000002
+# 
+# fast_testbench.MIPS_CORE.ALU (             1038805) PASS test 00000003
+# 
+# fast_testbench.MIPS_CORE.ALU (             1564245) PASS test 00000004
+# 
+# fast_testbench.MIPS_CORE.ALU (             1696525) PASS test 00000005
+# 
+# fast_testbench.MIPS_CORE.ALU (             1775905) PASS test 00000006
+# 
+# fast_testbench.MIPS_CORE.ALU (             2050705) PASS test 00000007
+# 
+# fast_testbench.MIPS_CORE.ALU (             2202085) PASS test 00000008
+# 
+# fast_testbench.MIPS_CORE.ALU (             2387985) PASS test 00000009
+# 
+# fast_testbench.MIPS_CORE.ALU (             2787465) PASS test 0000000a
+# 
+# fast_testbench.MIPS_CORE.ALU (             3136845) PASS test 0000000b
+# 
+# fast_testbench.MIPS_CORE.ALU (             3196825) PASS test 0000000c
+# 
+# fast_testbench.MIPS_CORE.ALU (             3253625) PASS test 0000000d
+# 
+# fast_testbench.MIPS_CORE.ALU (             3718385) PASS test 0000000e
+# 
+# fast_testbench.MIPS_CORE.ALU (             3808105) PASS test 0000000f
+# 
+# fast_testbench.MIPS_CORE.ALU (             4029425) PASS test 00000010
+# 
+# fast_testbench.MIPS_CORE.ALU (             4130665) PASS test 00000011
+# 
+# fast_testbench.MIPS_CORE.ALU (             4170805) PASS test 00000012
+# 
+# fast_testbench.MIPS_CORE.ALU (             4476205) PASS test 00000013
+# 
+# fast_testbench.MIPS_CORE.ALU (             4546165) PASS test 00000014
+# 
+# fast_testbench.MIPS_CORE.ALU (             4816965) PASS test 00000015
+# 
+# fast_testbench.MIPS_CORE.ALU (             5355465) PASS test 00000016
+# 
+# fast_testbench.MIPS_CORE.ALU (             5418945) PASS test 00000017
+# 
+# fast_testbench.MIPS_CORE.ALU (             5447165) PASS test 00000018
+# 
+# fast_testbench.MIPS_CORE.ALU (             5702545) PASS test 00000019
+# 
+# fast_testbench.MIPS_CORE.ALU (             6363065) PASS test 0000001a
+# 
+# fast_testbench.MIPS_CORE.ALU (             6779805) PASS test 0000001b
+# 
+# fast_testbench.MIPS_CORE.ALU (             6817045) PASS test 0000001c
+# 
+# fast_testbench.MIPS_CORE.ALU (             8411185) PASS test 0000001d
+# 
+# fast_testbench.MIPS_CORE.ALU (             8921805) PASS test 0000001e
+# 
+# fast_testbench.MIPS_CORE.ALU (             9282805) PASS test 0000001f
+# 
+# fast_testbench.MIPS_CORE.ALU (             9483425) PASS test 00000020
+# 
+# fast_testbench.MIPS_CORE.ALU (             9540765) PASS test 00000021
+# 
+# fast_testbench.MIPS_CORE.ALU (            10122785) PASS test 00000022
+# 
+# fast_testbench.MIPS_CORE.ALU (            10234605) PASS test 00000023
+# 
+# fast_testbench.MIPS_CORE.ALU (            10366685) PASS test 00000024
+# 
+# fast_testbench.MIPS_CORE.ALU (            10451285) PASS test 00000025
+# 
+# fast_testbench.MIPS_CORE.ALU (            10512425) PASS test 00000026
+# 
+# fast_testbench.MIPS_CORE.ALU (            10638225) PASS test 00000027
+# 
+# fast_testbench.MIPS_CORE.ALU (            10866405) PASS test 00000028
+# 
+# fast_testbench.MIPS_CORE.ALU (            10879405) PASS test 00000029
+# 
+# fast_testbench.MIPS_CORE.ALU (            11030785) PASS test 0000002a
+# 
+# fast_testbench.MIPS_CORE.ALU (            11223825) PASS test 0000002b
+# 
+# fast_testbench.MIPS_CORE.ALU (            11289805) PASS test 0000002c
+# 
+# fast_testbench.MIPS_CORE.ALU (            11327065) PASS test 0000002d
+# 
+# fast_testbench.MIPS_CORE.ALU (            11424905) PASS test 0000002e
+# 
+# fast_testbench.MIPS_CORE.ALU (            11629605) PASS test 0000002f
+# 
+# fast_testbench.MIPS_CORE.ALU (            12356885) PASS test 00000030
+# 
+do C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/testbench.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:00:28 on Apr 21,2021
+# vlog -reportprogress 300 -work work ../../testbench.sv 
+# -- Compiling package testbench_sv_unit
+# -- Importing package mips_cpu_pkg
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 16:00:28 on Apr 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:00:28 on Apr 21,2021
+# vlog -reportprogress 300 -work work -suppress 2902 -suppress 13388 ../../ip/sdr_sdram/sdr.v 
+# -- Compiling module sdr
+# 
+# Top level modules:
+# 	sdr
+# End time: 16:00:28 on Apr 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0, Suppressed Errors: 2
+# ** Error: running
+# Error in macro C:\Users\blade\Desktop\Baseline_v2.3\mips_cpu\testbench.do line 12
+# running
+#     while executing
+# "error "running""
+#     (procedure "vsim" line 24)
+#     invoked from within
+# "vsim -t ns -L error_adapter_0 -L avalon_st_adapter -L sdram_controller_s1_rsp_width_adapter -L rsp_mux -L rsp_demux -L cmd_mux -L cmd_demux -L sdram_c..."
+# fast_testbench.MIPS_CORE.ALU (            13289345) PASS test 00000031
+# 
+# fast_testbench.MIPS_CORE.ALU (            13525985) PASS test 00000032
+# 
+# fast_testbench.MIPS_CORE.ALU (            13999785) PASS test 00000033
+# 
+# Break key hit
+# Break in Module cache_bank_core at C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/cache_bank.sv line 61
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'iread_fifo'.  Expected 13, found 8.
+#    Time: 0 ns  Iteration: 0  Instance: /fast_testbench/FAST_SDRAM/iread_fifo File: ../../fast_sdram.sv Line: 66
+# ** Warning: (vsim-3722) ../../fast_sdram.sv(66): [TFMPC] - Missing connection for port 'sclr'.
+# ** Warning: (vsim-3722) ../../fast_sdram.sv(66): [TFMPC] - Missing connection for port 'eccstatus'.
+# ** Warning: (vsim-3722) ../../fast_sdram.sv(66): [TFMPC] - Missing connection for port 'usedw'.
+# ** Warning: (vsim-3722) ../../fast_sdram.sv(66): [TFMPC] - Missing connection for port 'almost_full'.
+# ** Warning: (vsim-3722) ../../fast_sdram.sv(66): [TFMPC] - Missing connection for port 'almost_empty'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'dread_fifo'.  Expected 13, found 8.
+#    Time: 0 ns  Iteration: 0  Instance: /fast_testbench/FAST_SDRAM/dread_fifo File: ../../fast_sdram.sv Line: 88
+# ** Warning: (vsim-3722) ../../fast_sdram.sv(88): [TFMPC] - Missing connection for port 'sclr'.
+# ** Warning: (vsim-3722) ../../fast_sdram.sv(88): [TFMPC] - Missing connection for port 'eccstatus'.
+# ** Warning: (vsim-3722) ../../fast_sdram.sv(88): [TFMPC] - Missing connection for port 'usedw'.
+# ** Warning: (vsim-3722) ../../fast_sdram.sv(88): [TFMPC] - Missing connection for port 'almost_full'.
+# ** Warning: (vsim-3722) ../../fast_sdram.sv(88): [TFMPC] - Missing connection for port 'almost_empty'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'dwrite_fifo'.  Expected 13, found 8.
+#    Time: 0 ns  Iteration: 0  Instance: /fast_testbench/FAST_SDRAM/dwrite_fifo File: ../../fast_sdram.sv Line: 110
+# ** Warning: (vsim-3722) ../../fast_sdram.sv(110): [TFMPC] - Missing connection for port 'sclr'.
+# ** Warning: (vsim-3722) ../../fast_sdram.sv(110): [TFMPC] - Missing connection for port 'eccstatus'.
+# ** Warning: (vsim-3722) ../../fast_sdram.sv(110): [TFMPC] - Missing connection for port 'usedw'.
+# ** Warning: (vsim-3722) ../../fast_sdram.sv(110): [TFMPC] - Missing connection for port 'almost_full'.
+# ** Warning: (vsim-3722) ../../fast_sdram.sv(110): [TFMPC] - Missing connection for port 'almost_empty'.
+do C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/testbench.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:00:54 on Apr 21,2021
+# vlog -reportprogress 300 -work work ../../testbench.sv 
+# -- Compiling package testbench_sv_unit
+# -- Importing package mips_cpu_pkg
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 16:00:54 on Apr 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:00:54 on Apr 21,2021
+# vlog -reportprogress 300 -work work -suppress 2902 -suppress 13388 ../../ip/sdr_sdram/sdr.v 
+# -- Compiling module sdr
+# 
+# Top level modules:
+# 	sdr
+# End time: 16:00:54 on Apr 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0, Suppressed Errors: 2
+# End time: 16:00:57 on Apr 21,2021, Elapsed time: 0:01:52
+# Errors: 0, Warnings: 18
+# vsim -t ns -L error_adapter_0 -L avalon_st_adapter -L sdram_controller_s1_rsp_width_adapter -L rsp_mux -L rsp_demux -L cmd_mux -L cmd_demux -L sdram_controller_s1_burst_adapter -L router_003 -L router -L sdram_controller_s1_agent_rsp_fifo -L sdram_controller_s1_agent -L d_cache_read_avalon_master_agent -L sdram_controller_s1_translator -L d_cache_read_avalon_master_translator -L rst_controller -L mm_interconnect_0 -L sdram_controller -L pll_0 -L d_cache_read -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver testbench 
+# Start time: 16:00:57 on Apr 21,2021
+# Loading sv_std.std
+# Loading work.mips_cpu_pkg
+# Loading work.testbench_sv_unit
+# Loading work.testbench
+# Loading work.mips_cpu_sv_unit
+# Loading work.mips_cpu
+# Loading work.memory_interfaces_sv_unit
+# Loading work.mem_read_ifc
+# Loading work.mem_write_ifc
+# Loading work.pass_done_interface_sv_unit
+# Loading work.pass_done_ifc
+# Loading work.sdram
+# Loading d_cache_read.custom_master
+# Loading pll_0.sdram_pll_0
+# Loading altera_lnsim_ver.altera_lnsim_functions
+# Loading altera_lnsim_ver.altera_pll
+# Loading sdram_controller.sdram_sdram_controller
+# Loading sdram_controller.sdram_sdram_controller_input_efifo_module
+# Loading mm_interconnect_0.sdram_mm_interconnect_0
+# Loading d_cache_read_avalon_master_translator.altera_merlin_master_translator
+# Loading sdram_controller_s1_translator.altera_merlin_slave_translator
+# Loading d_cache_read_avalon_master_agent.altera_merlin_master_agent
+# Loading sdram_controller_s1_agent.altera_merlin_slave_agent
+# Loading sdram_controller_s1_rsp_width_adapter.altera_merlin_burst_uncompressor
+# Loading sdram_controller_s1_agent_rsp_fifo.altera_avalon_sc_fifo
+# Loading router.sdram_mm_interconnect_0_router
+# Loading router.sdram_mm_interconnect_0_router_default_decode
+# Loading router_003.sdram_mm_interconnect_0_router_003
+# Loading router_003.sdram_mm_interconnect_0_router_003_default_decode
+# Loading sdram_controller_s1_burst_adapter.altera_merlin_burst_adapter
+# Loading cmd_demux.sdram_mm_interconnect_0_cmd_demux
+# Loading cmd_mux.sdram_mm_interconnect_0_cmd_mux
+# Loading rsp_mux.altera_merlin_arbitrator
+# Loading rsp_mux.altera_merlin_arb_adder
+# Loading rsp_demux.sdram_mm_interconnect_0_rsp_demux
+# Loading rsp_mux.sdram_mm_interconnect_0_rsp_mux
+# Loading sdram_controller_s1_rsp_width_adapter.altera_merlin_width_adapter
+# Loading avalon_st_adapter.sdram_mm_interconnect_0_avalon_st_adapter
+# Loading error_adapter_0.sdram_mm_interconnect_0_avalon_st_adapter_error_adapter_0
+# Loading rst_controller.altera_reset_controller
+# Loading work.mips_core_pkg
+# Loading work.mips_core_sv_unit
+# Loading work.mips_core
+# Loading work.mips_core_interfaces_sv_unit
+# Loading work.pc_ifc
+# Loading work.cache_output_ifc
+# Loading work.decoder_sv_unit
+# Loading work.decoder_output_ifc
+# Loading work.reg_file_sv_unit
+# Loading work.reg_file_output_ifc
+# Loading work.branch_decoded_ifc
+# Loading work.alu_sv_unit
+# Loading work.alu_input_ifc
+# Loading work.alu_pass_through_ifc
+# Loading work.alu_output_ifc
+# Loading work.llsc_module_sv_unit
+# Loading work.llsc_input_ifc
+# Loading work.branch_result_ifc
+# Loading work.d_cache_sv_unit
+# Loading work.d_cache_input_ifc
+# Loading work.d_cache_pass_through_ifc
+# Loading work.llsc_output_ifc
+# Loading work.write_back_ifc
+# Loading work.hazard_control_ifc
+# Loading work.load_pc_ifc
+# Loading work.fetch_unit_sv_unit
+# Loading work.fetch_unit
+# Loading work.i_cache_sv_unit
+# Loading work.i_cache
+# Loading work.cache_bank
+# Loading work.cache_bank_core
+# Loading work.pipeline_registers_sv_unit
+# Loading work.pr_i2d
+# Loading work.decoder
+# Loading work.reg_file
+# Loading work.forward_unit_sv_unit
+# Loading work.forward_unit
+# Loading work.glue_circuits_sv_unit
+# Loading work.decode_stage_glue
+# Loading work.pr_d2e
+# Loading work.alu
+# Loading work.llsc_module
+# Loading work.ex_stage_glue
+# Loading work.pr_e2m
+# Loading work.d_cache
+# Loading work.mem_stage_glue
+# Loading work.pr_m2w
+# Loading work.hazard_controller_sv_unit
+# Loading work.hazard_controller
+# Loading work.branch_controller_sv_unit
+# Loading work.branch_controller
+# Loading work.branch_predictor_backward_taken_forward_not_taken
+# Loading work.sdr
+# Loading d_cache_read.latency_aware_read_master
+# Loading altera_mf_ver.scfifo
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading d_cache_read.write_master
+# Loading altera_lnsim_ver.dps_extra_kick
+# Loading altera_lnsim_ver.dprio_init
+# Loading altera_lnsim_ver.altera_generic_pll_functions
+# Loading altera_lnsim_ver.generic_pll
+# Loading sdram_controller_s1_burst_adapter.altera_merlin_burst_adapter_uncompressed_only
+# Loading rst_controller.altera_reset_synchronizer
+# ** Warning: (vsim-8311) System Verilog assertions are supported only in Questasim.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 24, found 13.
+#    Time: 0 ns  Iteration: 0  Instance: /testbench/DUT File: ../../testbench.sv Line: 30
+# ** Warning: (vsim-3722) ../../testbench.sv(30): [TFMPC] - Missing connection for port 'CLOCK2_50'.
+# ** Warning: (vsim-3722) ../../testbench.sv(30): [TFMPC] - Missing connection for port 'CLOCK3_50'.
+# ** Warning: (vsim-3722) ../../testbench.sv(30): [TFMPC] - Missing connection for port 'CLOCK4_50'.
+# ** Warning: (vsim-3722) ../../testbench.sv(30): [TFMPC] - Missing connection for port 'HEX0'.
+# ** Warning: (vsim-3722) ../../testbench.sv(30): [TFMPC] - Missing connection for port 'HEX1'.
+# ** Warning: (vsim-3722) ../../testbench.sv(30): [TFMPC] - Missing connection for port 'HEX2'.
+# ** Warning: (vsim-3722) ../../testbench.sv(30): [TFMPC] - Missing connection for port 'HEX3'.
+# ** Warning: (vsim-3722) ../../testbench.sv(30): [TFMPC] - Missing connection for port 'HEX4'.
+# ** Warning: (vsim-3722) ../../testbench.sv(30): [TFMPC] - Missing connection for port 'HEX5'.
+# ** Warning: (vsim-3722) ../../testbench.sv(30): [TFMPC] - Missing connection for port 'KEY'.
+# ** Warning: (vsim-3722) ../../testbench.sv(30): [TFMPC] - Missing connection for port 'LEDR'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'the_master_to_user_fifo'.  Expected 13, found 8.
+#    Time: 0 ns  Iteration: 0  Instance: /testbench/DUT/u0/d_cache_read/genblk1/genblk1/a_latency_aware_read_master/the_master_to_user_fifo File: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/latency_aware_read_master.v Line: 239
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/latency_aware_read_master.v(239): [TFMPC] - Missing connection for port 'sclr'.
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/latency_aware_read_master.v(239): [TFMPC] - Missing connection for port 'eccstatus'.
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/latency_aware_read_master.v(239): [TFMPC] - Missing connection for port 'full'.
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/latency_aware_read_master.v(239): [TFMPC] - Missing connection for port 'almost_full'.
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/latency_aware_read_master.v(239): [TFMPC] - Missing connection for port 'almost_empty'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'the_user_to_master_fifo'.  Expected 13, found 8.
+#    Time: 0 ns  Iteration: 0  Instance: /testbench/DUT/u0/d_cache_write/genblk1/genblk1/a_write_master/the_user_to_master_fifo File: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/write_master.v Line: 183
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/write_master.v(183): [TFMPC] - Missing connection for port 'sclr'.
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/write_master.v(183): [TFMPC] - Missing connection for port 'eccstatus'.
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/write_master.v(183): [TFMPC] - Missing connection for port 'usedw'.
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/write_master.v(183): [TFMPC] - Missing connection for port 'almost_full'.
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/write_master.v(183): [TFMPC] - Missing connection for port 'almost_empty'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'the_master_to_user_fifo'.  Expected 13, found 8.
+#    Time: 0 ns  Iteration: 0  Instance: /testbench/DUT/u0/i_cache_read/genblk1/genblk1/a_latency_aware_read_master/the_master_to_user_fifo File: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/latency_aware_read_master.v Line: 239
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/latency_aware_read_master.v(239): [TFMPC] - Missing connection for port 'sclr'.
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/latency_aware_read_master.v(239): [TFMPC] - Missing connection for port 'eccstatus'.
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/latency_aware_read_master.v(239): [TFMPC] - Missing connection for port 'full'.
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/latency_aware_read_master.v(239): [TFMPC] - Missing connection for port 'almost_full'.
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/latency_aware_read_master.v(239): [TFMPC] - Missing connection for port 'almost_empty'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'sdram_pll_0_altera_pll_altera_pll_i_1098'.  Expected 26, found 5.
+#    Time: 0 ns  Iteration: 0  Instance: /testbench/DUT/u0/pll_0/sdram_pll_0_altera_pll_altera_pll_i_1098 File: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_pll_0.vo Line: 48
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_pll_0.vo(48): [TFMPC] - Missing connection for port 'refclk1'.
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_pll_0.vo(48): [TFMPC] - Missing connection for port 'phase_en'.
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_pll_0.vo(48): [TFMPC] - Missing connection for port 'updn'.
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_pll_0.vo(48): [TFMPC] - Missing connection for port 'num_phase_shifts'.
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_pll_0.vo(48): [TFMPC] - Missing connection for port 'scanclk'.
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_pll_0.vo(48): [TFMPC] - Missing connection for port 'cntsel'.
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_pll_0.vo(48): [TFMPC] - Missing connection for port 'reconfig_to_pll'.
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_pll_0.vo(48): [TFMPC] - Missing connection for port 'extswitch'.
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_pll_0.vo(48): [TFMPC] - Missing connection for port 'adjpllin'.
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_pll_0.vo(48): [TFMPC] - Missing connection for port 'cclk'.
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_pll_0.vo(48): [TFMPC] - Missing connection for port 'fboutclk'.
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_pll_0.vo(48): [TFMPC] - Missing connection for port 'phase_done'.
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_pll_0.vo(48): [TFMPC] - Missing connection for port 'reconfig_from_pll'.
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_pll_0.vo(48): [TFMPC] - Missing connection for port 'activeclk'.
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_pll_0.vo(48): [TFMPC] - Missing connection for port 'clkbad'.
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_pll_0.vo(48): [TFMPC] - Missing connection for port 'phout'.
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_pll_0.vo(48): [TFMPC] - Missing connection for port 'lvds_clk'.
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_pll_0.vo(48): [TFMPC] - Missing connection for port 'loaden'.
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_pll_0.vo(48): [TFMPC] - Missing connection for port 'extclk_out'.
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_pll_0.vo(48): [TFMPC] - Missing connection for port 'cascade_out'.
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_pll_0.vo(48): [TFMPC] - Missing connection for port 'zdbfbclk'.
+do C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/testbench.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:01:12 on Apr 21,2021
+# vlog -reportprogress 300 -work work ../../testbench.sv 
+# -- Compiling package testbench_sv_unit
+# -- Importing package mips_cpu_pkg
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 16:01:13 on Apr 21,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:01:13 on Apr 21,2021
+# vlog -reportprogress 300 -work work -suppress 2902 -suppress 13388 ../../ip/sdr_sdram/sdr.v 
+# -- Compiling module sdr
+# 
+# Top level modules:
+# 	sdr
+# End time: 16:01:13 on Apr 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0, Suppressed Errors: 2
+# End time: 16:01:15 on Apr 21,2021, Elapsed time: 0:00:18
+# Errors: 0, Warnings: 53
+# vsim -t ns -L error_adapter_0 -L avalon_st_adapter -L sdram_controller_s1_rsp_width_adapter -L rsp_mux -L rsp_demux -L cmd_mux -L cmd_demux -L sdram_controller_s1_burst_adapter -L router_003 -L router -L sdram_controller_s1_agent_rsp_fifo -L sdram_controller_s1_agent -L d_cache_read_avalon_master_agent -L sdram_controller_s1_translator -L d_cache_read_avalon_master_translator -L rst_controller -L mm_interconnect_0 -L sdram_controller -L pll_0 -L d_cache_read -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver testbench 
+# Start time: 16:01:15 on Apr 21,2021
+# Loading sv_std.std
+# Loading work.mips_cpu_pkg
+# Loading work.testbench_sv_unit
+# Loading work.testbench
+# Loading work.mips_cpu_sv_unit
+# Loading work.mips_cpu
+# Loading work.memory_interfaces_sv_unit
+# Loading work.mem_read_ifc
+# Loading work.mem_write_ifc
+# Loading work.pass_done_interface_sv_unit
+# Loading work.pass_done_ifc
+# Loading work.sdram
+# Loading d_cache_read.custom_master
+# Loading pll_0.sdram_pll_0
+# Loading altera_lnsim_ver.altera_lnsim_functions
+# Loading altera_lnsim_ver.altera_pll
+# Loading sdram_controller.sdram_sdram_controller
+# Loading sdram_controller.sdram_sdram_controller_input_efifo_module
+# Loading mm_interconnect_0.sdram_mm_interconnect_0
+# Loading d_cache_read_avalon_master_translator.altera_merlin_master_translator
+# Loading sdram_controller_s1_translator.altera_merlin_slave_translator
+# Loading d_cache_read_avalon_master_agent.altera_merlin_master_agent
+# Loading sdram_controller_s1_agent.altera_merlin_slave_agent
+# Loading sdram_controller_s1_rsp_width_adapter.altera_merlin_burst_uncompressor
+# Loading sdram_controller_s1_agent_rsp_fifo.altera_avalon_sc_fifo
+# Loading router.sdram_mm_interconnect_0_router
+# Loading router.sdram_mm_interconnect_0_router_default_decode
+# Loading router_003.sdram_mm_interconnect_0_router_003
+# Loading router_003.sdram_mm_interconnect_0_router_003_default_decode
+# Loading sdram_controller_s1_burst_adapter.altera_merlin_burst_adapter
+# Loading cmd_demux.sdram_mm_interconnect_0_cmd_demux
+# Loading cmd_mux.sdram_mm_interconnect_0_cmd_mux
+# Loading rsp_mux.altera_merlin_arbitrator
+# Loading rsp_mux.altera_merlin_arb_adder
+# Loading rsp_demux.sdram_mm_interconnect_0_rsp_demux
+# Loading rsp_mux.sdram_mm_interconnect_0_rsp_mux
+# Loading sdram_controller_s1_rsp_width_adapter.altera_merlin_width_adapter
+# Loading avalon_st_adapter.sdram_mm_interconnect_0_avalon_st_adapter
+# Loading error_adapter_0.sdram_mm_interconnect_0_avalon_st_adapter_error_adapter_0
+# Loading rst_controller.altera_reset_controller
+# Loading work.mips_core_pkg
+# Loading work.mips_core_sv_unit
+# Loading work.mips_core
+# Loading work.mips_core_interfaces_sv_unit
+# Loading work.pc_ifc
+# Loading work.cache_output_ifc
+# Loading work.decoder_sv_unit
+# Loading work.decoder_output_ifc
+# Loading work.reg_file_sv_unit
+# Loading work.reg_file_output_ifc
+# Loading work.branch_decoded_ifc
+# Loading work.alu_sv_unit
+# Loading work.alu_input_ifc
+# Loading work.alu_pass_through_ifc
+# Loading work.alu_output_ifc
+# Loading work.llsc_module_sv_unit
+# Loading work.llsc_input_ifc
+# Loading work.branch_result_ifc
+# Loading work.d_cache_sv_unit
+# Loading work.d_cache_input_ifc
+# Loading work.d_cache_pass_through_ifc
+# Loading work.llsc_output_ifc
+# Loading work.write_back_ifc
+# Loading work.hazard_control_ifc
+# Loading work.load_pc_ifc
+# Loading work.fetch_unit_sv_unit
+# Loading work.fetch_unit
+# Loading work.i_cache_sv_unit
+# Loading work.i_cache
+# Loading work.cache_bank
+# Loading work.cache_bank_core
+# Loading work.pipeline_registers_sv_unit
+# Loading work.pr_i2d
+# Loading work.decoder
+# Loading work.reg_file
+# Loading work.forward_unit_sv_unit
+# Loading work.forward_unit
+# Loading work.glue_circuits_sv_unit
+# Loading work.decode_stage_glue
+# Loading work.pr_d2e
+# Loading work.alu
+# Loading work.llsc_module
+# Loading work.ex_stage_glue
+# Loading work.pr_e2m
+# Loading work.d_cache
+# Loading work.mem_stage_glue
+# Loading work.pr_m2w
+# Loading work.hazard_controller_sv_unit
+# Loading work.hazard_controller
+# Loading work.branch_controller_sv_unit
+# Loading work.branch_controller
+# Loading work.branch_predictor_backward_taken_forward_not_taken
+# Loading work.sdr
+# Loading d_cache_read.latency_aware_read_master
+# Loading altera_mf_ver.scfifo
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading d_cache_read.write_master
+# Loading altera_lnsim_ver.dps_extra_kick
+# Loading altera_lnsim_ver.dprio_init
+# Loading altera_lnsim_ver.altera_generic_pll_functions
+# Loading altera_lnsim_ver.generic_pll
+# Loading sdram_controller_s1_burst_adapter.altera_merlin_burst_adapter_uncompressed_only
+# Loading rst_controller.altera_reset_synchronizer
+# ** Warning: (vsim-8311) System Verilog assertions are supported only in Questasim.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 24, found 13.
+#    Time: 0 ns  Iteration: 0  Instance: /testbench/DUT File: ../../testbench.sv Line: 30
+# ** Warning: (vsim-3722) ../../testbench.sv(30): [TFMPC] - Missing connection for port 'CLOCK2_50'.
+# ** Warning: (vsim-3722) ../../testbench.sv(30): [TFMPC] - Missing connection for port 'CLOCK3_50'.
+# ** Warning: (vsim-3722) ../../testbench.sv(30): [TFMPC] - Missing connection for port 'CLOCK4_50'.
+# ** Warning: (vsim-3722) ../../testbench.sv(30): [TFMPC] - Missing connection for port 'HEX0'.
+# ** Warning: (vsim-3722) ../../testbench.sv(30): [TFMPC] - Missing connection for port 'HEX1'.
+# ** Warning: (vsim-3722) ../../testbench.sv(30): [TFMPC] - Missing connection for port 'HEX2'.
+# ** Warning: (vsim-3722) ../../testbench.sv(30): [TFMPC] - Missing connection for port 'HEX3'.
+# ** Warning: (vsim-3722) ../../testbench.sv(30): [TFMPC] - Missing connection for port 'HEX4'.
+# ** Warning: (vsim-3722) ../../testbench.sv(30): [TFMPC] - Missing connection for port 'HEX5'.
+# ** Warning: (vsim-3722) ../../testbench.sv(30): [TFMPC] - Missing connection for port 'KEY'.
+# ** Warning: (vsim-3722) ../../testbench.sv(30): [TFMPC] - Missing connection for port 'LEDR'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'the_master_to_user_fifo'.  Expected 13, found 8.
+#    Time: 0 ns  Iteration: 0  Instance: /testbench/DUT/u0/d_cache_read/genblk1/genblk1/a_latency_aware_read_master/the_master_to_user_fifo File: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/latency_aware_read_master.v Line: 239
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/latency_aware_read_master.v(239): [TFMPC] - Missing connection for port 'sclr'.
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/latency_aware_read_master.v(239): [TFMPC] - Missing connection for port 'eccstatus'.
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/latency_aware_read_master.v(239): [TFMPC] - Missing connection for port 'full'.
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/latency_aware_read_master.v(239): [TFMPC] - Missing connection for port 'almost_full'.
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/latency_aware_read_master.v(239): [TFMPC] - Missing connection for port 'almost_empty'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'the_user_to_master_fifo'.  Expected 13, found 8.
+#    Time: 0 ns  Iteration: 0  Instance: /testbench/DUT/u0/d_cache_write/genblk1/genblk1/a_write_master/the_user_to_master_fifo File: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/write_master.v Line: 183
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/write_master.v(183): [TFMPC] - Missing connection for port 'sclr'.
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/write_master.v(183): [TFMPC] - Missing connection for port 'eccstatus'.
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/write_master.v(183): [TFMPC] - Missing connection for port 'usedw'.
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/write_master.v(183): [TFMPC] - Missing connection for port 'almost_full'.
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/write_master.v(183): [TFMPC] - Missing connection for port 'almost_empty'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'the_master_to_user_fifo'.  Expected 13, found 8.
+#    Time: 0 ns  Iteration: 0  Instance: /testbench/DUT/u0/i_cache_read/genblk1/genblk1/a_latency_aware_read_master/the_master_to_user_fifo File: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/latency_aware_read_master.v Line: 239
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/latency_aware_read_master.v(239): [TFMPC] - Missing connection for port 'sclr'.
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/latency_aware_read_master.v(239): [TFMPC] - Missing connection for port 'eccstatus'.
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/latency_aware_read_master.v(239): [TFMPC] - Missing connection for port 'full'.
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/latency_aware_read_master.v(239): [TFMPC] - Missing connection for port 'almost_full'.
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/latency_aware_read_master.v(239): [TFMPC] - Missing connection for port 'almost_empty'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'sdram_pll_0_altera_pll_altera_pll_i_1098'.  Expected 26, found 5.
+#    Time: 0 ns  Iteration: 0  Instance: /testbench/DUT/u0/pll_0/sdram_pll_0_altera_pll_altera_pll_i_1098 File: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_pll_0.vo Line: 48
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_pll_0.vo(48): [TFMPC] - Missing connection for port 'refclk1'.
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_pll_0.vo(48): [TFMPC] - Missing connection for port 'phase_en'.
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_pll_0.vo(48): [TFMPC] - Missing connection for port 'updn'.
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_pll_0.vo(48): [TFMPC] - Missing connection for port 'num_phase_shifts'.
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_pll_0.vo(48): [TFMPC] - Missing connection for port 'scanclk'.
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_pll_0.vo(48): [TFMPC] - Missing connection for port 'cntsel'.
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_pll_0.vo(48): [TFMPC] - Missing connection for port 'reconfig_to_pll'.
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_pll_0.vo(48): [TFMPC] - Missing connection for port 'extswitch'.
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_pll_0.vo(48): [TFMPC] - Missing connection for port 'adjpllin'.
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_pll_0.vo(48): [TFMPC] - Missing connection for port 'cclk'.
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_pll_0.vo(48): [TFMPC] - Missing connection for port 'fboutclk'.
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_pll_0.vo(48): [TFMPC] - Missing connection for port 'phase_done'.
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_pll_0.vo(48): [TFMPC] - Missing connection for port 'reconfig_from_pll'.
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_pll_0.vo(48): [TFMPC] - Missing connection for port 'activeclk'.
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_pll_0.vo(48): [TFMPC] - Missing connection for port 'clkbad'.
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_pll_0.vo(48): [TFMPC] - Missing connection for port 'phout'.
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_pll_0.vo(48): [TFMPC] - Missing connection for port 'lvds_clk'.
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_pll_0.vo(48): [TFMPC] - Missing connection for port 'loaden'.
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_pll_0.vo(48): [TFMPC] - Missing connection for port 'extclk_out'.
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_pll_0.vo(48): [TFMPC] - Missing connection for port 'cascade_out'.
+# ** Warning: (vsim-3722) C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_pll_0.vo(48): [TFMPC] - Missing connection for port 'zdbfbclk'.
+do C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/wave.do
+run -all
+# Info: =================================================
+# Info:           Generic PLL Summary
+# Info: =================================================
+# Time scale of (testbench.DUT.u0.pll_0.sdram_pll_0_altera_pll_altera_pll_i_1098.new_model.gpll.no_need_to_gen) is  1ps /  1ps
+# Info: hierarchical_name = testbench.DUT.u0.pll_0.sdram_pll_0_altera_pll_altera_pll_i_1098.new_model.gpll.no_need_to_gen
+# Info: reference_clock_frequency = 50.0 MHz
+# Info: output_clock_frequency = 100 MHZ
+# Info: phase_shift = 0 ps
+# Info: duty_cycle = 50
+# Info: sim_additional_refclk_cycles_to_lock = 0
+# Info: output_clock_high_period = 5000.000000
+# Info: output_clock_low_period = 5000.000000
+# ** Note: $stop    : ../../testbench.sv(93)
+#    Time: 2190 ns  Iteration: 4  Instance: /testbench
+# Break in Module testbench at ../../testbench.sv line 93

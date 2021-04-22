@@ -102,3 +102,12 @@ interface hazard_control_ifc ();
 	modport in  (input flush, stall);
 	modport out (output flush, stall);
 endinterface
+
+
+interface register_alias_table_ifc ();
+	logic valid[32];
+	logic [`DATA_WIDTH - 1 : 0] valueTable [32];
+	logic [15 : 0] tag[32];
+	modport in  (input valid, valueTable, tag);
+
+endinterface

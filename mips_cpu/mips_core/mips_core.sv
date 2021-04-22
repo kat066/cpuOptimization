@@ -42,7 +42,7 @@ module mips_core (
 	branch_decoded_ifc dec_branch_decoded();
 	alu_input_ifc dec_alu_input();
 	alu_pass_through_ifc dec_alu_pass_through();
-
+	register_alias_table_ifc register_alias();
 	// ==== DEC to EX
 	pc_ifc d2e_pc();
 	alu_input_ifc d2e_alu_input();
@@ -125,7 +125,7 @@ module mips_core (
 	decoder DECODER(
 		.i_pc(i2d_pc),
 		.i_inst(i2d_inst),
-
+		.register_alias(register_alias),
 		.out(dec_decoder_output)
 	);
 

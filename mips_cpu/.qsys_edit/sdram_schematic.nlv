@@ -1,0 +1,33 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst sdram.d_cache_write -pg 1 -lvl 2 -y 130
+preplace inst sdram -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst sdram.pll_0 -pg 1 -lvl 2 -y 490
+preplace inst sdram.clock_bridge -pg 1 -lvl 3 -y 290
+preplace inst sdram.sdram_controller -pg 1 -lvl 3 -y 330
+preplace inst sdram.reset_bridge -pg 1 -lvl 3 -y 430
+preplace inst sdram.i_cache_read -pg 1 -lvl 2 -y 230
+preplace inst sdram.d_cache_read -pg 1 -lvl 2 -y 30
+preplace inst sdram.clk_0 -pg 1 -lvl 1 -y 510
+preplace inst sdram.reset_bridge_active_high -pg 1 -lvl 1 -y 310
+preplace netloc EXPORT<net_container>sdram</net_container>(SLAVE)clk_0.clk_in,(SLAVE)sdram.clk) 1 0 1 NJ
+preplace netloc FAN_OUT<net_container>sdram</net_container>(SLAVE)sdram_controller.clk,(MASTER)pll_0.outclk0,(SLAVE)reset_bridge.clk,(SLAVE)d_cache_write.clock_reset,(SLAVE)i_cache_read.clock_reset,(SLAVE)reset_bridge_active_high.clk,(SLAVE)clock_bridge.in_clk,(SLAVE)d_cache_read.clock_reset) 1 0 3 170 260 390 340 670
+preplace netloc EXPORT<net_container>sdram</net_container>(SLAVE)d_cache_write.control,(SLAVE)sdram.d_cache_write_control) 1 0 2 NJ 180 NJ
+preplace netloc FAN_OUT<net_container>sdram</net_container>(MASTER)reset_bridge.out_reset,(SLAVE)reset_bridge_active_high.in_reset,(SLAVE)sdram_controller.reset) 1 0 4 170 380 NJ 380 690 500 920
+preplace netloc FAN_OUT<net_container>sdram</net_container>(MASTER)reset_bridge_active_high.out_reset,(SLAVE)d_cache_read.clock_reset_reset,(SLAVE)d_cache_write.clock_reset_reset,(SLAVE)i_cache_read.clock_reset_reset) 1 1 1 410
+preplace netloc FAN_OUT<net_container>sdram</net_container>(SLAVE)reset_bridge.in_reset,(SLAVE)pll_0.reset,(MASTER)clk_0.clk_reset) 1 1 2 410 580 710
+preplace netloc EXPORT<net_container>sdram</net_container>(SLAVE)sdram_controller.wire,(SLAVE)sdram.sdram_controller_wire) 1 0 3 NJ 400 NJ 400 NJ
+preplace netloc EXPORT<net_container>sdram</net_container>(SLAVE)sdram.reset,(SLAVE)clk_0.clk_in_reset) 1 0 1 NJ
+preplace netloc EXPORT<net_container>sdram</net_container>(SLAVE)sdram.i_cache_read_user,(SLAVE)i_cache_read.user) 1 0 2 NJ 300 NJ
+preplace netloc EXPORT<net_container>sdram</net_container>(SLAVE)sdram.d_cache_read_user,(SLAVE)d_cache_read.user) 1 0 2 NJ 100 NJ
+preplace netloc EXPORT<net_container>sdram</net_container>(SLAVE)d_cache_read.control,(SLAVE)sdram.d_cache_read_control) 1 0 2 NJ 80 NJ
+preplace netloc EXPORT<net_container>sdram</net_container>(MASTER)sdram.mips_core_clk,(MASTER)clock_bridge.out_clk) 1 3 1 NJ
+preplace netloc EXPORT<net_container>sdram</net_container>(SLAVE)i_cache_read.control,(SLAVE)sdram.i_cache_read_control) 1 0 2 NJ 280 NJ
+preplace netloc EXPORT<net_container>sdram</net_container>(MASTER)sdram.mips_core_rst,(MASTER)reset_bridge.out_reset_1) 1 3 1 NJ
+preplace netloc POINT_TO_POINT<net_container>sdram</net_container>(MASTER)clk_0.clk,(SLAVE)pll_0.refclk) 1 1 1 N
+preplace netloc EXPORT<net_container>sdram</net_container>(MASTER)sdram.sdram_clk,(MASTER)pll_0.outclk1) 1 2 2 NJ 520 NJ
+preplace netloc EXPORT<net_container>sdram</net_container>(SLAVE)sdram.pll_0_locked,(SLAVE)pll_0.locked) 1 0 2 NJ 500 NJ
+preplace netloc FAN_IN<net_container>sdram</net_container>(MASTER)d_cache_write.avalon_master,(MASTER)d_cache_read.avalon_master,(MASTER)i_cache_read.avalon_master,(SLAVE)sdram_controller.s1) 1 2 1 710
+preplace netloc EXPORT<net_container>sdram</net_container>(SLAVE)d_cache_write.user,(SLAVE)sdram.d_cache_write_user) 1 0 2 NJ 200 NJ
+levelinfo -pg 1 0 140 1050
+levelinfo -hier sdram 150 220 440 760 940

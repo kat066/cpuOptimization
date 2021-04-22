@@ -25,7 +25,7 @@ module branch_controller (
 	logic request_prediction;
 
 	// Change the following line to switch predictor
-	branch_predictor_always_not_taken PREDICTOR (
+	branch_predictor_backward_taken_forward_not_taken PREDICTOR (
 		.clk, .rst_n,
 
 		.i_req_valid     (request_prediction),
@@ -70,6 +70,57 @@ module branch_predictor_always_not_taken (
 	always_comb
 	begin
 		o_req_prediction = NOT_TAKEN;
+	end
+
+endmodule
+
+module branch_predictor_always_taken (
+	input clk,    // Clock
+	input rst_n,  // Asynchronous reset active low
+
+	// Request
+	input logic i_req_valid,
+	input logic [`ADDR_WIDTH - 1 : 0] i_req_pc,
+	input logic [`ADDR_WIDTH - 1 : 0] i_req_target,
+	output mips_core_pkg::BranchOutcome o_req_prediction,
+
+	// Feedback
+	input logic i_fb_valid,
+	input logic [`ADDR_WIDTH - 1 : 0] i_fb_pc,
+	input mips_core_pkg::BranchOutcome i_fb_prediction,
+	input mips_core_pkg::BranchOutcome i_fb_outcome
+);
+
+	always_comb
+	begin
+		o_req_prediction = NOT_TAKEN;
+	end
+
+endmodule
+module branch_predictor_backward_taken_forward_not_taken (
+	input clk,    // Clock
+	input rst_n,  // Asynchronous reset active low
+
+	// Request
+	input logic i_req_valid,
+	input logic [`ADDR_WIDTH - 1 : 0] i_req_pc,
+	input logic [`ADDR_WIDTH - 1 : 0] i_req_target,
+	output mips_core_pkg::BranchOutcome o_req_prediction,
+
+	// Feedback
+	input logic i_fb_valid,
+	input logic [`ADDR_WIDTH - 1 : 0] i_fb_pc,
+	input mips_core_pkg::BranchOutcome i_fb_prediction,
+	input mips_core_pkg::BranchOutcome i_fb_outcome
+);
+
+	always_comb
+	begin
+		
+		o_req_prediction =
+			(i_req_pc<i_req_target)
+			?NOT_TAKEN
+			:TAKEN;
 	end
 
 endmodule
