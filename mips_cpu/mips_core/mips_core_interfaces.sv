@@ -104,10 +104,27 @@ interface hazard_control_ifc ();
 endinterface
 
 
-interface register_alias_table_ifc ();
-	logic valid[32];
-	logic [`DATA_WIDTH - 1 : 0] valueTable [32];
-	logic [15 : 0] tag[32];
-	modport in  (input valid, valueTable, tag);
+interface register_Map_table_ifc ();
+	logic [63 : 0] valueTable [31 : 0];
+
+endinterface
+
+
+
+interface free_List_ifc ();
+	logic [63 : 0] free [63 : 0];
+	logic [63 : 0]freeCount;
+
+
+endinterface
+
+interface active_List_ifc ();
+	logic [31 : 0] instruction_Queue [31 : 0];
+	logic [31 : 0] logical [31 : 0];
+	logic [63 : 0] physical [31 : 0];
+	logic done [31 : 0];
+	logic [31 : 0]head ;
+	logic [31 : 0]tail ;
+
 
 endinterface

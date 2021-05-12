@@ -10,7 +10,7 @@ z2
 cModel Technology
 Z0 dC:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/simulation/modelsim
 vburst_read_master
-Z1 !s110 1619045792
+Z1 !s110 1620809390
 !i10b 1
 !s100 Og>in0EmfV71bndB;EUCd2
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -20,13 +20,13 @@ R0
 Z4 w1617575545
 8C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/burst_read_master.v
 FC:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/burst_read_master.v
-!i122 42
+!i122 47
 L0 36 234
 Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1619045792.000000
+Z6 !s108 1620809390.000000
 !s107 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/burst_read_master.v|
 !s90 -reportprogress|300|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/burst_read_master.v|-work|d_cache_read|
 !i113 1
@@ -43,7 +43,7 @@ R0
 R4
 8C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/burst_write_master.v
 FC:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/burst_write_master.v
-!i122 41
+!i122 46
 L0 37 283
 R5
 r1
@@ -66,7 +66,7 @@ R0
 R4
 8C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/custom_master.v
 FC:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/custom_master.v
-!i122 40
+!i122 45
 L0 9 203
 R5
 r1
@@ -79,7 +79,7 @@ R6
 R7
 R8
 vlatency_aware_read_master
-R1
+Z9 !s110 1620809391
 !i10b 1
 !s100 3Vb;Flz5<48`zRzU^G9Z11
 R2
@@ -89,20 +89,20 @@ R0
 R4
 8C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/latency_aware_read_master.v
 FC:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/latency_aware_read_master.v
-!i122 44
+!i122 49
 L0 45 226
 R5
 r1
 !s85 0
 31
-R6
+!s108 1620809391.000000
 !s107 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/latency_aware_read_master.v|
 !s90 -reportprogress|300|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/latency_aware_read_master.v|-work|d_cache_read|
 !i113 1
 R7
 R8
 vwrite_master
-R1
+R9
 !i10b 1
 !s100 i?K6A_ik8MQ>I^O_:Z<Y<1
 R2
@@ -112,7 +112,7 @@ R0
 R4
 8C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/write_master.v
 FC:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/write_master.v
-!i122 43
+!i122 48
 L0 45 170
 R5
 r1

@@ -9,60 +9,90 @@ z2
 !i10f 100
 cModel Technology
 Z0 dC:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/simulation/modelsim
-valu
+Yactive_List_ifc
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
 Z2 DXx4 work 12 mips_cpu_pkg 0 22 >:Ln`d8PI?i8<0<6XUAIl1
 Z3 DXx4 work 13 mips_core_pkg 0 22 E_cc_<oh3oI4eBH]:hdnR2
-Z4 DXx4 work 11 alu_sv_unit 0 22 W81db5=_OT[H9l1[b`[kS0
-Z5 !s110 1619045794
+Z4 DXx4 work 28 mips_core_interfaces_sv_unit 0 22 ]UUe>nY9iK8k8_lf:65@03
+Z5 !s110 1620809391
 Z6 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+!i10b 1
+!s100 WhNB@;O9D6Zg>z5CbY^RJ2
+IKdga:3P]1<I:ZJ[]ZNY_b0
+Z7 !s105 mips_core_interfaces_sv_unit
+S1
+R0
+Z8 w1620808965
+Z9 8C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/mips_core_interfaces.sv
+Z10 FC:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/mips_core_interfaces.sv
+!i122 5
+L0 127 0
+Z11 OV;L;2020.1;71
+31
+Z12 !s108 1620809391.000000
+Z13 !s107 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/../mips_cpu.svh|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/mips_core.svh|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/mips_core_interfaces.sv|
+Z14 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/mips_core_interfaces.sv|
+!i113 1
+Z15 o-sv -work work
+Z16 !s92 -sv -work work +incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core
+Z17 tCvgOpt 0
+nactive_@list_ifc
+valu
+R1
+R2
+R3
+Z18 DXx4 work 11 alu_sv_unit 0 22 W81db5=_OT[H9l1[b`[kS0
+Z19 !s110 1620809392
+R6
 r1
 !s85 0
 !i10b 1
 !s100 SfMz]AV]?1X]o0A;D3<7W2
 IWAQ_YK4FRM`UGRzmfI_1d0
-Z7 !s105 alu_sv_unit
+Z20 !s105 alu_sv_unit
 S1
 R0
-Z8 w1585944472
-Z9 8C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/alu.sv
-Z10 FC:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/alu.sv
+Z21 w1585944472
+Z22 8C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/alu.sv
+Z23 FC:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/alu.sv
 !i122 13
 L0 41 79
-Z11 OV;L;2020.1;71
+R11
 31
-Z12 !s108 1619045794.000000
-Z13 !s107 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/../mips_cpu.svh|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/mips_core.svh|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/alu.sv|
-Z14 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/alu.sv|
+Z24 !s108 1620809392.000000
+Z25 !s107 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/../mips_cpu.svh|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/mips_core.svh|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/alu.sv|
+Z26 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/alu.sv|
 !i113 1
-Z15 o-sv -work work
-Z16 !s92 -sv -work work +incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core
-Z17 tCvgOpt 0
+R15
+R16
+R17
 Yalu_input_ifc
 R1
 R2
 R3
-R4
-R5
+R18
+R19
 R6
 r1
 !s85 0
 !i10b 1
 !s100 ENjJI:eVd_3GKV8^8UKEV1
 IVbQVSJ?94jGjC3m<iRED_0
-R7
+R20
 S1
 R0
-R8
-R9
-R10
+R21
+R22
+R23
 !i122 13
-Z18 L0 15 0
+Z27 L0 15 0
 R11
 31
-R12
-R13
-R14
+R24
+R25
+R26
 !i113 1
 R15
 R16
@@ -71,22 +101,51 @@ Yalu_output_ifc
 R1
 R2
 R3
-R4
-R5
+R18
+R19
 R6
 r1
 !s85 0
 !i10b 1
 !s100 9ZSoLB0=Y2gfWUPf0dTlM1
 Igg;V0B6;fPihEg];L]kFB2
+R20
+S1
+R0
+R21
+R22
+R23
+!i122 13
+Z28 L0 28 0
+R11
+31
+R24
+R25
+R26
+!i113 1
+R15
+R16
+R17
+Yalu_pass_through_ifc
+R1
+R2
+R3
+R4
+R5
+R6
+r1
+!s85 0
+!i10b 1
+!s100 k4]2]:9T_9zLQnG?Mle`61
+I8K3K9;0O760bK`?2f0]=J0
 R7
 S1
 R0
 R8
 R9
 R10
-!i122 13
-Z19 L0 28 0
+!i122 5
+L0 49 0
 R11
 31
 R12
@@ -96,40 +155,11 @@ R14
 R15
 R16
 R17
-Yalu_pass_through_ifc
-R1
-R2
-R3
-Z20 DXx4 work 28 mips_core_interfaces_sv_unit 0 22 OaQP`gVOiH[WbDcK=LPa90
-Z21 !s110 1619045793
-R6
-r1
-!s85 0
-!i10b 1
-!s100 k4]2]:9T_9zLQnG?Mle`61
-I8K3K9;0O760bK`?2f0]=J0
-Z22 !s105 mips_core_interfaces_sv_unit
-S1
-R0
-Z23 w1585863316
-Z24 8C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/mips_core_interfaces.sv
-Z25 FC:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/mips_core_interfaces.sv
-!i122 5
-L0 49 0
-R11
-31
-Z26 !s108 1619045793.000000
-Z27 !s107 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/../mips_cpu.svh|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/mips_core.svh|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/mips_core_interfaces.sv|
-Z28 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/mips_core_interfaces.sv|
-!i113 1
-R15
-R16
-R17
 Xalu_sv_unit
 R1
 R2
 R3
-R5
+R19
 VW81db5=_OT[H9l1[b`[kS0
 r1
 !s85 0
@@ -140,17 +170,17 @@ IW81db5=_OT[H9l1[b`[kS0
 S1
 R0
 Z29 w1585959444
-R9
-R10
+R22
+R23
 Z30 FC:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/mips_core.svh
 Z31 FC:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/../mips_cpu.svh
 !i122 13
 Z32 L0 4 0
 R11
 31
-R12
-R13
-R14
+R24
+R25
+R26
 !i113 1
 R15
 R16
@@ -160,7 +190,7 @@ R1
 R2
 R3
 Z33 DXx4 work 25 branch_controller_sv_unit 0 22 iU@3KU`8Q0b4OiWmMQWZV0
-R5
+R19
 R6
 r1
 !s85 0
@@ -177,7 +207,7 @@ Z37 FC:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/branch_controller.s
 L0 13 39
 R11
 31
-R26
+R24
 Z38 !s107 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/../mips_cpu.svh|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/mips_core.svh|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/branch_controller.sv|
 Z39 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/branch_controller.sv|
 !i113 1
@@ -188,7 +218,7 @@ Xbranch_controller_sv_unit
 R1
 R2
 R3
-R5
+R19
 ViU@3KU`8Q0b4OiWmMQWZV0
 r1
 !s85 0
@@ -207,7 +237,7 @@ R31
 R32
 R11
 31
-R26
+R24
 R38
 R39
 !i113 1
@@ -218,27 +248,27 @@ Ybranch_decoded_ifc
 R1
 R2
 R3
-R20
-R21
+R4
+R5
 R6
 r1
 !s85 0
 !i10b 1
 !s100 @AM?ocmnJX>Z5DWLXa9Ri0
 IIK]C6LfkAi4gUTFz;O[[j1
-R22
+R7
 S1
 R0
-R23
-R24
-R25
+R8
+R9
+R10
 !i122 5
 L0 35 0
 R11
 31
-R26
-R27
-R28
+R12
+R13
+R14
 !i113 1
 R15
 R16
@@ -248,7 +278,7 @@ R1
 R2
 R3
 R33
-R5
+R19
 R6
 r1
 !s85 0
@@ -265,7 +295,7 @@ R37
 L0 128 57
 R11
 31
-R26
+R24
 R38
 R39
 !i113 1
@@ -277,7 +307,7 @@ R1
 R2
 R3
 R33
-R5
+R19
 R6
 r1
 !s85 0
@@ -294,7 +324,7 @@ R37
 L0 53 23
 R11
 31
-R26
+R24
 R38
 R39
 !i113 1
@@ -306,7 +336,7 @@ R1
 R2
 R3
 R33
-R5
+R19
 R6
 r1
 !s85 0
@@ -323,7 +353,7 @@ R37
 L0 77 23
 R11
 31
-R26
+R24
 R38
 R39
 !i113 1
@@ -335,7 +365,7 @@ R1
 R2
 R3
 R33
-R5
+R19
 R6
 r1
 !s85 0
@@ -352,7 +382,7 @@ R37
 L0 100 27
 R11
 31
-R26
+R24
 R38
 R39
 !i113 1
@@ -363,42 +393,42 @@ Ybranch_result_ifc
 R1
 R2
 R3
-R20
-R21
+R4
+R5
 R6
 r1
 !s85 0
 !i10b 1
 !s100 bBdXQlP1>ZWOKiDCjL@cl0
 I81k:2T7=aHT1n[j<dOa[G2
-R22
+R7
 S1
 R0
-R23
-R24
-R25
+R8
+R9
+R10
 !i122 5
 L0 67 0
 R11
 31
-R26
-R27
-R28
+R12
+R13
+R14
 !i113 1
 R15
 R16
 R17
 vcache_bank
 R1
-Z40 !s110 1619045792
+R5
 !i10b 1
 !s100 :g9@8e<:GfFK1E=B;Te?j3
-Z41 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Z40 !s11b Dg1SIo80bB@j0V0VzS_@n1
 IXlbm0d<n6S@jf7MVdPcc>0
 R6
 S1
 R0
-R23
+Z41 w1585863316
 Z42 8C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/cache_bank.sv
 Z43 FC:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/cache_bank.sv
 !i122 1
@@ -407,24 +437,24 @@ R11
 r1
 !s85 0
 31
-Z44 !s108 1619045792.000000
-Z45 !s107 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/cache_bank.sv|
-Z46 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/cache_bank.sv|
+R12
+Z44 !s107 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/cache_bank.sv|
+Z45 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/cache_bank.sv|
 !i113 1
 R15
 R16
 R17
 vcache_bank_core
 R1
-R40
+R5
 !i10b 1
 !s100 n<UgRDWW]@HTdEB6860gj2
-R41
+R40
 Id[a`RH5KJ:F99WV3=53Zz0
 R6
 S1
 R0
-R23
+R41
 R42
 R43
 !i122 1
@@ -433,9 +463,9 @@ R11
 r1
 !s85 0
 31
+R12
 R44
 R45
-R46
 !i113 1
 R15
 R16
@@ -444,27 +474,27 @@ Ycache_output_ifc
 R1
 R2
 R3
-R20
-R21
+R4
+R5
 R6
 r1
 !s85 0
 !i10b 1
 !s100 eb[V4:2:JiIHMAY<H0ZIR0
 ID@gzYUM?V38WdHjC3KHH40
-R22
+R7
 S1
 R0
-R23
-R24
-R25
+R8
+R9
+R10
 !i122 5
-Z47 L0 27 0
+Z46 L0 27 0
 R11
 31
-R26
-R27
-R28
+R12
+R13
+R14
 !i113 1
 R15
 R16
@@ -473,27 +503,27 @@ vd_cache
 R1
 R2
 R3
-Z48 DXx4 work 15 d_cache_sv_unit 0 22 E8JLCm2<@8H8jm^mYgX]?0
-R21
+Z47 DXx4 work 15 d_cache_sv_unit 0 22 E8JLCm2<@8H8jm^mYgX]?0
+R19
 R6
 r1
 !s85 0
 !i10b 1
 !s100 Cb3<eiT=6iPc7?MhVVS5Q1
 II^3zRYJ29>5B]FfJR]FY01
-Z49 !s105 d_cache_sv_unit
+Z48 !s105 d_cache_sv_unit
 S1
 R0
-Z50 w1585950308
-Z51 8C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/d_cache.sv
-Z52 FC:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/d_cache.sv
+Z49 w1585950308
+Z50 8C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/d_cache.sv
+Z51 FC:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/d_cache.sv
 !i122 11
 L0 39 307
 R11
 31
-R26
-Z53 !s107 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/../mips_cpu.svh|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/mips_core.svh|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/d_cache.sv|
-Z54 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/d_cache.sv|
+R24
+Z52 !s107 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/../mips_cpu.svh|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/mips_core.svh|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/d_cache.sv|
+Z53 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/d_cache.sv|
 !i113 1
 R15
 R16
@@ -502,27 +532,27 @@ Yd_cache_input_ifc
 R1
 R2
 R3
-R48
-R21
+R47
+R19
 R6
 r1
 !s85 0
 !i10b 1
 !s100 h0D?<eAOJ7HUbP?d4]D0N3
 I`9V^M6VVQ5Ij:d1_dI?DR3
-R49
+R48
 S1
 R0
+R49
 R50
 R51
-R52
 !i122 11
-R47
+R46
 R11
 31
-R26
+R24
+R52
 R53
-R54
 !i113 1
 R15
 R16
@@ -531,27 +561,27 @@ Yd_cache_pass_through_ifc
 R1
 R2
 R3
-R20
-R21
+R4
+R5
 R6
 r1
 !s85 0
 !i10b 1
 !s100 jX6=N8Ag@EBf9i825z=GD0
 I6KUlgTeI5SliIEXDR9eel3
-R22
+R7
 S1
 R0
-R23
-R24
-R25
+R8
+R9
+R10
 !i122 5
 L0 77 0
 R11
 31
-R26
-R27
-R28
+R12
+R13
+R14
 !i113 1
 R15
 R16
@@ -560,7 +590,7 @@ Xd_cache_sv_unit
 R1
 R2
 R3
-R21
+R19
 VE8JLCm2<@8H8jm^mYgX]?0
 r1
 !s85 0
@@ -571,17 +601,17 @@ IE8JLCm2<@8H8jm^mYgX]?0
 S1
 R0
 R29
+R50
 R51
-R52
 R30
 R31
 !i122 11
 R32
 R11
 31
-R26
+R24
+R52
 R53
-R54
 !i113 1
 R15
 R16
@@ -590,27 +620,27 @@ vdecode_stage_glue
 R1
 R2
 R3
-Z55 DXx4 work 21 glue_circuits_sv_unit 0 22 ^f647>aY>TcLn_CU?2:082
-R5
+Z54 DXx4 work 21 glue_circuits_sv_unit 0 22 ^f647>aY>TcLn_CU?2:082
+R19
 R6
 r1
 !s85 0
 !i10b 1
 !s100 CE[4L:WKG;jEP6j_9f=;30
 I:NUf_Pf`:W_>?z=EVh^Se0
-Z56 !s105 glue_circuits_sv_unit
+Z55 !s105 glue_circuits_sv_unit
 S1
 R0
-Z57 w1585952566
-Z58 8C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/glue_circuits.sv
-Z59 FC:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/glue_circuits.sv
+Z56 w1585952566
+Z57 8C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/glue_circuits.sv
+Z58 FC:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/glue_circuits.sv
 !i122 17
 L0 13 43
 R11
 31
-R12
-Z60 !s107 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/../mips_cpu.svh|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/mips_core.svh|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/glue_circuits.sv|
-Z61 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/glue_circuits.sv|
+R24
+Z59 !s107 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/../mips_cpu.svh|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/mips_core.svh|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/glue_circuits.sv|
+Z60 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/glue_circuits.sv|
 !i113 1
 R15
 R16
@@ -619,27 +649,27 @@ vdecoder
 R1
 R2
 R3
-Z62 DXx4 work 15 decoder_sv_unit 0 22 T07SZH<2n_hhMDWj:mW@83
-R21
+Z61 DXx4 work 15 decoder_sv_unit 0 22 NeP<zW[?3]3H[UIAW_4SC3
+R19
 R6
 r1
 !s85 0
 !i10b 1
-!s100 Al`4K[G[G7dV=lMoU7n:52
-IK_03]:8?ic]UQ?2Bbc2im1
-Z63 !s105 decoder_sv_unit
+!s100 PO`gXJXccg74;VmLOT]i93
+IOc>RV;F;0X0@U0Zlo79aj2
+Z62 !s105 decoder_sv_unit
 S1
 R0
-Z64 w1585934752
-Z65 8C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/decoder.sv
-Z66 FC:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/decoder.sv
+Z63 w1620808992
+Z64 8C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/decoder.sv
+Z65 FC:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/decoder.sv
 !i122 10
-L0 49 512
+L0 49 511
 R11
 31
-R26
-Z67 !s107 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/../mips_cpu.svh|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/mips_core.svh|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/decoder.sv|
-Z68 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/decoder.sv|
+R24
+Z66 !s107 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/../mips_cpu.svh|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/mips_core.svh|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/decoder.sv|
+Z67 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/decoder.sv|
 !i113 1
 R15
 R16
@@ -648,27 +678,27 @@ Ydecoder_output_ifc
 R1
 R2
 R3
-R62
-R21
+R61
+R19
 R6
 r1
 !s85 0
 !i10b 1
 !s100 WCEU8@IH>I_YmSV:CEQlE2
 IS=?kC2;_n]A5OlP?HH[3R2
-R63
+R62
 S1
 R0
+R63
 R64
 R65
-R66
 !i122 10
 L0 14 0
 R11
 31
-R26
+R24
+R66
 R67
-R68
 !i113 1
 R15
 R16
@@ -677,28 +707,28 @@ Xdecoder_sv_unit
 R1
 R2
 R3
-R21
-VT07SZH<2n_hhMDWj:mW@83
+R19
+VNeP<zW[?3]3H[UIAW_4SC3
 r1
 !s85 0
 !i10b 1
-!s100 Z_NBJR:XZ45e:HA>fKM2]2
-IT07SZH<2n_hhMDWj:mW@83
+!s100 cnY[E]W;kzW29aF@SbQRM1
+INeP<zW[?3]3H[UIAW_4SC3
 !i103 1
 S1
 R0
-R29
+R63
+R64
 R65
-R66
 R30
 R31
 !i122 10
 R32
 R11
 31
-R26
+R24
+R66
 R67
-R68
 !i113 1
 R15
 R16
@@ -707,27 +737,27 @@ vex_stage_glue
 R1
 R2
 R3
-R55
-R5
+R54
+R19
 R6
 r1
 !s85 0
 !i10b 1
 !s100 k^T@A8GYnejeE>Mn?E>o20
 IH55NaSB=[:;U<P7@g=Ac43
-R56
+R55
 S1
 R0
+R56
 R57
 R58
-R59
 !i122 17
 L0 57 35
 R11
 31
-R12
+R24
+R59
 R60
-R61
 !i113 1
 R15
 R16
@@ -736,7 +766,7 @@ vfast_sdram
 R1
 R2
 DXx4 work 18 fast_sdram_sv_unit 0 22 CilNV^OdDB21]OZ^QAJ`=3
-Z69 !s110 1619045945
+Z68 !s110 1620809416
 R6
 r1
 !s85 0
@@ -747,22 +777,22 @@ IJlkZ7M2_in0izbO8_Te5J2
 S1
 R0
 R29
-Z70 8../../fast_sdram.sv
-Z71 F../../fast_sdram.sv
+Z69 8../../fast_sdram.sv
+Z70 F../../fast_sdram.sv
 !i122 22
 L0 18 245
 R11
 31
-Z72 !s108 1619045945.000000
-Z73 !s107 ..\..\mips_cpu.svh|../../fast_sdram.sv|
-Z74 !s90 -reportprogress|300|-work|work|../../fast_sdram.sv|
+Z71 !s108 1620809416.000000
+!s107 ..\..\mips_cpu.svh|../../fast_sdram.sv|
+Z72 !s90 -reportprogress|300|-work|work|../../fast_sdram.sv|
 !i113 1
-Z75 o-work work
+Z73 o-work work
 R17
 Xfast_sdram_sv_unit
 R1
 R2
-R69
+R68
 VCilNV^OdDB21]OZ^QAJ`=3
 r1
 !s85 0
@@ -773,24 +803,24 @@ ICilNV^OdDB21]OZ^QAJ`=3
 S1
 R0
 R29
+R69
 R70
-R71
-Z76 F..\..\mips_cpu.svh
+Z74 F..\..\mips_cpu.svh
 !i122 22
 R32
 R11
 31
+R71
+Z75 !s107 ..\..\mips_cpu.svh|../../fast_sdram.sv|
 R72
-R73
-R74
 !i113 1
-R75
+R73
 R17
 vfast_testbench
 R1
 R2
 DXx4 work 22 fast_testbench_sv_unit 0 22 n9aWW1YWZWX[kLzCEU_7o1
-R69
+R68
 R6
 r1
 !s85 0
@@ -801,22 +831,22 @@ IQO0Vb_l3bAbod1Kin5;SQ0
 S1
 R0
 R29
-Z77 8../../fast_testbench.sv
-Z78 F../../fast_testbench.sv
+Z76 8../../fast_testbench.sv
+Z77 F../../fast_testbench.sv
 !i122 21
 L0 18 58
 R11
 31
-R72
-Z79 !s107 ..\..\mips_cpu.svh|../../fast_testbench.sv|
-Z80 !s90 -reportprogress|300|-work|work|../../fast_testbench.sv|
+R71
+Z78 !s107 ..\..\mips_cpu.svh|../../fast_testbench.sv|
+Z79 !s90 -reportprogress|300|-work|work|../../fast_testbench.sv|
 !i113 1
-R75
+R73
 R17
 Xfast_testbench_sv_unit
 R1
 R2
-R69
+R68
 Vn9aWW1YWZWX[kLzCEU_7o1
 r1
 !s85 0
@@ -827,25 +857,25 @@ In9aWW1YWZWX[kLzCEU_7o1
 S1
 R0
 R29
-R77
-R78
 R76
+R77
+R74
 !i122 21
 R32
 R11
 31
-R72
+R71
+R78
 R79
-R80
 !i113 1
-R75
+R73
 R17
 vfetch_unit
 R1
 R2
 R3
 DXx4 work 18 fetch_unit_sv_unit 0 22 _X8NPlVdWSK;>aboQoefL0
-R21
+R19
 R6
 r1
 !s85 0
@@ -855,16 +885,16 @@ IQgaOd8anN`UU;4FdR@6`;3
 !s105 fetch_unit_sv_unit
 S1
 R0
-R23
-Z81 8C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/fetch_unit.sv
-Z82 FC:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/fetch_unit.sv
+R41
+Z80 8C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/fetch_unit.sv
+Z81 FC:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/fetch_unit.sv
 !i122 9
 L0 18 37
 R11
 31
-R26
-Z83 !s107 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/../mips_cpu.svh|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/mips_core.svh|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/fetch_unit.sv|
-Z84 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/fetch_unit.sv|
+R12
+Z82 !s107 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/../mips_cpu.svh|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/mips_core.svh|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/fetch_unit.sv|
+Z83 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/fetch_unit.sv|
 !i113 1
 R15
 R16
@@ -873,7 +903,7 @@ Xfetch_unit_sv_unit
 R1
 R2
 R3
-R21
+R19
 V_X8NPlVdWSK;>aboQoefL0
 r1
 !s85 0
@@ -884,17 +914,17 @@ I_X8NPlVdWSK;>aboQoefL0
 S1
 R0
 R29
+R80
 R81
-R82
 R30
 R31
 !i122 9
 R32
 R11
 31
-R26
+R12
+R82
 R83
-R84
 !i113 1
 R15
 R16
@@ -904,7 +934,7 @@ R1
 R2
 R3
 DXx4 work 20 forward_unit_sv_unit 0 22 OC;XUUCaJlBOEGeH>oTb_3
-R5
+R19
 R6
 r1
 !s85 0
@@ -914,16 +944,16 @@ IJR0oe4WUz6RUM;Wii`2QN3
 !s105 forward_unit_sv_unit
 S1
 R0
-R23
-Z85 8C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/forward_unit.sv
-Z86 FC:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/forward_unit.sv
+R41
+Z84 8C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/forward_unit.sv
+Z85 FC:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/forward_unit.sv
 !i122 18
 L0 16 91
 R11
 31
-R12
-Z87 !s107 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/../mips_cpu.svh|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/mips_core.svh|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/forward_unit.sv|
-Z88 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/forward_unit.sv|
+R24
+Z86 !s107 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/../mips_cpu.svh|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/mips_core.svh|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/forward_unit.sv|
+Z87 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/forward_unit.sv|
 !i113 1
 R15
 R16
@@ -932,7 +962,7 @@ Xforward_unit_sv_unit
 R1
 R2
 R3
-R5
+R19
 VOC;XUUCaJlBOEGeH>oTb_3
 r1
 !s85 0
@@ -943,26 +973,56 @@ IOC;XUUCaJlBOEGeH>oTb_3
 S1
 R0
 R29
+R84
 R85
-R86
 R30
 R31
 !i122 18
 R32
 R11
 31
-R12
+R24
+R86
 R87
-R88
 !i113 1
 R15
 R16
 R17
+Yfree_List_ifc
+R1
+R2
+R3
+R4
+R5
+R6
+r1
+!s85 0
+!i10b 1
+!s100 GEgL>_afECJ0E0Yob]XZX3
+I>L^UAMNOF?jP4_Ij:U]`^2
+R7
+S1
+R0
+R8
+R9
+R10
+!i122 5
+L0 120 0
+R11
+31
+R12
+R13
+R14
+!i113 1
+R15
+R16
+R17
+nfree_@list_ifc
 Xglue_circuits_sv_unit
 R1
 R2
 R3
-R5
+R19
 V^f647>aY>TcLn_CU?2:082
 r1
 !s85 0
@@ -973,17 +1033,17 @@ I^f647>aY>TcLn_CU?2:082
 S1
 R0
 R29
+R57
 R58
-R59
 R30
 R31
 !i122 17
 R32
 R11
 31
-R12
+R24
+R59
 R60
-R61
 !i113 1
 R15
 R16
@@ -992,27 +1052,27 @@ Yhazard_control_ifc
 R1
 R2
 R3
-R20
-R21
+R4
+R5
 R6
 r1
 !s85 0
 !i10b 1
 !s100 YF^WJ:40@kSA:CBYY0HEe0
 IH8J6a=`Cm67]1E<7jlazP2
-R22
+R7
 S1
 R0
-R23
-R24
-R25
+R8
+R9
+R10
 !i122 5
 L0 97 0
 R11
 31
-R26
-R27
-R28
+R12
+R13
+R14
 !i113 1
 R15
 R16
@@ -1022,7 +1082,7 @@ R1
 R2
 R3
 DXx4 work 25 hazard_controller_sv_unit 0 22 6zQ8M4]@^iQN4[S=hB;<e2
-R5
+R19
 R6
 r1
 !s85 0
@@ -1032,16 +1092,16 @@ I<7QWMWJMM7K9jFFa[bkRk2
 !s105 hazard_controller_sv_unit
 S1
 R0
-R23
-Z89 8C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/hazard_controller.sv
-Z90 FC:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/hazard_controller.sv
+R41
+Z88 8C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/hazard_controller.sv
+Z89 FC:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/hazard_controller.sv
 !i122 16
 L0 16 164
 R11
 31
-R12
-Z91 !s107 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/../mips_cpu.svh|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/mips_core.svh|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/hazard_controller.sv|
-Z92 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/hazard_controller.sv|
+R24
+Z90 !s107 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/../mips_cpu.svh|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/mips_core.svh|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/hazard_controller.sv|
+Z91 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/hazard_controller.sv|
 !i113 1
 R15
 R16
@@ -1050,7 +1110,7 @@ Xhazard_controller_sv_unit
 R1
 R2
 R3
-R5
+R19
 V6zQ8M4]@^iQN4[S=hB;<e2
 r1
 !s85 0
@@ -1061,17 +1121,17 @@ I6zQ8M4]@^iQN4[S=hB;<e2
 S1
 R0
 R29
+R88
 R89
-R90
 R30
 R31
 !i122 16
 R32
 R11
 31
-R12
+R24
+R90
 R91
-R92
 !i113 1
 R15
 R16
@@ -1081,7 +1141,7 @@ R1
 R2
 R3
 DXx4 work 15 i_cache_sv_unit 0 22 PjgG<NjIF7_Zbf910Il7>2
-R21
+R5
 R6
 r1
 !s85 0
@@ -1091,16 +1151,16 @@ Im]?7aV0O37D11KcHDXSga2
 !s105 i_cache_sv_unit
 S1
 R0
-R23
-Z93 8C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/i_cache.sv
-Z94 FC:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/i_cache.sv
+R41
+Z92 8C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/i_cache.sv
+Z93 FC:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/i_cache.sv
 !i122 8
 L0 27 214
 R11
 31
-R26
-Z95 !s107 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/../mips_cpu.svh|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/mips_core.svh|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/i_cache.sv|
-Z96 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/i_cache.sv|
+R12
+Z94 !s107 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/../mips_cpu.svh|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/mips_core.svh|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/i_cache.sv|
+Z95 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/i_cache.sv|
 !i113 1
 R15
 R16
@@ -1109,7 +1169,7 @@ Xi_cache_sv_unit
 R1
 R2
 R3
-R21
+R5
 VPjgG<NjIF7_Zbf910Il7>2
 r1
 !s85 0
@@ -1120,46 +1180,76 @@ IPjgG<NjIF7_Zbf910Il7>2
 S1
 R0
 R29
+R92
 R93
-R94
 R30
 R31
 !i122 8
 R32
 R11
 31
-R26
+R12
+R94
 R95
-R96
 !i113 1
 R15
 R16
 R17
+Yinstruction_Queue
+R1
+R2
+R3
+R4
+R5
+R6
+r1
+!s85 0
+!i10b 1
+!s100 VNSLWn=3D=L95LJNNP^=l1
+I>o9bEQbNCUZmj7LFcQGI<0
+R7
+S1
+R0
+R8
+R9
+R10
+!i122 5
+L0 112 0
+R11
+31
+R12
+R13
+R14
+!i113 1
+R15
+R16
+R17
+ninstruction_@queue
 Yllsc_input_ifc
 R1
 R2
 R3
-Z97 DXx4 work 19 llsc_module_sv_unit 0 22 ::P]JO3zeLR]a`ic<ZFi`2
-R21
+Z96 DXx4 work 19 llsc_module_sv_unit 0 22 ::P]JO3zeLR]a`ic<ZFi`2
+R5
 R6
 r1
 !s85 0
 !i10b 1
 !s100 I4bko@a@HMQ@ecQ9F7YXi0
 IG1^0mW7h@d1a<5h6iiLYc0
-Z98 !s105 llsc_module_sv_unit
+Z97 !s105 llsc_module_sv_unit
 S1
 R0
-Z99 w1585952430
-Z100 8C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/llsc_module.sv
-Z101 FC:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/llsc_module.sv
+Z98 w1585952430
+Z99 8C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/llsc_module.sv
+Z100 FC:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/llsc_module.sv
 !i122 4
-Z102 L0 11 0
+Z101 L0 11 0
 R11
 31
-R26
-Z103 !s107 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/../mips_cpu.svh|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/mips_core.svh|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/llsc_module.sv|
-Z104 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/llsc_module.sv|
+R12
+Z102 !s107 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/../mips_cpu.svh|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/mips_core.svh|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/llsc_module.sv|
+Z103 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/llsc_module.sv|
 !i113 1
 R15
 R16
@@ -1168,27 +1258,27 @@ vllsc_module
 R1
 R2
 R3
-R97
-R21
+R96
+R5
 R6
 r1
 !s85 0
 !i10b 1
 !s100 @:C_Qz1KRBNMb8jQ732o;1
 IIXA7dKOOOEL=ah72KefSF0
-R98
+R97
 S1
 R0
+R98
 R99
 R100
-R101
 !i122 4
 L0 28 29
 R11
 31
-R26
+R12
+R102
 R103
-R104
 !i113 1
 R15
 R16
@@ -1197,7 +1287,7 @@ Xllsc_module_sv_unit
 R1
 R2
 R3
-R21
+R5
 V::P]JO3zeLR]a`ic<ZFi`2
 r1
 !s85 0
@@ -1208,17 +1298,17 @@ I::P]JO3zeLR]a`ic<ZFi`2
 S1
 R0
 R29
+R99
 R100
-R101
 R30
 R31
 !i122 4
 R32
 R11
 31
-R26
+R12
+R102
 R103
-R104
 !i113 1
 R15
 R16
@@ -1227,27 +1317,27 @@ Yllsc_output_ifc
 R1
 R2
 R3
-R97
-R21
+R96
+R5
 R6
 r1
 !s85 0
 !i10b 1
 !s100 NRaPDTfcl19_04h3Ze0O=0
 IA]4z?L7V5@hOAniRKaGUZ3
-R98
+R97
 S1
 R0
+R98
 R99
 R100
-R101
 !i122 4
 L0 21 0
 R11
 31
-R26
+R12
+R102
 R103
-R104
 !i113 1
 R15
 R16
@@ -1256,27 +1346,27 @@ Yload_pc_ifc
 R1
 R2
 R3
-R20
-R21
+R4
+R5
 R6
 r1
 !s85 0
 !i10b 1
 !s100 XiBNEPLC1^iT>T11cPh]z3
 IT6<Uo@0lSc]`O:B1mKGbc2
-R22
+R7
 S1
 R0
-R23
-R24
-R25
+R8
+R9
+R10
 !i122 5
-Z105 L0 12 0
+Z104 L0 12 0
 R11
 31
-R26
-R27
-R28
+R12
+R13
+R14
 !i113 1
 R15
 R16
@@ -1284,56 +1374,56 @@ R17
 Ymem_read_ifc
 R1
 R2
-Z106 DXx4 work 25 memory_interfaces_sv_unit 0 22 2ZYz`3[`h8hC42<L>E;1J2
-R21
+Z105 DXx4 work 25 memory_interfaces_sv_unit 0 22 2ZYz`3[`h8hC42<L>E;1J2
+R5
 R6
 r1
 !s85 0
 !i10b 1
 !s100 5J[Tbl=TWCBJLDACU2M=X2
 I7eV`]<USYABRkK=O=94bd0
-Z107 !s105 memory_interfaces_sv_unit
+Z106 !s105 memory_interfaces_sv_unit
 S1
 R0
 R29
-Z108 8C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/memory_interfaces.sv
-Z109 FC:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/memory_interfaces.sv
+Z107 8C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/memory_interfaces.sv
+Z108 FC:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/memory_interfaces.sv
 !i122 7
-R19
+R28
 R11
 31
-R26
-Z110 !s107 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_cpu.svh|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/memory_interfaces.sv|
-Z111 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/memory_interfaces.sv|
+R12
+Z109 !s107 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_cpu.svh|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/memory_interfaces.sv|
+Z110 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/memory_interfaces.sv|
 !i113 1
 R15
-Z112 !s92 -sv -work work +incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu
+Z111 !s92 -sv -work work +incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu
 R17
 vmem_stage_glue
 R1
 R2
 R3
-R55
-R5
+R54
+R19
 R6
 r1
 !s85 0
 !i10b 1
 !s100 ENanV1K0H5=5<hQYHglaD1
 IRJ<6Qi@l?gWYmMf3:0IKz2
-R56
+R55
 S1
 R0
+R56
 R57
 R58
-R59
 !i122 17
 L0 93 20
 R11
 31
-R12
+R24
+R59
 R60
-R61
 !i113 1
 R15
 R16
@@ -1341,35 +1431,35 @@ R17
 Ymem_write_ifc
 R1
 R2
-R106
-R21
+R105
+R5
 R6
 r1
 !s85 0
 !i10b 1
 !s100 zOXjJm>8:`7QdjGL`Zm0N3
 IB09:9gPg1Pk[OKLABM1LA2
-R107
+R106
 S1
 R0
 R29
+R107
 R108
-R109
 !i122 7
-R105
+R104
 R11
 31
-R26
+R12
+R109
 R110
-R111
 !i113 1
 R15
-R112
+R111
 R17
 Xmemory_interfaces_sv_unit
 R1
 R2
-R21
+R5
 V2ZYz`3[`h8hC42<L>E;1J2
 r1
 !s85 0
@@ -1380,45 +1470,45 @@ I2ZYz`3[`h8hC42<L>E;1J2
 S1
 R0
 R29
+R107
 R108
-R109
-Z113 FC:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_cpu.svh
+Z112 FC:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_cpu.svh
 !i122 7
 R32
 R11
 31
-R26
+R12
+R109
 R110
-R111
 !i113 1
 R15
-R112
+R111
 R17
 vmips_core
 R1
 R2
 R3
-DXx4 work 17 mips_core_sv_unit 0 22 5>K7`LAdm<`647:4F8TT]0
-R5
+DXx4 work 17 mips_core_sv_unit 0 22 AHLe^WPAG7<XghV[BZZW;1
+R19
 R6
 r1
 !s85 0
 !i10b 1
-!s100 <W1^h5]:MX62P1z@eNj>R3
-I_Me;COaZBh:[f?PVGbj0R1
+!s100 S6?3]FCA5d4C6bd>cYWEW0
+INI<mH[2=em=dm2aO7o@7g0
 !s105 mips_core_sv_unit
 S1
 R0
-Z114 w1617832691
-Z115 8C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/mips_core.sv
-Z116 FC:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/mips_core.sv
+Z113 w1620809031
+Z114 8C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/mips_core.sv
+Z115 FC:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/mips_core.sv
 !i122 19
-L0 12 331
+L0 12 329
 R11
 31
-R12
-Z117 !s107 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/../mips_cpu.svh|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/mips_core.svh|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/mips_core.sv|
-Z118 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/mips_core.sv|
+R24
+Z116 !s107 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/../mips_cpu.svh|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/mips_core.svh|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/mips_core.sv|
+Z117 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/mips_core.sv|
 !i113 1
 R15
 R16
@@ -1427,38 +1517,38 @@ Xmips_core_interfaces_sv_unit
 R1
 R2
 R3
-R21
-VOaQP`gVOiH[WbDcK=LPa90
+R5
+V]UUe>nY9iK8k8_lf:65@03
 r1
 !s85 0
 !i10b 1
-!s100 >J3]mozW3Adi0Al?ba3KC0
-IOaQP`gVOiH[WbDcK=LPa90
+!s100 =Qo:jJz0kPniY0o^iSCbQ0
+I]UUe>nY9iK8k8_lf:65@03
 !i103 1
 S1
 R0
-R29
-R24
-R25
+R8
+R9
+R10
 R30
 R31
 !i122 5
 R32
 R11
 31
-R26
-R27
-R28
+R12
+R13
+R14
 !i113 1
 R15
 R16
 R17
 Xmips_core_pkg
 R1
-R21
+R5
 !i10b 1
 !s100 A68ZSlb5DnBfoOD]Y[mSB2
-R41
+R40
 IE_cc_<oh3oI4eBH]:hdnR2
 VE_cc_<oh3oI4eBH]:hdnR2
 S1
@@ -1467,12 +1557,12 @@ w1585952216
 8C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/mips_core_pkg.sv
 FC:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/mips_core_pkg.sv
 !i122 2
-R102
+R101
 R11
 r1
 !s85 0
 31
-R44
+R12
 !s107 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/mips_core_pkg.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/mips_core_pkg.sv|
 !i113 1
@@ -1483,28 +1573,28 @@ Xmips_core_sv_unit
 R1
 R2
 R3
-R5
-V5>K7`LAdm<`647:4F8TT]0
+R19
+VAHLe^WPAG7<XghV[BZZW;1
 r1
 !s85 0
 !i10b 1
-!s100 fGKdigQ0^NlHeO^cAbF=n1
-I5>K7`LAdm<`647:4F8TT]0
+!s100 `8SUP2PC@m;cG:ikSFh_91
+IAHLe^WPAG7<XghV[BZZW;1
 !i103 1
 S1
 R0
+R113
 R114
 R115
-R116
 R30
 R31
 !i122 19
 R32
 R11
 31
-R12
+R24
+R116
 R117
-R118
 !i113 1
 R15
 R16
@@ -1513,7 +1603,7 @@ vmips_cpu
 R1
 R2
 DXx4 work 16 mips_cpu_sv_unit 0 22 kU]:F]f>1L^ji;a6V[V0[3
-R5
+Z118 !s110 1620809393
 R6
 r1
 !s85 0
@@ -1530,19 +1620,19 @@ Z120 FC:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_cpu.sv
 L0 21 131
 R11
 31
-R12
+R24
 Z121 !s107 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_cpu.svh|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_cpu.sv|
 Z122 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_cpu.sv|
 !i113 1
 R15
-R112
+R111
 R17
 Xmips_cpu_pkg
 R1
-R21
+R5
 !i10b 1
 !s100 6m4:`S7=h0MCg71MgjZ9M3
-R41
+R40
 I>:Ln`d8PI?i8<0<6XUAIl1
 V>:Ln`d8PI?i8<0<6XUAIl1
 S1
@@ -1556,17 +1646,17 @@ R11
 r1
 !s85 0
 31
-R26
+R12
 !s107 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_cpu_pkg.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_cpu_pkg.sv|
 !i113 1
 R15
-R112
+R111
 R17
 Xmips_cpu_sv_unit
 R1
 R2
-R5
+R118
 VkU]:F]f>1L^ji;a6V[V0[3
 r1
 !s85 0
@@ -1579,23 +1669,23 @@ R0
 R29
 R119
 R120
-R113
+R112
 !i122 20
 R32
 R11
 31
-R12
+R24
 R121
 R122
 !i113 1
 R15
-R112
+R111
 R17
 Ypass_done_ifc
 R1
 R2
 DXx4 work 27 pass_done_interface_sv_unit 0 22 Bj_e2=6IFgMP^mJj:^[Bo0
-R21
+R5
 R6
 r1
 !s85 0
@@ -1609,20 +1699,20 @@ R29
 Z123 8C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/pass_done_interface.sv
 Z124 FC:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/pass_done_interface.sv
 !i122 6
-R18
+R27
 R11
 31
-R26
+R12
 Z125 !s107 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_cpu.svh|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/pass_done_interface.sv|
 Z126 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/pass_done_interface.sv|
 !i113 1
 R15
-R112
+R111
 R17
 Xpass_done_interface_sv_unit
 R1
 R2
-R21
+R5
 VBj_e2=6IFgMP^mJj:^[Bo0
 r1
 !s85 0
@@ -1635,43 +1725,43 @@ R0
 R29
 R123
 R124
-R113
+R112
 !i122 6
 R32
 R11
 31
-R26
+R12
 R125
 R126
 !i113 1
 R15
-R112
+R111
 R17
 Ypc_ifc
 R1
 R2
 R3
-R20
-R21
+R4
+R5
 R6
 r1
 !s85 0
 !i10b 1
 !s100 _JT5S6:fl0NcKE4>z9TUb2
 I=Q4a];4HFn9m2UGUOCzYo2
-R22
+R7
 S1
 R0
-R23
-R24
-R25
+R8
+R9
+R10
 !i122 5
 L0 20 0
 R11
 31
-R26
-R27
-R28
+R12
+R13
+R14
 !i113 1
 R15
 R16
@@ -1680,7 +1770,7 @@ Xpipeline_registers_sv_unit
 R1
 R2
 R3
-R5
+R19
 VgJ>9CP4DCSz<I<jdQ^<CO3
 r1
 !s85 0
@@ -1699,7 +1789,7 @@ R31
 R32
 R11
 31
-R12
+R24
 Z129 !s107 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/../mips_cpu.svh|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/mips_core.svh|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/pipeline_registers.sv|
 Z130 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/pipeline_registers.sv|
 !i113 1
@@ -1711,7 +1801,7 @@ R1
 R2
 R3
 Z131 DXx4 work 26 pipeline_registers_sv_unit 0 22 gJ>9CP4DCSz<I<jdQ^<CO3
-R5
+R19
 R6
 r1
 !s85 0
@@ -1728,7 +1818,7 @@ R128
 L0 58 100
 R11
 31
-R12
+R24
 R129
 R130
 !i113 1
@@ -1740,7 +1830,7 @@ R1
 R2
 R3
 R131
-R5
+R19
 R6
 r1
 !s85 0
@@ -1757,7 +1847,7 @@ R128
 L0 159 75
 R11
 31
-R12
+R24
 R129
 R130
 !i113 1
@@ -1769,7 +1859,7 @@ R1
 R2
 R3
 R131
-R5
+R19
 R6
 r1
 !s85 0
@@ -1786,7 +1876,7 @@ R128
 L0 15 42
 R11
 31
-R12
+R24
 R129
 R130
 !i113 1
@@ -1798,7 +1888,7 @@ R1
 R2
 R3
 R131
-R5
+R19
 R6
 r1
 !s85 0
@@ -1815,7 +1905,7 @@ R128
 L0 235 39
 R11
 31
-R12
+R24
 R129
 R130
 !i113 1
@@ -1827,7 +1917,7 @@ R1
 R2
 R3
 Z134 DXx4 work 16 reg_file_sv_unit 0 22 DRhm4@1mnhGGY8;f>HJL>1
-R5
+R19
 R6
 r1
 !s85 0
@@ -1837,14 +1927,14 @@ IRXoY5ELJS<G70TER9PbO=0
 Z135 !s105 reg_file_sv_unit
 S1
 R0
-Z136 w1585863318
+Z136 w1619054790
 Z137 8C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/reg_file.sv
 Z138 FC:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/reg_file.sv
 !i122 14
 L0 24 26
 R11
 31
-R12
+R24
 Z139 !s107 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/../mips_cpu.svh|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/mips_core.svh|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/reg_file.sv|
 Z140 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/reg_file.sv|
 !i113 1
@@ -1856,7 +1946,7 @@ R1
 R2
 R3
 R134
-R5
+R19
 R6
 r1
 !s85 0
@@ -1873,7 +1963,7 @@ R138
 L0 16 0
 R11
 31
-R12
+R24
 R139
 R140
 !i113 1
@@ -1884,7 +1974,7 @@ Xreg_file_sv_unit
 R1
 R2
 R3
-R5
+R19
 VDRhm4@1mnhGGY8;f>HJL>1
 r1
 !s85 0
@@ -1894,7 +1984,7 @@ IDRhm4@1mnhGGY8;f>HJL>1
 !i103 1
 S1
 R0
-R29
+R136
 R137
 R138
 R30
@@ -1903,42 +1993,48 @@ R31
 R32
 R11
 31
-R12
+R24
 R139
 R140
 !i113 1
 R15
 R16
 R17
-vsdr
-Z141 !s110 1619046073
-!i10b 1
-!s100 ]Vk9SgK<NjGgl53L?:blG1
-R41
-IjUO=FL]li0QPhCR=BAbHk3
+Yregister_Map_table_ifc
+R1
+R2
+R3
+R4
+R5
 R6
-R0
-R29
-8../../ip/sdr_sdram/sdr.v
-F../../ip/sdr_sdram/sdr.v
-F..\..\ip\sdr_sdram\sdr_parameters.vh
-!i122 28
-L0 48 1229
-R11
 r1
 !s85 0
+!i10b 1
+!s100 YA;@iU>hmF]J2`82eFUGD3
+I6f5Z;z85XBZQ]o[YelKoJ2
+R7
+S1
+R0
+R8
+R9
+R10
+!i122 5
+L0 107 0
+R11
 31
-!s108 1619046073.000000
-!s107 ..\..\ip\sdr_sdram\sdr_parameters.vh|../../ip/sdr_sdram/sdr.v|
-!s90 -reportprogress|300|-work|work|-suppress|2902|-suppress|13388|../../ip/sdr_sdram/sdr.v|
+R12
+R13
+R14
 !i113 1
-o-suppress 2902 -suppress 13388 -work work
+R15
+R16
 R17
+nregister_@map_table_ifc
 vsdram
-R40
+R5
 !i10b 1
 !s100 0GeZF]Y_G]>h]7QDfifjX3
-R41
+R40
 I92BCe1][^JVAnOb_dR]FZ0
 R6
 R0
@@ -1951,90 +2047,36 @@ R11
 r1
 !s85 0
 31
-R44
+R12
 !s107 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/sdram.v|
 !s90 -reportprogress|300|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/sdram.v|
 !i113 1
-R17
-vtestbench
-R1
-R2
-DXx4 work 17 testbench_sv_unit 0 22 lCTKU6[8z?g9BR5KAF:@T2
-R141
-R6
-r1
-!s85 0
-!i10b 1
-!s100 ;hA<YjOzQA1:b_F`QTgKD1
-I6<62l7fU>ii2O51aG@<>51
-!s105 testbench_sv_unit
-S1
-R0
-R29
-Z142 8../../testbench.sv
-Z143 F../../testbench.sv
-!i122 27
-L0 12 90
-R11
-31
-Z144 !s108 1619046072.000000
-Z145 !s107 ..\..\mips_cpu.svh|../../testbench.sv|
-Z146 !s90 -reportprogress|300|-work|work|../../testbench.sv|
-!i113 1
-R75
-R17
-Xtestbench_sv_unit
-R1
-R2
-R141
-VlCTKU6[8z?g9BR5KAF:@T2
-r1
-!s85 0
-!i10b 1
-!s100 P@ID>Db`5Gk`:R8Bz9iK12
-IlCTKU6[8z?g9BR5KAF:@T2
-!i103 1
-S1
-R0
-R29
-R142
-R143
-R76
-!i122 27
-R32
-R11
-31
-R144
-R145
-R146
-!i113 1
-R75
 R17
 Ywrite_back_ifc
 R1
 R2
 R3
-R20
-R21
+R4
+R5
 R6
 r1
 !s85 0
 !i10b 1
 !s100 4ddT9n3^k9_T`448cnd:G3
 I1VEoEiL[ANgOm6`K`ig@;3
-R22
+R7
 S1
 R0
-R23
-R24
-R25
+R8
+R9
+R10
 !i122 5
 L0 88 0
 R11
 31
-R26
-R27
-R28
+R12
+R13
+R14
 !i113 1
 R15
 R16
