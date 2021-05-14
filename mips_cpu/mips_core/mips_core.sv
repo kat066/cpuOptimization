@@ -42,6 +42,10 @@ module mips_core (
 	branch_decoded_ifc dec_branch_decoded();
 	alu_input_ifc dec_alu_input();
 	alu_pass_through_ifc dec_alu_pass_through();
+	
+	//register map table
+	decoder_output_ifc register_map_output();
+	
 	// ==== DEC to EX
 	pc_ifc d2e_pc();
 	alu_input_ifc d2e_alu_input();
@@ -126,11 +130,17 @@ module mips_core (
 		.i_inst(i2d_inst),
 		.out(dec_decoder_output)
 	);
+	
+	register_Map_Table REGISTER_MAP_TABLE(
+		.decoded(dec_decoder_output),
 
+		.out(register_map_output),
+	);
+	
 	reg_file REG_FILE(
 		.clk,
 
-		.i_decoded(dec_decoder_output),
+		.i_decoded(register_map_output),
 		.i_wb(m2w_write_back), // WB stage
 
 		.out(dec_reg_file_output)

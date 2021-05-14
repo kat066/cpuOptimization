@@ -75,7 +75,7 @@ typedef enum logic [5:0] {
 	p60 = 6'd60,
 	p61 = 6'd61,
 	p62 = 6'd62,
-	p63 = 6'd63,
+	p63 = 6'd63
 } MipsReg;
 
 typedef enum logic [4:0] {
