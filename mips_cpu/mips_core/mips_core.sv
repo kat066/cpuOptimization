@@ -26,6 +26,16 @@ module mips_core (
 	localparam DEBUG = 0;
 
 	// Interfaces
+	//out of order
+	
+	//register map table
+	decoder_output_ifc register_map_output();
+	
+	//free list
+	logic free_list[64];
+
+	//instruction_queue
+	decoder_output_ifc instruction_issue_output();
 	// |||| IF Stage
 	pc_ifc if_pc_current();
 	pc_ifc if_pc_next();
@@ -42,9 +52,6 @@ module mips_core (
 	branch_decoded_ifc dec_branch_decoded();
 	alu_input_ifc dec_alu_input();
 	alu_pass_through_ifc dec_alu_pass_through();
-	
-	//register map table
-	decoder_output_ifc register_map_output();
 	
 	// ==== DEC to EX
 	pc_ifc d2e_pc();
@@ -133,18 +140,27 @@ module mips_core (
 	
 	register_Map_Table REGISTER_MAP_TABLE(
 		.decoded(dec_decoder_output),
-
 		.out(register_map_output),
+		.free_list_out(free_list)
 	);
+	
+	instruction_Queue INSTRUCTION_QUEUE(
+		.clk,
+		.free_list(free_list),
+		.decoded(dec_decoder_output),
+		.register (register_map_output),
+//		.out(instruction_issue_output)
+	);
+	
 	
 	reg_file REG_FILE(
 		.clk,
-
-		.i_decoded(register_map_output),
+		.i_decoded(dec_decoder_output),
 		.i_wb(m2w_write_back), // WB stage
 
 		.out(dec_reg_file_output)
 	);
+
 
 	forward_unit FORWARD_UNIT(
 		.decoded     (dec_decoder_output),

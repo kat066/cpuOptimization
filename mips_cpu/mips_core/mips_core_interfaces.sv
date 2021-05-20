@@ -103,7 +103,14 @@ interface hazard_control_ifc ();
 	modport out (output flush, stall);
 endinterface
 
+interface issue_ifc ();
+	logic issue;	// Write Enable
+	mips_core_pkg::MipsReg physical_addr[2];
+	logic [4 : 0] logical_address[2];
 
+	modport in  (input issue, physical_addr, logical_address);
+	modport out (input issue, physical_addr, logical_address);
+endinterface
 
 
 
