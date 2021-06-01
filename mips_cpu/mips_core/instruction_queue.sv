@@ -74,7 +74,8 @@ always_ff @(posedge clk) begin
 				Instr_Queue.is_sw[i]=decoded.is_sw;
 				Instr_Queue.valid_entry[i]=1;
 				Instr_Queue.ready[i]=(free_list[register.rs_addr] & free_list[register.rt_addr])?'b1:'b0;
-				Instr_Queue.active_List_Index[i]=0;
+				Instr_Queue.active_List_Index[i]=0;  //The active_List_Index should be based on where the corresponding 
+													 //entry is in the active list!
 				j=1;
 			end
 			else if(Instr_Queue.valid_entry[i] & Instr_Queue.ready[i]) begin

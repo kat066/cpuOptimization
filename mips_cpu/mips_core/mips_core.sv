@@ -146,10 +146,16 @@ module mips_core (
 	
 	instruction_Queue INSTRUCTION_QUEUE(
 		.clk,
-		.free_list(free_list),
+		.free_list(free_list),                 //Does this cause a double dependency?  
+											   //We might be better off calling the .free_list_out() of the REGISTER_MAP_TABLE 
+											   //something like "free_list_reg", and using that as the input to .free_list() of the 
+											   //INSTRUCTION_QUEUE.
+											   //
+											   //I'm worried that, as it, the synthesizer will connect the free_list in parallel, 
+											   //instead of in series.
 		.decoded(dec_decoder_output),
 		.register (register_map_output),
-//		.out(instruction_issue_output)
+//		.out(instruction_issue_output)		   //This should be connected to the REG_FILE and ALU...
 	);
 	
 	
