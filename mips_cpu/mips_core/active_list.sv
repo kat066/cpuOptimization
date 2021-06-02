@@ -6,8 +6,8 @@ interface active_List_ifc ();
 	logic [4 : 0] logical [32];
 	mips_core_pkg::MipsReg physical [32];
 	logic done [32];
-	logic [4 : 0]head ;
-	logic [4 : 0]tail ;
+	logic [4 : 0]head;
+	logic [4 : 0]tail;
 endinterface
 
 

@@ -1,9 +1,9 @@
 `include "mips_core.svh"
 
 interface instruction_Queue_ifc ();
-	logic valid_entry[32];
+	logic valid_entry[32];				//Valid bit of the instruction queue entry.
 	logic ready[32];
-	logic valid[32];
+	logic valid[32];					//Valid bit used for control signal of the MIPS CPU 
 	mips_core_pkg::AluCtl alu_ctl[32];
 	logic is_branch_jump[32];
 	logic is_jump[32];
@@ -37,16 +37,24 @@ endinterface
 module instruction_Queue (
 	input clk,
 	input free_list[64],
+	input [31:0] wr_tags,
 	decoder_output_ifc.in decoded,
 	decoder_output_ifc.in register,
-	decoder_output_ifc.out out
+	decoder_output_ifc.out out,
+	hazard_control_ifc.in hazard,
 );
 instruction_Queue_ifc Instr_Queue();
+
+logic continue_flushing;
 
 always_ff @(posedge clk) begin
 		
 		for(int i=0,j=0;i<32;i++) begin
-			if(~Instr_Queue.valid_entry[i] & ~j)begin
+			if ((hazard.flush & wr_tags[i]) | continue_flushing) begin
+				Instr_Queue.valid_entry[i] = 0;	
+				continue_flushing = 1;
+			end
+			if(~Instr_Queue.valid_entry[i] & ~j) begin
 				Instr_Queue.valid[i]=decoded.valid;
 				Instr_Queue.alu_ctl[i]=decoded.alu_ctl;
 				Instr_Queue.is_branch_jump[i]=decoded.is_branch_jump;
@@ -77,8 +85,9 @@ always_ff @(posedge clk) begin
 				Instr_Queue.active_List_Index[i]=0;  //The active_List_Index should be based on where the corresponding 
 													 //entry is in the active list!
 				j=1;
+				continue_flushing = 0;
 			end
-			else if(Instr_Queue.valid_entry[i] & Instr_Queue.ready[i]) begin
+			else if(Instr_Queue.valid_entry[i] & Instr_Queue.ready[i] & ~wr_tags[i]) begin
 				out.valid=Instr_Queue.valid[i];
 				out.alu_ctl=Instr_Queue.alu_ctl[i];
 				out.is_branch_jump=Instr_Queue.is_branch_jump[i];
