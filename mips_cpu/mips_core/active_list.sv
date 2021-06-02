@@ -30,14 +30,15 @@ module active_List(
 		end
 	end
 	
+	//When does o_wb.issue ever become 1'b1?
 	always_ff @(posedge clk or negedge rst_n)
 	begin
 		if(~rst_n)
-		begin
-			o_wb.issue <= 1'b0;
-			o_wb.physical_addr <= zero;
-			o_wb.logical_address <= 5'b0;
-		end
+			begin
+				o_wb.issue <= 1'b0;
+				o_wb.physical_addr <= zero;
+				o_wb.logical_address <= 5'b0;
+			end
 		else
 		begin
 			if (!i_hc.stall)
