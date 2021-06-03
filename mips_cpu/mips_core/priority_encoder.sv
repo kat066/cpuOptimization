@@ -13,8 +13,8 @@
  * module is uses, which is based on the value of the parameter "HIGH_PRIORITY".
  *
  */
-module priority_encoder #(parameter NUM_OF_INPUTS = 32, HIGH_PRIORITY = 1) (
-	input [NUM_OF_INPUTS-1:0] data_inputs,
+module priority_encoder #(parameter NUM_OF_INPUTS = 32, parameter HIGH_PRIORITY = 1) (
+	input data_inputs [NUM_OF_INPUTS-1:0] ,
 	output logic [$clog2(NUM_OF_INPUTS)-1:0] encoding_output
 );
 
@@ -42,12 +42,18 @@ generate											//The "generate" keyword tells Quartus to only synthesize the
 														//"i".  Since the priority_encoder priorities "high 'i'" input in this case, we say
 														//that it is a "High Priority Encoder."
 				end
+				else begin
+					encoding_output = encoding_output;
+				end
 			end	
 		end
 		else begin
 			for (i = NUM_OF_INPUTS; i >= 0; i--) begin
 				if (data_inputs[i]) begin				//This case is the inverse of the above, so we call it a "Low Priority Encoder."
 					encoding_output = i;
+				end
+				else begin
+					encoding_output = encoding_output;
 				end
 			end
 		end

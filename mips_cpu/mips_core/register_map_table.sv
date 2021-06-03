@@ -24,8 +24,9 @@ module register_Map_Table(
 register_Map_Table_ifc register_Map_Table();
 
 logic free_list[64];
+logic [5:0] free_list_index;
 
-
+priority_encoder #(.NUM_OF_INPUTS(64), .HIGH_PRIORITY(1)) encoder( .data_inputs(free_list), .encoding_output(free_list_index) );
 
 initial begin
 	for(int i=0; i<32; i++)begin
@@ -55,21 +56,8 @@ always_comb begin
 		out.rw_addr = mips_core_pkg::MipsReg'(0);
 	end
 	else begin
-		if(free_list[register_Map_Table.MapTable[decoded.rw_addr]]==0) begin  //If the physical register that maps to the logical register "decoded.rw_addr" is NOT free!
-			for(int i=0;i<64;i++)begin
-				if(free_list[i]==1) begin
-					free_list[i]=0;
-					out.rw_addr = mips_core_pkg::MipsReg'(i);
-					register_Map_Table.MapTable[decoded.rw_addr]=out.rw_addr;
-					break;
-				end
-			end
-			out.rw_addr = register_Map_Table.MapTable[decoded.rw_addr];
-		end
-		else begin
-			out.rw_addr = register_Map_Table.MapTable[decoded.rw_addr];
-			free_list[register_Map_Table.MapTable[decoded.rw_addr]] = 0;
-		end
+		out.rw_addr = register_Map_Table.MapTable[free_list_index];
+		free_list[free_list_index] = 0;
 	end
 
 	free_list_out = free_list;
