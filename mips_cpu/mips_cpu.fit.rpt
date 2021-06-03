@@ -1,5 +1,5 @@
 Fitter report for mips_cpu
-Tue Jun 01 15:38:15 2021
+Wed Jun 02 22:12:23 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -69,7 +69,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +---------------------------------+---------------------------------------------+
-; Fitter Status                   ; Successful - Tue Jun 01 15:38:15 2021       ;
+; Fitter Status                   ; Successful - Wed Jun 02 22:12:23 2021       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; mips_cpu                                    ;
 ; Top-level Entity Name           ; mips_cpu                                    ;
@@ -159,16 +159,16 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 12          ;
 ; Maximum allowed            ; 6           ;
 ;                            ;             ;
-; Average used               ; 1.21        ;
+; Average used               ; 1.20        ;
 ; Maximum used               ; 6           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   4.6%      ;
-;     Processor 3            ;   4.4%      ;
-;     Processor 4            ;   4.2%      ;
-;     Processor 5            ;   3.7%      ;
-;     Processor 6            ;   3.7%      ;
+;     Processor 2            ;   4.5%      ;
+;     Processor 3            ;   4.2%      ;
+;     Processor 4            ;   4.1%      ;
+;     Processor 5            ;   3.6%      ;
+;     Processor 6            ;   3.6%      ;
 +----------------------------+-------------+
 
 
@@ -2977,14 +2977,6 @@ Info (332111): Found 7 clocks
 Info (176233): Starting register packing
 Warning (176250): Ignoring invalid fast I/O register assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Warning (176251): Ignoring some wildcard destinations of fast I/O register assignments
-    Info (176252): Wildcard assignment "Fast Output Register=ON" to "m_data[13]" matches multiple destination nodes -- some destinations are not valid targets for this assignment
-    Info (176252): Wildcard assignment "Fast Output Register=ON" to "m_data[12]" matches multiple destination nodes -- some destinations are not valid targets for this assignment
-    Info (176252): Wildcard assignment "Fast Output Register=ON" to "m_data[11]" matches multiple destination nodes -- some destinations are not valid targets for this assignment
-    Info (176252): Wildcard assignment "Fast Output Register=ON" to "m_data[10]" matches multiple destination nodes -- some destinations are not valid targets for this assignment
-    Info (176252): Wildcard assignment "Fast Output Register=ON" to "m_data[0]" matches multiple destination nodes -- some destinations are not valid targets for this assignment
-    Info (176252): Wildcard assignment "Fast Output Register=ON" to "m_cmd[2]" matches multiple destination nodes -- some destinations are not valid targets for this assignment
-    Info (176252): Wildcard assignment "Fast Output Register=ON" to "m_cmd[1]" matches multiple destination nodes -- some destinations are not valid targets for this assignment
-    Info (176252): Wildcard assignment "Fast Output Register=ON" to "m_cmd[0]" matches multiple destination nodes -- some destinations are not valid targets for this assignment
     Info (176252): Wildcard assignment "Fast Output Enable Register=ON" to "oe" matches multiple destination nodes -- some destinations are not valid targets for this assignment
     Info (176252): Wildcard assignment "Fast Output Register=ON" to "m_data[9]" matches multiple destination nodes -- some destinations are not valid targets for this assignment
     Info (176252): Wildcard assignment "Fast Output Register=ON" to "m_data[8]" matches multiple destination nodes -- some destinations are not valid targets for this assignment
@@ -2997,12 +2989,20 @@ Warning (176251): Ignoring some wildcard destinations of fast I/O register assig
     Info (176252): Wildcard assignment "Fast Output Register=ON" to "m_data[1]" matches multiple destination nodes -- some destinations are not valid targets for this assignment
     Info (176252): Wildcard assignment "Fast Output Register=ON" to "m_data[15]" matches multiple destination nodes -- some destinations are not valid targets for this assignment
     Info (176252): Wildcard assignment "Fast Output Register=ON" to "m_data[14]" matches multiple destination nodes -- some destinations are not valid targets for this assignment
+    Info (176252): Wildcard assignment "Fast Output Register=ON" to "m_data[13]" matches multiple destination nodes -- some destinations are not valid targets for this assignment
+    Info (176252): Wildcard assignment "Fast Output Register=ON" to "m_data[12]" matches multiple destination nodes -- some destinations are not valid targets for this assignment
+    Info (176252): Wildcard assignment "Fast Output Register=ON" to "m_data[11]" matches multiple destination nodes -- some destinations are not valid targets for this assignment
+    Info (176252): Wildcard assignment "Fast Output Register=ON" to "m_data[10]" matches multiple destination nodes -- some destinations are not valid targets for this assignment
+    Info (176252): Wildcard assignment "Fast Output Register=ON" to "m_data[0]" matches multiple destination nodes -- some destinations are not valid targets for this assignment
+    Info (176252): Wildcard assignment "Fast Output Register=ON" to "m_cmd[2]" matches multiple destination nodes -- some destinations are not valid targets for this assignment
+    Info (176252): Wildcard assignment "Fast Output Register=ON" to "m_cmd[1]" matches multiple destination nodes -- some destinations are not valid targets for this assignment
+    Info (176252): Wildcard assignment "Fast Output Register=ON" to "m_cmd[0]" matches multiple destination nodes -- some destinations are not valid targets for this assignment
 Info (176235): Finished register packing
     Extra Info (176218): Packed 16 registers into blocks of type Block RAM
     Extra Info (176218): Packed 16 registers into blocks of type I/O input buffer
     Extra Info (176218): Packed 51 registers into blocks of type I/O output buffer
     Extra Info (176220): Created 34 register duplicates
-Info (11798): Fitter preparation operations ending: elapsed time is 00:00:14
+Info (11798): Fitter preparation operations ending: elapsed time is 00:00:15
 Info (170189): Fitter placement preparation operations beginning
 Info (14951): The Fitter is using Advanced Physical Optimization.
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:38
@@ -3014,8 +3014,8 @@ Info (170195): Router estimated average interconnect usage is 3% of the availabl
     Info (170196): Router estimated peak interconnect usage is 31% of the available device resources in the region that extends from location X45_Y0 to location X55_Y10
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:24
-Info (11888): Total time spent on timing analysis during the Fitter is 10.97 seconds.
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:23
+Info (11888): Total time spent on timing analysis during the Fitter is 10.70 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -3024,10 +3024,10 @@ Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:16
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Info (144001): Generated suppressed messages file C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_cpu.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 7151 megabytes
-    Info: Processing ended: Tue Jun 01 15:38:17 2021
-    Info: Elapsed time: 00:02:42
-    Info: Total CPU time (on all processors): 00:10:59
+    Info: Peak virtual memory: 7146 megabytes
+    Info: Processing ended: Wed Jun 02 22:12:25 2021
+    Info: Elapsed time: 00:02:43
+    Info: Total CPU time (on all processors): 00:10:51
 
 
 +----------------------------+

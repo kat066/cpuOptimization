@@ -44,6 +44,7 @@ module mips_core (
 	// ==== IF to DEC
 	pc_ifc i2d_pc();
 	cache_output_ifc i2d_inst();
+	pc_ifc d2q_pc();
 
 	// |||| DEC Stage
 	decoder_output_ifc dec_decoder_output();
@@ -135,7 +136,8 @@ module mips_core (
 	decoder DECODER(
 		.i_pc(i2d_pc),
 		.i_inst(i2d_inst),
-		.out(dec_decoder_output)
+		.out(dec_decoder_output),
+		.o_pc(d2q_pc)
 	);
 	
 	register_Map_Table REGISTER_MAP_TABLE(
@@ -155,6 +157,8 @@ module mips_core (
 											   //instead of in series.
 		.decoded(dec_decoder_output),
 		.register (register_map_output),
+		.hazard (i2d_hc),
+		.instruction_pc(d2q_pc)
 //		.out(instruction_issue_output)		   //This should be connected to the REG_FILE and ALU...
 	);
 	

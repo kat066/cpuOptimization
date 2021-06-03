@@ -1,4 +1,5 @@
 vendor_name = ModelSim
+source_file = 1, C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder.sv
 source_file = 1, C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/llsc_module.sv
 source_file = 1, C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/cache_bank.sv
 source_file = 1, C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/ip/sdr_sdram/sdr.v

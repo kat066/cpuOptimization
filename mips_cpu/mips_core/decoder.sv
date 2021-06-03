@@ -49,8 +49,10 @@ endinterface
 module decoder (
 	pc_ifc.in i_pc,
 	cache_output_ifc.in i_inst,
-	decoder_output_ifc.out out
+	decoder_output_ifc.out out,
+	pc_ifc.out o_pc							//ADDED CODE.
 );
+	assign o_pc.pc = i_pc.pc;				//ADDED CODE.
 
 	task uses_rs;
 		begin
