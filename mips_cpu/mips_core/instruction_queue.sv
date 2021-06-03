@@ -41,7 +41,7 @@ module instruction_Queue (
 	decoder_output_ifc.in decoded,
 	decoder_output_ifc.in register,
 	decoder_output_ifc.out out,
-	hazard_control_ifc.in hazard,
+	hazard_control_ifc.in hazard
 );
 instruction_Queue_ifc Instr_Queue();
 
