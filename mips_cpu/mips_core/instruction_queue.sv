@@ -45,15 +45,9 @@ module instruction_Queue (
 );
 instruction_Queue_ifc Instr_Queue();
 
-logic continue_flushing;
 
-always_ff @(posedge clk) begin
-		
+always_ff @(posedge clk) begin		
 		for(int i=0,j=0;i<32;i++) begin
-			if ((hazard.flush & wr_tags[i]) | continue_flushing) begin
-				Instr_Queue.valid_entry[i] = 0;	
-				continue_flushing = 1;
-			end
 			if(~Instr_Queue.valid_entry[i] & ~j) begin
 				Instr_Queue.valid[i]=decoded.valid;
 				Instr_Queue.alu_ctl[i]=decoded.alu_ctl;
@@ -85,7 +79,6 @@ always_ff @(posedge clk) begin
 				Instr_Queue.active_List_Index[i]=0;  //The active_List_Index should be based on where the corresponding 
 													 //entry is in the active list!
 				j=1;
-				continue_flushing = 0;
 			end
 			else if(Instr_Queue.valid_entry[i] & Instr_Queue.ready[i] & ~wr_tags[i]) begin
 				out.valid=Instr_Queue.valid[i];

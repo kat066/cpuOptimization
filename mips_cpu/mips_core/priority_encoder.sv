@@ -30,9 +30,9 @@ generate											//The "generate" keyword tells Quartus to only synthesize the
 													//That said, "generate" can only work if the conditions are based on parameters! This is 
 													//because parameters are constant at compile time!  If you try to do a "generate" condition based
 													//on a variable that can change, Quartus will give an error!
-	always_comb begin
+	always_latch begin
 		if (HIGH_PRIORITY) begin
-			for (i = 0; i < NUM_OF_INPUTS; i++) begin	
+			for (i = 0; i < NUM_OF_INPUTS; i = i + 1) begin	
 				if (data_inputs[i]) begin
 					encoding_output = i;				//If we ever have a case where there are more than one cases
 														//where "data_inputs[i] == 1", then the case where "i" is the highest
@@ -42,18 +42,12 @@ generate											//The "generate" keyword tells Quartus to only synthesize the
 														//"i".  Since the priority_encoder priorities "high 'i'" input in this case, we say
 														//that it is a "High Priority Encoder."
 				end
-				else begin
-					encoding_output = encoding_output;
-				end
 			end	
 		end
 		else begin
-			for (i = NUM_OF_INPUTS; i >= 0; i--) begin
+			for (i = NUM_OF_INPUTS; i >= 0; i = i - 1) begin
 				if (data_inputs[i]) begin				//This case is the inverse of the above, so we call it a "Low Priority Encoder."
 					encoding_output = i;
-				end
-				else begin
-					encoding_output = encoding_output;
 				end
 			end
 		end
@@ -67,5 +61,6 @@ generate											//The "generate" keyword tells Quartus to only synthesize the
 	
 	
 endgenerate
+
 
 endmodule
