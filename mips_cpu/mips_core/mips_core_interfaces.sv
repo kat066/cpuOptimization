@@ -22,6 +22,7 @@ interface pc_ifc ();
 
 	modport in  (input pc);
 	modport out (output pc);
+	modport in_out (inout pc);
 endinterface
 
 interface cache_output_ifc ();
