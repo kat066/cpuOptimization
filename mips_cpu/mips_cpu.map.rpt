@@ -1,5 +1,5 @@
 Analysis & Synthesis report for mips_cpu
-Wed Jun 02 22:09:41 2021
+Fri Jun 04 23:05:58 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -180,7 +180,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Jun 02 22:09:41 2021       ;
+; Analysis & Synthesis Status     ; Successful - Fri Jun 04 23:05:57 2021       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; mips_cpu                                    ;
 ; Top-level Entity Name           ; mips_cpu                                    ;
@@ -5803,7 +5803,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Wed Jun 02 22:09:11 2021
+    Info: Processing started: Fri Jun 04 23:05:26 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off mips_cpu -c mips_cpu
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -5972,9 +5972,12 @@ Info (12021): Found 3 design units, including 3 entities, in source file mips_co
     Info (12023): Found entity 3: register_Map_Table File: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/register_map_table.sv Line: 16
 Info (12021): Found 1 design units, including 1 entities, in source file mips_core/free_list.sv
     Info (12023): Found entity 1: free_List File: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/free_list.sv Line: 4
-Info (12021): Found 2 design units, including 2 entities, in source file mips_core/active_list.sv
-    Info (12023): Found entity 1: active_List_ifc File: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/active_list.sv Line: 4
-    Info (12023): Found entity 2: active_List File: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/active_list.sv Line: 14
+Info (12021): Found 4 design units, including 4 entities, in source file mips_core/active_list.sv
+    Info (12023): Found entity 1: active_List_ifc File: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/active_list.sv Line: 5
+    Info (12023): Found entity 2: active_List_Queue_ifc File: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/active_list.sv Line: 17
+    Info (12023): Found entity 3: active_List_Commit_ifc File: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/active_list.sv Line: 30
+    Info (12023): Found entity 4: active_List File: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/active_list.sv Line: 40
+Warning (10236): Verilog HDL Implicit Net warning at active_list.sv(61): created implicit net for "queue_valid" File: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/active_list.sv Line: 61
 Warning (10037): Verilog HDL or VHDL warning at sdram_sdram_controller.v(318): conditional expression evaluates to a constant File: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/synthesis/submodules/sdram_sdram_controller.v Line: 318
 Warning (10037): Verilog HDL or VHDL warning at sdram_sdram_controller.v(328): conditional expression evaluates to a constant File: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/synthesis/submodules/sdram_sdram_controller.v Line: 328
 Warning (10037): Verilog HDL or VHDL warning at sdram_sdram_controller.v(338): conditional expression evaluates to a constant File: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/synthesis/submodules/sdram_sdram_controller.v Line: 338
@@ -6948,11 +6951,11 @@ Info (21057): Implemented 7406 device resources after synthesis - the final reso
     Info (21061): Implemented 6897 logic cells
     Info (21064): Implemented 398 RAM segments
     Info (21065): Implemented 2 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 397 warnings
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 398 warnings
     Info: Peak virtual memory: 4958 megabytes
-    Info: Processing ended: Wed Jun 02 22:09:42 2021
-    Info: Elapsed time: 00:00:31
-    Info: Total CPU time (on all processors): 00:00:39
+    Info: Processing ended: Fri Jun 04 23:05:58 2021
+    Info: Elapsed time: 00:00:32
+    Info: Total CPU time (on all processors): 00:00:41
 
 
 +------------------------------------------+
