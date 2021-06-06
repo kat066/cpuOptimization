@@ -1,5 +1,5 @@
 Flow report for mips_cpu
-Sat Jun 05 22:57:21 2021
+Sat Jun 05 23:49:33 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Sat Jun 05 22:57:21 2021       ;
+; Flow Status                     ; Successful - Sat Jun 05 23:49:33 2021       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; mips_cpu                                    ;
 ; Top-level Entity Name           ; mips_cpu                                    ;
@@ -68,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 06/05/2021 22:51:33 ;
+; Start date & time ; 06/05/2021 23:45:43 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; mips_cpu            ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+------------------------------------------------------------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                                                                    ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+------------------------------------------------------------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 1097618172084.162295869203444                                                            ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 153951939052517.162296194217548                                                          ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Systemverilog Hdl                                                                        ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (SystemVerilog)                                                          ; <None>        ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                                                                       ; --            ; --          ; --             ;
@@ -144,12 +144,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:34     ; 1.0                     ; 5010 MB             ; 00:00:43                           ;
-; Fitter               ; 00:04:40     ; 1.3                     ; 8103 MB             ; 00:31:37                           ;
-; Assembler            ; 00:00:10     ; 1.0                     ; 4893 MB             ; 00:00:08                           ;
-; Timing Analyzer      ; 00:00:14     ; 3.9                     ; 5559 MB             ; 00:00:41                           ;
-; EDA Netlist Writer   ; 00:00:04     ; 1.0                     ; 4958 MB             ; 00:00:04                           ;
-; Total                ; 00:05:42     ; --                      ; --                  ; 00:33:13                           ;
+; Analysis & Synthesis ; 00:00:30     ; 1.0                     ; 4963 MB             ; 00:00:39                           ;
+; Fitter               ; 00:02:45     ; 1.2                     ; 7144 MB             ; 00:11:02                           ;
+; Assembler            ; 00:00:10     ; 1.0                     ; 4888 MB             ; 00:00:08                           ;
+; Timing Analyzer      ; 00:00:14     ; 2.5                     ; 5439 MB             ; 00:00:33                           ;
+; EDA Netlist Writer   ; 00:00:04     ; 1.0                     ; 4962 MB             ; 00:00:03                           ;
+; Total                ; 00:03:43     ; --                      ; --                  ; 00:12:25                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -158,11 +158,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; DESKTOP-76TS3RK  ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; DESKTOP-76TS3RK  ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; DESKTOP-76TS3RK  ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; DESKTOP-76TS3RK  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-76TS3RK  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; DESKTOP-V8BP945  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; DESKTOP-V8BP945  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; DESKTOP-V8BP945  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; DESKTOP-V8BP945  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-V8BP945  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
