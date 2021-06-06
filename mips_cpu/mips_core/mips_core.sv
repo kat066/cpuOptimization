@@ -160,9 +160,9 @@ module mips_core (
 		.decoded(dec_decoder_output),
 		.register (register_map_output),
 		.hazard (i2d_hc),
-		.instruction_pc(d2q_pc)
-		.out(instruction_issue_output)		   //This should be connected to the REG_FILE and ALU...
-		.issued_instruction_ID(issued_instruction_ID);
+		.instruction_pc(d2q_pc),
+		.out(instruction_issue_output),		   //This should be connected to the REG_FILE and ALU...
+		.issued_instruction_ID(issued_instruction_ID)
 	);
 	
 	
