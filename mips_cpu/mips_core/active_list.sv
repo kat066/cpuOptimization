@@ -139,6 +139,9 @@ interface active_List_Data_Queue_ifc ();
 																					//List's Mapping Table in O(1) time.
 endinterface
 
+
+
+
 /* This is the interface for the Active List's Commit Logic.
  *
  * The interface contains all the information that needs to be 
@@ -150,8 +153,10 @@ endinterface
  *			into the Register File (if that's where the instruction's destination is)!
  *		A Main Memory address, which is used to write the result data into
  *			Main Memory (if that's where the instruction's destination is)!
- *		And a bit flag that is used to signal whether or not the data will be written 
- *			into the Register File or Main Memory.
+ *		A bit flag that is used to signal whether or not the data will be written 
+ *			into the Register File,
+ *		And a bit flag that is used to signal whether or not the data will be written
+ *			into Main Memory.
  */
 interface active_List_Commit_ifc ();
 	mips_core_pkg::MipsReg reg_addr;				//The physical register address of where the result data 
@@ -160,115 +165,172 @@ interface active_List_Commit_ifc ();
 	logic [31 : 0] memory_addr;						//The Main Memory address of where the result data that'safely
 													//being committed should go.
 													
-	logic Reg_Mem_Flag;								//A bit flag to signal whether or not the data be written in 
-													//the Register File, or Main Memory.
-													//
-													//(1 for Register File, 0 for Main Memory).
+	logic [`DATA_WIDTH - 1 : 0] result_data;		//The result data that will actually be written into either the 
+													//Register File, or Main Memory.
 	
-	modport out (output reg_addr, memory_addr, Reg_Mem_Flag);
+	logic Reg_WR_EN;								//Write Enable signal of a commit for the Register File. 
+													//
+													//(1 if the commit is for the Register File, 0 if it is for Main Memory).
+	
+	logic Mem_WR_EN;								//Write Enable signal of a commit for Main Memory.
+													//
+													//(1 if the commit is for Main Memory, 0 if it is for the Register File).
+	
+	modport out (output reg_addr, memory_addr, result_data, Reg_WR_EN, Mem_WR_EN);
 endinterface
+
+
+
 
 
 module active_List(
 	input clk,    // Clock
 	input rst_n,  // Asynchronous reset active low
+	
 	input advance_head,				//Signal sent by either RegFile or Memory whenever they are done writing data.
 	input add_mapping,				//Signal sent by Register Mapping Table whenever they output data to the Active List.
 
-	hazard_control_ifc.in i_hc,
+	hazard_control_ifc.in i_hc,		//Hazard Controls containing the flush and stall signals.
 
-	register_Map_Table_Pairing_ifc.in i_wb,
-	register_Map_Table_Pairing_ifc.out o_wb,
-	register_Map_Table_Pairing_ifc.out flush_map_pairing,
+	register_Map_Table_Pairing_ifc.in i_map_pairing,		 			//Input map pairing to be added to the Active List's Mapping Table.
+	register_Map_Table_Pairing_ifc.out flush_map_pairing,				//Output map pairing that is sent to the Register Map Table when a flush occurs.
 	
-	active_List_Commit_ifc.out active_Commit
+	active_List_Commit_ifc.out active_Commit							//Output data that is sent to the Register File and/or Main Memory, in order to
+																		//actually commit the data!
 );
-	active_List_Mapping_Table active_List();
-	active_List_Queue_ifc active_Queue();
+
+	active_List_Mapping_Table act_List();
+	active_List_Queue_ifc act_Queue();
 	
-	logic [$clog2(`ACTIVE_LIST_QUEUE_WIDTH)-1:0] queue_encoder_index;
-	
-	
+	logic [$clog2(`ACTIVE_LIST_QUEUE_WIDTH)-1:0] next_queue_slot_index;
 	priority_encoder #(.NUM_OF_INPUTS(`ACTIVE_LIST_QUEUE_WIDTH), .HIGH_PRIORITY(0), .SIGNAL(1)) 
-		queue_encoder( .data_inputs(queue_valid), .encoding_output(queue_encoder_index) );
+		queue_encoder( .data_inputs(queue_valid), .encoding_output(next_queue_slot_index) );
 	
-	logic queue_post_commit_index; 			//Queue index for the entry of the registers that was just committed!
 	logic flush_in_progress;
 	
 	initial begin
-		active_List.head = 5'b0;
-		active_List.tail = 5'b0;
-		active_List.done = 0;
+		act_List.head = 5'b0;
+		act_List.tail = 5'b0;
+		act_List.done = 0;
 		
 		flush_in_progress = 1'b0;
+		
+		flush_map_pairing.prev_physical_reg <= mips_core_pkg::MipsReg'(0);
+		flush_map_pairing.prev_logical_reg  <= mips_core_pkg::MipsReg'(0);
+		
+		active_Commit.reg_addr      <= mips_core_pkg::MipsReg'(0);
+		active_Commit.memory_addr   <= 0;
+		active_Commit.result_data   <= 0;
+		active_Commit.Reg_WR_EN  	<= 1'b0;
+		active_Commit.Mem_WR_EN 	<= 1'b0;
 	end
 
-	//Active List Queue Logic
+	//Active List Data Queue Logic
 	always_ff @(posedge clk or negedge rst_n) begin
 		if (~rst_n) begin
 			for (int i = 0; i < `ACTIVE_LIST_QUEUE_WIDTH; i++) begin 
-				active_Queue.result_data[i] 	  	 	 <= 0;
-				active_Queue.result_physical_addr_reg[i] <= 0;
-				active_Queue.result_mem_addr[i]			 <= 0;
-				active_Queue.active_list_tag[i]      	 <= 0;		
-				active_Queue.queue_valid[i] 		 	 <= 1;
+				act_Queue.result_data[i] 	  	 	  	 <= 0;
+				act_Queue.result_physical_addr_reg[i] 	 <= 0;
+				act_Queue.result_mem_addr[i]			 <= 0;
+				act_Queue.act_List_tag[i]      	 	 	 <= 0;		
+				act_Queue.queue_valid[i] 		 	 	 <= 1;
 			end
 		end
-		else if (advance_head) begin
-			//Look at the Active List "head," and find its "index in queue."
-			//Then, set "active_Queue.queue_valid[tag_of_queue_entry] <= 1'b1."
-		end
-		else begin
-			active_Queue.result_data[queue_encoder_index] 		   	   <= active_Queue.new_result_data;
-			active_Queue.result_physical_addr_reg[queue_encoder_index] <= active_Queue.new_result_physical_addr_reg;
-			active_Queue.result_mem_addr[queue_encoder_index]          <= active_Queue.new_result_mem_addr;
-			active_Queue.active_list_tag[queue_encoder_index] 	   	   <= active_Queue.new_active_list_tag;
-			active_Queue.queue_valid[queue_encoder_index] 		   	   <= 1'b0;
-			
-			//Search Active List and find the entry with the tag, "active_Queue.new_active_list_tag."
-			//Set that entry's "tag_of_queue_entry" to "queue_encoder_index."
+		
+		//When the Active List Data Queue gets a signal from either the Register File or 
+		//Main Memory, which signals that the result data has been written, change the valid bit
+		//of the entry associated with that result data from 0 to 1.
+		//
+		//That entry can be found using the "tag_of_queue_entry" from the "head" of the Active List's 
+		//Mapping Table.
+		else if (advance_head) act_Queue.queue_valid[ act_List.tag_of_queue_entry[act_List.head] ] <= 1'b1;
+		
+		//Otherwise, if a flush is not happening, add incoming data from the "Write Back" stage into the Active List's Data Queue.
+		else if (~(i_hc.flush | flush_in_progress))begin
+			act_Queue.result_data[next_queue_slot_index] 		   	   <= act_Queue.new_result_data;
+			act_Queue.result_physical_addr_reg[next_queue_slot_index]  <= act_Queue.new_result_physical_addr_reg;
+			act_Queue.result_mem_addr[next_queue_slot_index]           <= act_Queue.new_result_mem_addr;
+			act_Queue.act_List_tag[next_queue_slot_index] 	   	       <= act_Queue.new_act_List_tag;
+			act_Queue.queue_valid[next_queue_slot_index] 		   	   <= 1'b0;
+
+			//Find the entry in the Active List's Mapping Table that is associated with the result data
+			//that is being entered into the Active List's Data Queue.  Set that entry's "tag_of_queue_entry" 
+			//equal to "next_queue_slot_index."  This is the index of where the new entry is being added into the queue!
+			act_List.tag_of_queue_entry[ act_Queue.new_act_List_tag ]  <= next_queue_slot_index;
 		end
 	end
 
 
-	//Active List Logic
+	//Active List Mapping Table and Active List Committing Logic
 	always_ff @(posedge clk or negedge rst_n) begin
 		if (~rst_n) begin
-			active_List.head 	   <= 5'b0;
-			active_List.tail	   <= 5'b0;
-			active_List.done 	   <= 0;
-			active_List.reg_or_mem <= 1;			
-			active_List.physical   <= mips_core_pkg::MipsReg'(0);
-			active_List.logical    <= mips_core_pkg::MipsReg'(0);
+			act_List.head 	    <= 5'b0;
+			act_List.tail	    <= 5'b0;
+			act_List.done 	    <= 0;
+			act_List.reg_or_mem <= 1;			
+			act_List.physical   <= mips_core_pkg::MipsReg'(0);
+			act_List.logical    <= mips_core_pkg::MipsReg'(0);
 
-			o_wb.prev_physical_reg <= mips_core_pkg::MipsReg'(0);
-			o_wb.prev_logical_reg  <= mips_core_pkg::MipsReg'(0);
+			flush_map_pairing.prev_physical_reg <= mips_core_pkg::MipsReg'(0);
+			flush_map_pairing.prev_logical_reg  <= mips_core_pkg::MipsReg'(0);
 			
 			active_Commit.reg_addr      <= mips_core_pkg::MipsReg'(0);
 			active_Commit.memory_addr   <= 0;
-			active_Commit.Reg_Mem_Flag  <= 1'b0;
+			active_Commit.result_data   <= 0;
+			active_Commit.Reg_WR_EN  	<= 1'b0;
+			active_Commit.Mem_WR_EN 	<= 1'b0;
 		end
-		if (i_hc.flush || flush_in_progress) begin
-			flush_in_progress <= 1'b1;
+		
+		//If a flush signal has been recieved, "lock down" the Active List.
+		//This is done by setting "flush_in_progress" to 1.
+		if (i_hc.flush) flush_in_progress <= 1'b1;
+		
+		//While a flush is occurring, send back map pairings to the Register Map Table,
+		//so it can reset its mapping, and de-increment the "tail" index for the 
+		//Active List's Mapping Table.
+		//
+		//All valid mappings will have been sent when "head" == "tail".  When that 
+		//happens, release the "lock down" by setting "flush_in_progress" to 0.
+		if (flush_in_progress) begin					
+			if (act_List.head == act_List.tail) flush_in_progress <= 1'b0;
 			
-			//"Lock down" Active List, and begin sending back map pairings to 
-			//the map table, so it can reset its mapping.
+			flush_map_pairing.prev_physical_reg <= act_List.physical[ act_List.tail ];
+			flush_map_pairing.prev_logical_reg  <= act_List.logical[ act_List.tail ];
+			
+			act_List.tail <= (act_List.tail == 0) ? act_List.tail <= 5'b11111 : act_List.tail <= act_List.tail - 1;
+		end
+		
+		//If a flush is not in progress...
+		else begin
+			//If the Active List's Mapping Table gets a signal from the Register Mapping table to add a new 
+			//mapping, add it into the slot pointed to by the "tail" index, and then increment the 
+			//"tail" index.
 			//
-			//The Active List will be done when "head" == "tail".  When that happens,
-			//release the "lock down."
-		end
-		else if (add_mapping) begin
-			active_List.physical[active_List.tail] <= i_wb.prev_physical_reg;
-			active_List.logical[active_List.tail]  <= i_wb.prev_logical_reg;
-			active_List.done[active_List.tail]	   <= 1'b0;
+			//(We should add an output signal to the Register Map Table that is sent to the Active List
+			// for this purpose!)
+			if (add_mapping) begin
+				act_List.physical[act_List.tail]   <= i_map_pairing.prev_physical_reg;
+				act_List.logical[act_List.tail]    <= i_map_pairing.prev_logical_reg;
+				act_List.done[act_List.tail]	   <= 1'b0;
+				
+				act_List.tail 					   <= (act_List.tail + 1) % 32;
+			end
 			
-			active_List.tail 					   <= (active_List.tail + 1) % 32;
-		end
-		if (active_List.done[active_List.head]) begin
-			//Send data to Reg File or Memory to be written.  
-		end
-		if (advance_head) begin
-			active_List.head = (active_List.head + 1) % 32;
+			//If the mapping entry pointed to by the "head" index has its done bit set to 1, send the 
+			//relevant data to be committed either by the Register File or Main Memory.  This is done 
+			//by filling out the "active_Commit" interface, which will then be sent to both Register File and
+			//Main Memory.  
+			if (act_List.done[act_List.head]) begin
+				active_Commit.reg_addr		<= act_List.physical[act_List.head];
+				active_Commit.memory_addr   <= act_List.mem_addr[act_List.head];
+				active_Commit.result_data   <= act_Queue.result_data[ act_List.tag_of_queue_entry[act_List.head] ];
+				active_Commit.Reg_WR_EN		<= act_Queue.reg_or_mem[ act_List.tag_of_queue_entry[act_List.head] ];
+				active_Commit.Mem_WR_EN		<= ~act_Queue.reg_or_mem[ act_List.tag_of_queue_entry[act_List.head] ];
+			end
+			
+			//If the Register File or Main Memory sends a signal to the Active List's Mapping Table that the result 
+			//data has be written, advance the "head" pointer by 1.
+			if (advance_head) act_List.head <= (act_List.head + 1) % 32;		
 		end
 	end
 endmodule
