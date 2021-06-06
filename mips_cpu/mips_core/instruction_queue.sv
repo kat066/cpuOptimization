@@ -36,16 +36,17 @@ endinterface
 
 module instruction_Queue (
 	input clk,
+	input rst_n,
 	input free_list[64],
 	input active_list_end_flush_signal,		//Current name for a signal that the Active List sends to other modules to tell them
 											//that it is done flushing (and remappping).
 											
-	input [`ADDR_WIDTH-1:0]flushed_instruction_ID;
+	input [`ADDR_WIDTH-1:0]flushed_instruction_ID,
 	decoder_output_ifc.in decoded,
 	decoder_output_ifc.in register,
 	hazard_control_ifc.in hazard,
 	decoder_output_ifc.out out,
-	output logic [`ADDR_WIDTH-1:0] issued_instruction_ID;
+	output logic [`ADDR_WIDTH-1:0] issued_instruction_ID
 	
 
 );
@@ -107,9 +108,9 @@ always_ff @(posedge clk) begin
 	 */
 	if (~rst_n) begin
 		for(int i = 0; i < 32;i++) begin
-			Instr_Queue.valid_entry[i] = 1'b0;
+			Instr_Queue.valid_entry[i] <= 1'b0;
 		end
-		next_ID = 32'b0;
+		next_ID <= 32'b0;
 	end
 	else begin
 		if (hazard.flush) block_queue_from_adding <= 1;
@@ -145,10 +146,11 @@ always_ff @(posedge clk) begin
 			
 			Instr_Queue.valid_entry[valid_entry_index]		 <= 1;
 			Instr_Queue.ready[valid_entry_index] 	   		 <= (free_list[register.rs_addr] & free_list[register.rt_addr]) ? 'b1 : 'b0;
-			Instr_Queue.active_List_Index[valid_entry_index] <= 0;  //The active_List_Index should be based on where the corresponding 
-																	//entry is in the active list!
-			Instr_Queue.instruction_ID[valid_entry_index]	<= next_ID;
-			next_ID <= next_ID + 1；
+			Instr_Queue.active_List_Index[valid_entry_index] <= 0;
+			//Instr_Queue.instruction_ID[valid_entry_index] <= next_ID;
+			//next_ID <= next_ID + 1；
+			Instr_Queue.instruction_ID[valid_entry_index] <= next_ID;
+			next_ID <= next_ID + 1;
 													
 		end
 
