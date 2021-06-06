@@ -36,6 +36,8 @@ module mips_core (
 
 	//instruction_queue
 	decoder_output_ifc instruction_issue_output();
+	logic [`ADDR_WIDTH-1:0] issued_instruction_ID;
+	
 	// |||| IF Stage
 	pc_ifc if_pc_current();
 	pc_ifc if_pc_next();
@@ -159,7 +161,8 @@ module mips_core (
 		.register (register_map_output),
 		.hazard (i2d_hc),
 		.instruction_pc(d2q_pc)
-//		.out(instruction_issue_output)		   //This should be connected to the REG_FILE and ALU...
+		.out(instruction_issue_output)		   //This should be connected to the REG_FILE and ALU...
+		.issued_instruction_ID(issued_instruction_ID);
 	);
 	
 	
