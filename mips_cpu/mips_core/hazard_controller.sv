@@ -33,8 +33,8 @@ module hazard_controller (
 	hazard_control_ifc.out i2i_hc,
 	hazard_control_ifc.out i2d_hc,
 	hazard_control_ifc.out d2e_hc,
-	hazard_control_ifc.out e2i_hc,
-	hazard_control_ifc.out i2m_hc,
+	hazard_control_ifc.out d2is_hc,
+	hazard_control_ifc.out is2e_hc,
 	hazard_control_ifc.out e2m_hc,
 	hazard_control_ifc.out m2w_hc,
 

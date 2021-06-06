@@ -87,6 +87,8 @@ module mips_core (
 	hazard_control_ifc i2i_hc();
 	hazard_control_ifc i2d_hc();
 	hazard_control_ifc d2e_hc();
+	hazard_control_ifc d2is_hc(),
+	hazard_control_ifc is2e_hc(),
 	hazard_control_ifc e2m_hc();
 	hazard_control_ifc m2w_hc();
 	load_pc_ifc load_pc();
@@ -142,6 +144,9 @@ module mips_core (
 		.o_pc(d2q_pc)
 	);
 	
+	// ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+	// |||| ISSUE Stage
+	// ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 	register_Map_Table REGISTER_MAP_TABLE(
 		.decoded(dec_decoder_output),
 		.out(register_map_output),
@@ -160,7 +165,7 @@ module mips_core (
 											   //instead of in series.
 		.decoded(dec_decoder_output),
 		.register (register_map_output),
-		.hazard (i2d_hc),
+		.hazard (d2is_hc),
 		.out(instruction_issue_output),		   //This should be connected to the REG_FILE and ALU...
 		.issued_instruction_ID(issued_instruction_ID)
 	);
