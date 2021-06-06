@@ -1,5 +1,5 @@
 EDA Netlist Writer report for mips_cpu
-Wed Jun 02 22:12:56 2021
+Sat Jun 05 22:57:21 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Wed Jun 02 22:12:56 2021 ;
+; EDA Netlist Writer Status ; Successful - Sat Jun 05 22:57:21 2021 ;
 ; Revision Name             ; mips_cpu                              ;
 ; Top-level Entity Name     ; mips_cpu                              ;
 ; Family                    ; Cyclone V                             ;
@@ -67,13 +67,13 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------------------------------+---------------------------------+
 
 
-+------------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                               ;
-+------------------------------------------------------------------------------------------+
-; Generated Files                                                                          ;
-+------------------------------------------------------------------------------------------+
-; C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/simulation/modelsim/mips_cpu.svo ;
-+------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------+
+; Simulation Generated Files                                                     ;
++--------------------------------------------------------------------------------+
+; Generated Files                                                                ;
++--------------------------------------------------------------------------------+
+; C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/simulation/modelsim/mips_cpu.svo ;
++--------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -82,15 +82,15 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Wed Jun 02 22:12:53 2021
+    Info: Processing started: Sat Jun 05 22:57:17 2021
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off mips_cpu -c mips_cpu
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Warning (10905): Generated the EDA functional simulation netlist because it is the only supported netlist type for this device.
-Info (204019): Generated file mips_cpu.svo in folder "C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file mips_cpu.svo in folder "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/simulation/modelsim/" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4962 megabytes
-    Info: Processing ended: Wed Jun 02 22:12:57 2021
+    Info: Peak virtual memory: 4958 megabytes
+    Info: Processing ended: Sat Jun 05 22:57:21 2021
     Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:03
+    Info: Total CPU time (on all processors): 00:00:04
 
 

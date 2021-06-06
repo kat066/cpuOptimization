@@ -36,6 +36,7 @@ endinterface
 
 module instruction_Queue (
 	input clk,
+	input	rst_n,
 	input free_list[64],
 	input active_list_end_flush_signal,		//Current name for a signal that the Active List sends to other modules to tell them
 											//that it is done flushing (and remappping).
@@ -148,7 +149,7 @@ always_ff @(posedge clk) begin
 			Instr_Queue.active_List_Index[valid_entry_index] <= 0;  //The active_List_Index should be based on where the corresponding 
 																	//entry is in the active list!
 			Instr_Queue.instruction_ID[valid_entry_index]	<= next_ID;
-			next_ID <= next_ID + 1；			
+			next_ID <= next_ID + `ADDR_WIDTH'd1;
 		end
 
 		/* Now, even though we cannot ADD new instructions into the Instr_Queue while
@@ -188,9 +189,9 @@ always_ff @(posedge clk) begin
 		 * from the queue.
 		 */
 		for (int i = 0; i < 32; i++) if ((flushed_instruction_ID < Instr_Queue.instruction_ID[i]) && hazard.flush) Instr_Queue.valid_entry[i] <= 0;
-		end
 	end
-	
+end
+
 
 
 
