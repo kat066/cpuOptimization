@@ -30,13 +30,22 @@ module mips_core (
 	
 	//register map table
 	decoder_output_ifc register_map_output();
-	
+	register_Map_Table_Pairing_ifc previous_register_mapping();
+
 	//free list
 	logic free_list[64];
 
 	//instruction_queue
 	decoder_output_ifc instruction_issue_output();
 	logic [`ADDR_WIDTH-1:0] issued_instruction_ID;
+	logic [`ADDR_WIDTH-1:0]	wb_instruction_ID;
+	
+	//active_list
+	logic wb;
+	logic active_list_flush_in_progress;
+	register_Map_Table_Pairing_ifc flushed_register_mapping();
+	active_List_Commit_ifc active_Commit();
+	logic [31 : 0] new_result_mem_addr;
 	
 	// |||| IF Stage
 	pc_ifc if_pc_current();
@@ -86,9 +95,8 @@ module mips_core (
 	logic lw_hazard;
 	hazard_control_ifc i2i_hc();
 	hazard_control_ifc i2d_hc();
-	hazard_control_ifc d2e_hc();
-	hazard_control_ifc d2is_hc(),
-	hazard_control_ifc is2e_hc(),
+	hazard_control_ifc d2is_hc();
+	hazard_control_ifc is2e_hc();
 	hazard_control_ifc e2m_hc();
 	hazard_control_ifc m2w_hc();
 	load_pc_ifc load_pc();
@@ -148,9 +156,11 @@ module mips_core (
 	// |||| ISSUE Stage
 	// ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 	register_Map_Table REGISTER_MAP_TABLE(
+		.free_register(active_Commit.reg_addr),
 		.decoded(dec_decoder_output),
 		.out(register_map_output),
-		.free_list_out(free_list)
+		.free_list_out(free_list),
+		.previous_register_mapping
 	);
 	
 	instruction_Queue INSTRUCTION_QUEUE(
@@ -163,19 +173,32 @@ module mips_core (
 											   //
 											   //I'm worried that, as it, the synthesizer will connect the free_list in parallel, 
 											   //instead of in series.
+		.flushed_instruction_ID(wb_instruction_ID),
 		.decoded(dec_decoder_output),
 		.register (register_map_output),
-		.hazard (d2is_hc),
+		.i_hc (d2is_hc),
 		.out(instruction_issue_output),		   //This should be connected to the REG_FILE and ALU...
 		.issued_instruction_ID(issued_instruction_ID)
 	);
-	
+	active_List ACTIVE_LIST(
+		.clk,
+		.rst_n,
+		.wb,
+		.new_result_mem_addr,
+		.wb_instruction_ID(wb_instruction_ID),
+		.register(register_map_output),
+		.i_hc(d2is_hc),
+		.i_wb(m2w_write_back),
+		.i_map_pairing(previous_register_mapping),		 			//Input map pairing to be added to the Active List's Mapping Table.
+		.flush_map_pairing(flushed_register_mapping),				//Output map pairing that is sent to the Register Map Table when a flush occurs.
+		.active_list_flush_in_progress(active_list_flush_in_progress),
+		.active_Commit
+	);
 	
 	reg_file REG_FILE(
 		.clk,
-		.i_decoded(dec_decoder_output),
-		.i_wb(m2w_write_back), // WB stage
-
+		.i_decoded(register_map_output),
+		.i_wb(active_Commit), // WB stage
 		.out(dec_reg_file_output)
 	);
 
@@ -196,11 +219,12 @@ module mips_core (
 	decode_stage_glue DEC_STAGE_GLUE(
 		.i_decoded          (dec_decoder_output),
 		.i_reg_data         (dec_forward_unit_output),
-
+		.issued_instruction_ID,
 		.branch_decoded     (dec_branch_decoded),
-
 		.o_alu_input        (dec_alu_input),
-		.o_alu_pass_through (dec_alu_pass_through)
+		.o_alu_pass_through (dec_alu_pass_through),
+		.wb,
+		.wb_instruction_ID
 	);
 
 	// ========================================================================
@@ -208,7 +232,7 @@ module mips_core (
 	// ========================================================================
 	pr_d2e PR_D2E(
 		.clk, .rst_n,
-		.i_hc(d2e_hc),
+		.i_hc(is2e_hc),
 
 		.i_pc(i2d_pc), .o_pc(d2e_pc),
 
@@ -304,7 +328,6 @@ module mips_core (
 	// xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 	hazard_controller HAZARD_CONTROLLER (
 		.clk, .rst_n,
-
 		.if_i_cache_output,
 		.dec_pc(i2d_pc),
 		.dec_branch_decoded,
@@ -312,10 +335,10 @@ module mips_core (
 		.lw_hazard,
 		.ex_branch_result,
 		.mem_done,
-
+		.active_list_flush_in_progress,
 		.i2i_hc,
 		.i2d_hc,
-		.d2e_hc,
+		.is2e_hc,
 		.e2m_hc,
 		.m2w_hc,
 		.load_pc
@@ -359,7 +382,7 @@ module mips_core (
 			 * nop, we count it as an instruction we executed.
 			 */
 			if (!i2d_hc.stall
-				&& !d2e_hc.flush
+				&& !is2e_hc.flush
 				&& dec_decoder_output.valid
 				&& i2d_inst.data)
 			begin

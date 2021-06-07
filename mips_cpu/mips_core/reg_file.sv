@@ -28,7 +28,7 @@ module reg_file (
 	decoder_output_ifc.in i_decoded,
 
 	// Input from write back stage
-	write_back_ifc.in i_wb,
+	active_List_Commit_ifc.in i_wb,
 
 	// Output data
 	reg_file_output_ifc.out out
@@ -40,9 +40,9 @@ module reg_file (
 	assign out.rt_data = i_decoded.uses_rt ? regs[i_decoded.rt_addr] : '0;
 
 	always_ff @(posedge clk) begin
-		if(i_wb.uses_rw)
+		if(i_wb.Reg_WR_EN)
 		begin
-			regs[i_wb.rw_addr] = i_wb.rw_data;
+			regs[i_wb.reg_addr] = i_wb.result_data;
 		end
 	end
 

@@ -16,9 +16,11 @@ endinterface
 module register_Map_Table(
 	
 	decoder_output_ifc.in decoded,
+	input mips_core_pkg::MipsReg free_register,
 	decoder_output_ifc.out out,
 	register_Map_Table_Pairing_ifc.out active_list_data,
-	output free_list_out[64]
+	output free_list_out[64],
+	register_Map_Table_Pairing_ifc.out previous_register_mapping
 	
 );
 register_Map_Table_ifc register_Map_Table();
@@ -44,6 +46,7 @@ assign out.uses_rt = decoded.uses_rt;
 assign out.uses_rw = decoded.uses_rw;
 
 always_comb begin
+	free_list[free_register] = 1;
 	out.rs_addr=decoded.uses_rs ? register_Map_Table.MapTable[decoded.rs_addr] : mips_core_pkg::MipsReg'(0);
 	out.rt_addr=decoded.uses_rt ? register_Map_Table.MapTable[decoded.rt_addr] : mips_core_pkg::MipsReg'(0);  //Register addresses are physical addresses.
 	

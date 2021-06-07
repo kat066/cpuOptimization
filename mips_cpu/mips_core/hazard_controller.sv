@@ -16,7 +16,6 @@
 module hazard_controller (
 	input clk,    // Clock
 	input rst_n,  // Asynchronous reset active low
-
 	// Feedback from IF
 	cache_output_ifc.in if_i_cache_output,
 	// Feedback from DEC
@@ -28,11 +27,11 @@ module hazard_controller (
 	branch_result_ifc.in ex_branch_result,
 	// Feedback from MEM
 	input mem_done,
+	input active_list_flush_in_progress,
 
 	// Hazard control output
 	hazard_control_ifc.out i2i_hc,
 	hazard_control_ifc.out i2d_hc,
-	hazard_control_ifc.out d2e_hc,
 	hazard_control_ifc.out d2is_hc,
 	hazard_control_ifc.out is2e_hc,
 	hazard_control_ifc.out e2m_hc,
@@ -57,7 +56,7 @@ module hazard_controller (
 	logic ex_overload;		// Branch prediction wrong
 	//    lw_hazard;		// Load word hazard (input from forward unit)
 	logic dc_miss;			// D cache miss
-
+	logic active_list_flush;
 	// Determine if we have these hazards
 	always_comb
 	begin
@@ -70,11 +69,14 @@ module hazard_controller (
 			& (ex_branch_result.prediction != ex_branch_result.outcome);
 		// lw_hazard is determined by forward unit.
 		dc_miss = ~mem_done;
+		
+		active_list_flush = active_list_flush_in_progress;
 	end
 
 	// Control signals
 	logic if_stall, if_flush;
 	logic dec_stall, dec_flush;
+	logic iss_stall, iss_flush;
 	logic ex_stall, ex_flush;
 	logic mem_stall, mem_flush;
 	// wb doesn't need to be stalled or flushed
@@ -123,7 +125,13 @@ module hazard_controller (
 		end
 
 		if (dec_stall)
+		begin
 			if_stall <= 1'b1;
+		end
+		if(active_list_flush)
+		begin
+			if_stall <= 1'b1;
+		end
 	end
 
 	always_comb
@@ -139,6 +147,28 @@ module hazard_controller (
 
 		if (ex_stall)
 			dec_stall <= 1'b1;
+	end
+	
+	always_comb
+	begin : handle_iss
+		iss_stall <= 1'b0;
+		iss_flush <= 1'b0;
+
+		if (ex_overload)
+		begin
+			iss_stall <= 1'b0;
+			iss_flush <= 1'b1;
+		end
+
+		if (dec_stall)
+		begin
+			iss_stall <= 1'b1;
+		end
+			
+		if(active_list_flush)
+		begin
+			iss_stall <= 1'b1;
+		end
 	end
 
 	always_comb
@@ -160,8 +190,10 @@ module hazard_controller (
 		i2i_hc.stall = if_stall;
 		i2d_hc.flush = if_flush;
 		i2d_hc.stall = dec_stall;
-		d2e_hc.flush = dec_flush;
-		d2e_hc.stall = ex_stall;
+		d2is_hc.flush = iss_flush;
+		d2is_hc.stall = iss_stall;
+		is2e_hc.flush = dec_flush;
+		is2e_hc.stall = ex_stall;
 		e2m_hc.flush = ex_flush;
 		e2m_hc.stall = mem_stall;
 		m2w_hc.flush = mem_flush;

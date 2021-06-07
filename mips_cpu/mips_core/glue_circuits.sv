@@ -11,17 +11,21 @@
 `include "mips_core.svh"
 
 module decode_stage_glue (
+	
 	decoder_output_ifc.in i_decoded,
 	reg_file_output_ifc.in i_reg_data,
-
+	input logic [`ADDR_WIDTH-1:0] issued_instruction_ID,
+	output logic [`ADDR_WIDTH-1:0]	wb_instruction_ID,
 	branch_decoded_ifc.decode branch_decoded,	// Contains both i/o
 
 	alu_input_ifc.out o_alu_input,
-	alu_pass_through_ifc.out o_alu_pass_through
+	alu_pass_through_ifc.out o_alu_pass_through,
+	output wb
 );
 
 	always_comb
 	begin
+		wb_instruction_ID = issued_instruction_ID;
 		o_alu_input.valid =   i_decoded.valid;
 		o_alu_input.alu_ctl = i_decoded.alu_ctl;
 		o_alu_input.op1 =     i_reg_data.rs_data;
@@ -38,7 +42,7 @@ module decode_stage_glue (
 		branch_decoded.target =  i_decoded.is_jump_reg
 			? i_reg_data.rs_data[`ADDR_WIDTH - 1 : 0]
 			: i_decoded.branch_target;
-
+		wb = i_decoded.uses_rw |i_decoded.is_mem_access;
 
 		o_alu_pass_through.is_branch =     i_decoded.is_branch_jump & ~i_decoded.is_jump;
 		o_alu_pass_through.prediction =    branch_decoded.prediction;

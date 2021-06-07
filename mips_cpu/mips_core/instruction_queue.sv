@@ -38,13 +38,11 @@ module instruction_Queue (
 	input clk,
 	input	rst_n,
 	input free_list[64],
-	input active_list_end_flush_signal,		//Current name for a signal that the Active List sends to other modules to tell them
-											//that it is done flushing (and remappping).
 											
 	input [`ADDR_WIDTH-1:0]flushed_instruction_ID,
 	decoder_output_ifc.in decoded,
 	decoder_output_ifc.in register,
-	hazard_control_ifc.in hazard,
+	hazard_control_ifc.in i_hc,
 	decoder_output_ifc.out out,
 	output logic [`ADDR_WIDTH-1:0] issued_instruction_ID
 	
@@ -55,8 +53,6 @@ instruction_Queue_ifc Instr_Queue();
 logic ready_and_valid[31:0];
 logic [4:0] valid_entry_index;				//Index of the Instr_Queue that points to an element that is not valid!
 logic [4:0] ready_and_valid_index;			//Index of the Instr_Queue that points to an element that is ready AND valid!
-
-logic block_queue_from_adding;
 logic [`ADDR_WIDTH-1:0] next_ID;
 
 initial begin
@@ -113,10 +109,9 @@ always_ff @(posedge clk) begin
 		next_ID = 32'b0;
 	end
 	else begin
-		if (hazard.flush) block_queue_from_adding <= 1;
-		if (active_list_end_flush_signal) block_queue_from_adding <= 0;
+
 	
-		if (~block_queue_from_adding) begin
+		if (~(i_hc.flush | i_hc.stall)) begin
 			Instr_Queue.valid[valid_entry_index]   <= decoded.valid;
 			Instr_Queue.alu_ctl[valid_entry_index] <= decoded.alu_ctl;
 			
@@ -188,7 +183,11 @@ always_ff @(posedge clk) begin
 		 * the current PC, the "valid_entry" bit of the entry will be set to 0, "flushing" it
 		 * from the queue.
 		 */
-		for (int i = 0; i < 32; i++) if ((flushed_instruction_ID < Instr_Queue.instruction_ID[i]) && hazard.flush) Instr_Queue.valid_entry[i] <= 0;
+		for (int i = 0; i < 32; i++) begin
+			if ((flushed_instruction_ID < Instr_Queue.instruction_ID[i]) && i_hc.flush) begin
+				Instr_Queue.valid_entry[i] <= 0;
+			end
+		end
 	end
 end
 
