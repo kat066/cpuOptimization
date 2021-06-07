@@ -59,7 +59,6 @@ initial begin
 	for(int i = 0; i < 32;i++) begin
 		Instr_Queue.valid_entry[i] = 1'b0;
 	end
-	next_ID = 32'b0;
 end
 
 always_comb begin

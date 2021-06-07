@@ -20,7 +20,7 @@ module decode_stage_glue (
 
 	alu_input_ifc.out o_alu_input,
 	alu_pass_through_ifc.out o_alu_pass_through,
-	output wb
+	output logic wb
 );
 
 	always_comb

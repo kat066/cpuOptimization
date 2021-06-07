@@ -156,6 +156,7 @@ module mips_core (
 	// |||| ISSUE Stage
 	// ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 	register_Map_Table REGISTER_MAP_TABLE(
+		.rst_n,
 		.free_register(active_Commit.reg_addr),
 		.decoded(dec_decoder_output),
 		.out(register_map_output),
@@ -338,6 +339,7 @@ module mips_core (
 		.active_list_flush_in_progress,
 		.i2i_hc,
 		.i2d_hc,
+		.d2is_hc,
 		.is2e_hc,
 		.e2m_hc,
 		.m2w_hc,

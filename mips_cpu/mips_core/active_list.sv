@@ -97,7 +97,7 @@ module active_List(
 	register_Map_Table_Pairing_ifc.in i_map_pairing,		 			//Input map pairing to be added to the Active List's Mapping Table.
 	register_Map_Table_Pairing_ifc.out flush_map_pairing,				//Output map pairing that is sent to the Register Map Table when a flush occurs.
 	
-	output active_list_flush_in_progress,
+	output logic active_list_flush_in_progress,
 	active_List_Commit_ifc.out active_Commit							//Output data that is sent to the Register File and/or Main Memory, in order to
 																		//actually commit the data!
 );
@@ -105,30 +105,30 @@ module active_List(
 	active_List_ifc a_l();
 	logic flush_in_progress;
 	logic [`ADDR_WIDTH-1:0]flushing_instruction_ID;
-	initial begin
-		
-		for (int i = 0; i < 32; i++) begin
-			a_l.physical[i] <= mips_core_pkg::MipsReg'(0);
-			a_l.logical[i]  <= mips_core_pkg::MipsReg'(0);
-				
-			a_l.mem_addr[i]   <= 0;
-			a_l.reg_or_mem[i] <= 1'b0;
-			a_l.done[i] 	  <= 1'b0;
-			a_l.instruction_ID[i] <= 32'b0;
-		end
-		flush_in_progress = 1'b0;
-		
-		flush_map_pairing.prev_physical_reg <= mips_core_pkg::MipsReg'(0);
-		flush_map_pairing.prev_logical_reg  <= mips_core_pkg::MipsReg'(0);
-		
-		active_Commit.reg_addr      <= mips_core_pkg::MipsReg'(0);
-		active_Commit.memory_addr   <= 0;
-		active_Commit.result_data   <= 0;
-		active_Commit.Reg_WR_EN  	<= 1'b0;
-		active_Commit.Mem_WR_EN 	<= 1'b0;
-		active_list_flush_in_progress <= 1'b0;
-		next_ID = 32'b0;
-	end
+//	initial begin
+//		
+//		for (int i = 0; i < 32; i++) begin
+//			a_l.physical[i] <= mips_core_pkg::MipsReg'(0);
+//			a_l.logical[i]  <= mips_core_pkg::MipsReg'(0);
+//				
+//			a_l.mem_addr[i]   <= 0;
+//			a_l.reg_or_mem[i] <= 1'b0;
+//			a_l.done[i] 	  <= 1'b0;
+//			a_l.instruction_ID[i] <= 32'b0;
+//		end
+//		flush_in_progress = 1'b0;
+//		
+//		flush_map_pairing.prev_physical_reg <= mips_core_pkg::MipsReg'(0);
+//		flush_map_pairing.prev_logical_reg  <= mips_core_pkg::MipsReg'(0);
+//		
+//		active_Commit.reg_addr      <= mips_core_pkg::MipsReg'(0);
+//		active_Commit.memory_addr   <= 0;
+//		active_Commit.result_data   <= 0;
+//		active_Commit.Reg_WR_EN  	<= 1'b0;
+//		active_Commit.Mem_WR_EN 	<= 1'b0;
+//		active_list_flush_in_progress <= 1'b0;
+//		next_ID = 32'b0;
+//	end
 
 	
 	always_ff @(posedge clk or negedge rst_n) begin
