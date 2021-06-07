@@ -1,5 +1,5 @@
 Flow report for mips_cpu
-Mon Jun 07 12:31:46 2021
+Mon Jun 07 14:15:52 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,25 +41,25 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Mon Jun 07 12:31:46 2021       ;
+; Flow Status                     ; Successful - Mon Jun 07 14:15:52 2021       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; mips_cpu                                    ;
 ; Top-level Entity Name           ; mips_cpu                                    ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CSEMA5F31C6                                ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 4,007 / 32,070 ( 12 % )                     ;
-; Total registers                 ; 4369                                        ;
-; Total pins                      ; 109 / 457 ( 24 % )                          ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 4161                                        ;
+; Total pins                      ; 109                                         ;
 ; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 80,032 / 4,065,280 ( 2 % )                  ;
-; Total DSP Blocks                ; 0 / 87 ( 0 % )                              ;
+; Total block memory bits         ; 80,032                                      ;
+; Total DSP Blocks                ; 0                                           ;
 ; Total HSSI RX PCSs              ; 0                                           ;
 ; Total HSSI PMA RX Deserializers ; 0                                           ;
 ; Total HSSI TX PCSs              ; 0                                           ;
 ; Total HSSI PMA TX Serializers   ; 0                                           ;
-; Total PLLs                      ; 1 / 6 ( 17 % )                              ;
-; Total DLLs                      ; 0 / 4 ( 0 % )                               ;
+; Total PLLs                      ; 1                                           ;
+; Total DLLs                      ; 0                                           ;
 +---------------------------------+---------------------------------------------+
 
 
@@ -68,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 06/07/2021 12:25:56 ;
+; Start date & time ; 06/07/2021 14:15:04 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; mips_cpu            ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+------------------------------------------------------------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                                                                    ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+------------------------------------------------------------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 1097618172084.162309395617196                                                            ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 1097618172084.162310050418244                                                            ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Systemverilog Hdl                                                                        ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (SystemVerilog)                                                          ; <None>        ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                                                                       ; --            ; --          ; --             ;
@@ -132,7 +132,7 @@ https://fpgasoftware.intel.com/eula.
 ; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                                                                      ; --            ; --          ; --             ;
 ; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                                                    ; --            ; --          ; --             ;
 ; SLD_FILE                            ; sdram/synthesis/sdram.debuginfo                                                          ; --            ; --          ; --             ;
-; SLD_INFO                            ; QSYS_NAME sdram HAS_SOPCINFO 1 GENERATION_ID 1623092984                                  ; --            ; sdram       ; --             ;
+; SLD_INFO                            ; QSYS_NAME sdram HAS_SOPCINFO 1 GENERATION_ID 1623100480                                  ; --            ; sdram       ; --             ;
 ; SOPCINFO_FILE                       ; sdram/synthesis/../../sdram.sopcinfo                                                     ; --            ; --          ; --             ;
 ; SPD_FILE                            ; sdram/simulation/../sdram.spd                                                            ; --            ; --          ; --             ;
 ; SYNTHESIS_ONLY_QIP                  ; On                                                                                       ; --            ; --          ; --             ;
@@ -144,12 +144,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:48     ; 1.0                     ; 5076 MB             ; 00:01:00                           ;
-; Fitter               ; 00:04:26     ; 1.3                     ; 8124 MB             ; 00:30:43                           ;
-; Assembler            ; 00:00:11     ; 1.0                     ; 4908 MB             ; 00:00:08                           ;
-; Timing Analyzer      ; 00:00:14     ; 4.0                     ; 5574 MB             ; 00:00:46                           ;
-; EDA Netlist Writer   ; 00:00:04     ; 1.0                     ; 4974 MB             ; 00:00:03                           ;
-; Total                ; 00:05:43     ; --                      ; --                  ; 00:32:40                           ;
+; Analysis & Synthesis ; 00:00:47     ; 1.0                     ; 5079 MB             ; 00:00:57                           ;
+; Total                ; 00:00:47     ; --                      ; --                  ; 00:00:57                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -159,10 +155,6 @@ https://fpgasoftware.intel.com/eula.
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
 ; Analysis & Synthesis ; DESKTOP-76TS3RK  ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; DESKTOP-76TS3RK  ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; DESKTOP-76TS3RK  ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; DESKTOP-76TS3RK  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-76TS3RK  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -170,10 +162,6 @@ https://fpgasoftware.intel.com/eula.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off mips_cpu -c mips_cpu
-quartus_fit --read_settings_files=off --write_settings_files=off mips_cpu -c mips_cpu
-quartus_asm --read_settings_files=off --write_settings_files=off mips_cpu -c mips_cpu
-quartus_sta mips_cpu -c mips_cpu
-quartus_eda --read_settings_files=off --write_settings_files=off mips_cpu -c mips_cpu
 
 
 

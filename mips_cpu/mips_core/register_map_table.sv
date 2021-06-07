@@ -18,7 +18,6 @@ module register_Map_Table(
 	decoder_output_ifc.in decoded,
 	input mips_core_pkg::MipsReg free_register,
 	decoder_output_ifc.out out,
-	register_Map_Table_Pairing_ifc.out active_list_data,
 	output logic free_list_out[64],
 	register_Map_Table_Pairing_ifc.out previous_register_mapping
 	
@@ -58,8 +57,8 @@ always_comb begin
 	out.rt_addr=decoded.uses_rt ? register_Map_Table.MapTable[decoded.rt_addr] : mips_core_pkg::MipsReg'(0);  //Register addresses are physical addresses.
 	
 	//Active List Output
-	active_list_data.prev_physical_reg = register_Map_Table.MapTable[decoded.rw_addr];
-	active_list_data.prev_logical_reg  = decoded.rw_addr;
+	previous_register_mapping.prev_physical_reg = register_Map_Table.MapTable[decoded.rw_addr];
+	previous_register_mapping.prev_logical_reg  = decoded.rw_addr;
 	
 	//Register Renaming (you should only rename the destination register).	
 	if (decoded.uses_rw == 0) begin

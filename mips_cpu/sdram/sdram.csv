@@ -1,12 +1,12 @@
-# system info sdram on 2021.06.07.12:09:41
+# system info sdram on 2021.06.07.14:14:37
 system_info:
 name,value
 DEVICE,5CSEMA5F31C6
 DEVICE_FAMILY,Cyclone V
-GENERATION_ID,1623092961
+GENERATION_ID,1623100458
 #
 #
-# Files generated for sdram on 2021.06.07.12:09:41
+# Files generated for sdram on 2021.06.07.14:14:37
 files:
 filepath,kind,attributes,module,is_top
 simulation/sdram.v,VERILOG,,sdram,true
