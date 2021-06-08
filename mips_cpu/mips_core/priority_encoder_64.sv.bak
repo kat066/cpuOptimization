@@ -16,7 +16,7 @@
  * 
  */
 module priority_encoder_64 #(parameter HIGH_PRIORITY = 0, parameter SIGNAL = 1) (
-	input data_inputs[63:0],
+	input [63:0] data_inputs,
 	output logic [5:0] encoding_output
 );
 

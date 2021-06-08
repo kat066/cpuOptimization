@@ -16,8 +16,8 @@
  * 
  */
 module priority_encoder_32 #(parameter HIGH_PRIORITY = 0, parameter SIGNAL = 1) (
-	input data_inputs [31:0],
-	output logic [4:0] encoding_output 
+	input [31:0] data_inputs,
+	output logic [4:0] encoding_output
 );
 
 int i; 

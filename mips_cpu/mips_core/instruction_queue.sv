@@ -52,7 +52,7 @@ module instruction_Queue (
 instruction_Queue_ifc Instr_Queue();
 logic ready_and_valid[31:0];
 logic [4:0] valid_entry_index;				//Index of the Instr_Queue that points to an element that is not valid!
-logic [4:0] ready_and_valid_index;			//Index of the Instr_Queue that points to an element that is ready AND valid!
+logic [4:0] ready_and_valid_index ;			//Index of the Instr_Queue that points to an element that is ready AND valid!
 logic [`ADDR_WIDTH-1:0] next_ID;
 
 initial begin
@@ -70,7 +70,7 @@ end
 priority_encoder_32 #(.HIGH_PRIORITY(0), .SIGNAL(0)) 
 	valid_entry_encoder( .data_inputs(Instr_Queue.valid_entry), .encoding_output(valid_entry_index) );
 
-priority_encoder_32 #(.NUM_OF_INPUTS(32), .HIGH_PRIORITY(1), .SIGNAL(1)) 
+priority_encoder_32 #(.HIGH_PRIORITY(1), .SIGNAL(1)) 
 	ready_encoder( .data_inputs(ready_and_valid), .encoding_output(ready_and_valid_index) );
 
 
