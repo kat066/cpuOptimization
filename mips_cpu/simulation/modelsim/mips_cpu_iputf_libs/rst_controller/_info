@@ -10,23 +10,23 @@ z2
 cModel Technology
 Z0 dC:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/simulation/modelsim
 valtera_reset_controller
-Z1 !s110 1623100245
+Z1 !s110 1623126461
 !i10b 1
 !s100 AbYPDDXoUZYQzY_kQ2LCk2
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
 II9YaDGUkXD0dUNd]4<4oo2
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 R0
-Z4 w1623100216
+Z4 w1623100476
 8C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_reset_controller.v
 FC:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_reset_controller.v
-!i122 44
+!i122 48
 L0 42 278
 Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1623100245.000000
+Z6 !s108 1623126461.000000
 !s107 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_reset_controller.v|
 !s90 -reportprogress|300|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_reset_controller.v|-work|rst_controller|
 !i113 1
@@ -43,7 +43,7 @@ R0
 R4
 8C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_reset_synchronizer.v
 FC:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_reset_synchronizer.v
-!i122 45
+!i122 49
 L0 24 63
 R5
 r1
