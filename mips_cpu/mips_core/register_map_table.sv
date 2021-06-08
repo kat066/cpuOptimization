@@ -27,7 +27,7 @@ register_Map_Table_ifc register_Map_Table();
 logic free_list[64];
 logic [5:0] free_list_index;
 
-priority_encoder #(.NUM_OF_INPUTS(64), .HIGH_PRIORITY(0), .SIGNAL(1)) encoder( .data_inputs(free_list), .encoding_output(free_list_index) );
+priority_encoder_64 #(.HIGH_PRIORITY(0), .SIGNAL(1)) encoder( .data_inputs(free_list), .encoding_output(free_list_index) );
 
 //initial begin
 //	for(int i=0; i<32; i++)begin

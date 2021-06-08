@@ -67,10 +67,10 @@ always_comb begin
 	end
 end
 
-priority_encoder #(.NUM_OF_INPUTS(32), .HIGH_PRIORITY(0), .SIGNAL(0)) 
+priority_encoder_32 #(.HIGH_PRIORITY(0), .SIGNAL(0)) 
 	valid_entry_encoder( .data_inputs(Instr_Queue.valid_entry), .encoding_output(valid_entry_index) );
 
-priority_encoder #(.NUM_OF_INPUTS(32), .HIGH_PRIORITY(1), .SIGNAL(1)) 
+priority_encoder_32 #(.NUM_OF_INPUTS(32), .HIGH_PRIORITY(1), .SIGNAL(1)) 
 	ready_encoder( .data_inputs(ready_and_valid), .encoding_output(ready_and_valid_index) );
 
 
