@@ -8,50 +8,50 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/simulation/modelsim
+dC:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/simulation/modelsim
 valtera_reset_controller
-Z1 !s110 1623126461
+Z0 !s110 1623140001
 !i10b 1
 !s100 AbYPDDXoUZYQzY_kQ2LCk2
-Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
-II9YaDGUkXD0dUNd]4<4oo2
-Z3 VDg1SIo80bB@j0V0VzS_@n1
-R0
-Z4 w1623100476
-8C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_reset_controller.v
-FC:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_reset_controller.v
-!i122 48
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I3K60ac??ie`OkJ]^4Sb^H3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dC:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/simulation/modelsim
+Z4 w1623136952
+8C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_reset_controller.v
+FC:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_reset_controller.v
+!i122 52
 L0 42 278
 Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1623126461.000000
-!s107 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_reset_controller.v|
-!s90 -reportprogress|300|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_reset_controller.v|-work|rst_controller|
+Z6 !s108 1623140001.000000
+!s107 C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_reset_controller.v|
+!s90 -reportprogress|300|C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_reset_controller.v|-work|rst_controller|
 !i113 1
 Z7 o-work rst_controller
 Z8 tCvgOpt 0
 valtera_reset_synchronizer
-R1
+R0
 !i10b 1
 !s100 BQ8==cV75_ke3L4GKGWGO3
+R1
+I7ogzjBb;Y`_EgPT:7H4K?2
 R2
-IBR`DLG0O:CE3lXEa<34Mk2
 R3
-R0
 R4
-8C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_reset_synchronizer.v
-FC:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_reset_synchronizer.v
-!i122 49
+8C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_reset_synchronizer.v
+FC:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_reset_synchronizer.v
+!i122 53
 L0 24 63
 R5
 r1
 !s85 0
 31
 R6
-!s107 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_reset_synchronizer.v|
-!s90 -reportprogress|300|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_reset_synchronizer.v|-work|rst_controller|
+!s107 C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_reset_synchronizer.v|
+!s90 -reportprogress|300|C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_reset_synchronizer.v|-work|rst_controller|
 !i113 1
 R7
 R8

@@ -8,54 +8,54 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/simulation/modelsim
+dC:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/simulation/modelsim
 valtera_merlin_burst_uncompressor
-Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1623126460
+Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z1 !s110 1623140000
 !i10b 1
 !s100 f5?g@0D[3mRE6h_kkF_Tg3
-Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I[GU`=<GJ44ljBOAcl`nT[0
-Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I15z1_i>cEh4k7:Re`KRKE1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
 S1
-R0
-Z5 w1623100476
-8C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_uncompressor.sv
-FC:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_uncompressor.sv
-!i122 49
+Z4 dC:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/simulation/modelsim
+Z5 w1623136952
+8C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_uncompressor.sv
+FC:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_uncompressor.sv
+!i122 53
 L0 40 256
 Z6 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z7 !s108 1623126460.000000
-!s107 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_uncompressor.sv|
-!s90 -reportprogress|300|-sv|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_uncompressor.sv|-work|sdram_controller_s1_agent|
+Z7 !s108 1623140000.000000
+!s107 C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_uncompressor.sv|
+!s90 -reportprogress|300|-sv|C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_uncompressor.sv|-work|sdram_controller_s1_agent|
 !i113 1
 Z8 o-sv -work sdram_controller_s1_agent
 Z9 tCvgOpt 0
 valtera_merlin_slave_agent
+R0
 R1
-R2
 !i10b 1
 !s100 ik7ACS8g5]^IS7Xe5iU]P3
+R2
+IikHA8GEhSLRIIZOYBO6Z@2
 R3
-IBaz9_mokIUlFLPDRS89h:2
-R4
 S1
-R0
+R4
 R5
-8C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_slave_agent.sv
-FC:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_slave_agent.sv
-!i122 48
+8C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_slave_agent.sv
+FC:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_slave_agent.sv
+!i122 52
 L0 34 588
 R6
 r1
 !s85 0
 31
 R7
-!s107 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_slave_agent.sv|
-!s90 -reportprogress|300|-sv|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_slave_agent.sv|-work|sdram_controller_s1_agent|
+!s107 C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_slave_agent.sv|
+!s90 -reportprogress|300|-sv|C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_slave_agent.sv|-work|sdram_controller_s1_agent|
 !i113 1
 R8
 R9

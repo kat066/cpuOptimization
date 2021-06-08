@@ -8,79 +8,79 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/simulation/modelsim
+dC:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/simulation/modelsim
 valtera_merlin_address_alignment
-Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1623126457
+Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z1 !s110 1623139998
 !i10b 1
 !s100 d[l4mS4WfF?SDFFCfRDR=1
-Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I^P7eV=02N^Q`XUmf:GUUU1
-Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IIn;co:oc6S[@@E?iS01gm0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
 S1
-R0
-Z5 w1623100476
-8C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_address_alignment.sv
-FC:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_address_alignment.sv
-!i122 73
+Z4 dC:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/simulation/modelsim
+Z5 w1623136952
+8C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_address_alignment.sv
+FC:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_address_alignment.sv
+!i122 79
 L0 26 238
 Z6 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z7 !s108 1623126457.000000
-!s107 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_address_alignment.sv|
-!s90 -reportprogress|300|-sv|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_address_alignment.sv|-work|sdram_controller_s1_rsp_width_adapter|
+Z7 !s108 1623139998.000000
+!s107 C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_address_alignment.sv|
+!s90 -reportprogress|300|-sv|C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_address_alignment.sv|-work|sdram_controller_s1_rsp_width_adapter|
 !i113 1
 Z8 o-sv -work sdram_controller_s1_rsp_width_adapter
 Z9 tCvgOpt 0
 valtera_merlin_burst_uncompressor
+R0
 R1
-R2
 !i10b 1
 !s100 f5?g@0D[3mRE6h_kkF_Tg3
+R2
+I?i3cC<A;;;8?PMGZ4ldhz1
 R3
-I@HE7612>6_dm:<RnAF`:b2
-R4
 S1
-R0
+R4
 R5
-8C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_uncompressor.sv
-FC:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_uncompressor.sv
-!i122 74
+8C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_uncompressor.sv
+FC:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_uncompressor.sv
+!i122 80
 L0 40 256
 R6
 r1
 !s85 0
 31
 R7
-!s107 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_uncompressor.sv|
-!s90 -reportprogress|300|-sv|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_uncompressor.sv|-work|sdram_controller_s1_rsp_width_adapter|
+!s107 C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_uncompressor.sv|
+!s90 -reportprogress|300|-sv|C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_uncompressor.sv|-work|sdram_controller_s1_rsp_width_adapter|
 !i113 1
 R8
 R9
 valtera_merlin_width_adapter
+R0
 R1
-R2
 !i10b 1
 !s100 ?6@hQbS6a@_3`IeY:n5E>3
+R2
+I`KGKWm6@Ld^?h[o10h]<<3
 R3
-IEGZYWQKIm]zfb_BSQmE9b3
-R4
 S1
-R0
+R4
 R5
-8C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_width_adapter.sv
-FC:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_width_adapter.sv
-!i122 72
+8C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_width_adapter.sv
+FC:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_width_adapter.sv
+!i122 78
 L0 25 1181
 R6
 r1
 !s85 0
 31
 R7
-!s107 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_width_adapter.sv|
-!s90 -reportprogress|300|-sv|C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_width_adapter.sv|-work|sdram_controller_s1_rsp_width_adapter|
+!s107 C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_width_adapter.sv|
+!s90 -reportprogress|300|-sv|C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_width_adapter.sv|-work|sdram_controller_s1_rsp_width_adapter|
 !i113 1
 R8
 R9

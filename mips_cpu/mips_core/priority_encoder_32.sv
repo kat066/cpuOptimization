@@ -23,9 +23,28 @@ module priority_encoder_32 #(parameter HIGH_PRIORITY = 0, parameter SIGNAL = 1) 
 int i; 
 
 always_comb begin
+	encoding_output = 0;
+	
+	if (HIGH_PRIORITY) begin
+		for (int i = 0; i < 32; i++) begin
+			if(data_inputs[i] == SIGNAL) begin
+				encoding_output = i;
+				break;
+			end
+		end	
+	end
+	else begin
+		for (int i = 31; i >= 0; i--) begin
+			if(data_inputs[i] == SIGNAL) begin
+				encoding_output = i;
+				break;
+			end
+		end		
+	end
+/*
 	if (HIGH_PRIORITY) begin
 		if (SIGNAL) begin
-			casex(data_inputs)
+			casex(packed_data_inputs)
 				32'b1XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX: encoding_output = 5'd31;
 				32'b01XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX: encoding_output = 5'd30;
 				32'b001XXXXXXXXXXXXXXXXXXXXXXXXXXXXX: encoding_output = 5'd29;
@@ -62,7 +81,7 @@ always_comb begin
 			endcase
 		end
 		else begin
-			casex(data_inputs)
+			casex(packed_data_inputs)
 				32'b0XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX: encoding_output = 5'd31;
 				32'b10XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX: encoding_output = 5'd30;
 				32'b110XXXXXXXXXXXXXXXXXXXXXXXXXXXXX: encoding_output = 5'd29;
@@ -101,7 +120,7 @@ always_comb begin
 	end
 	else begin
 		if (SIGNAL) begin
-			casex(data_inputs)
+			casex(packed_data_inputs)
 				32'b10000000000000000000000000000000: encoding_output = 5'd31;
 				32'bX1000000000000000000000000000000: encoding_output = 5'd30;
 				32'bXX100000000000000000000000000000: encoding_output = 5'd29;
@@ -138,7 +157,7 @@ always_comb begin
 			endcase		
 		end
 		else begin
-			casex(data_inputs)
+			casex(packed_data_inputs)
 				32'b01111111111111111111111111111111: encoding_output = 5'd31;
 				32'bX0111111111111111111111111111111: encoding_output = 5'd30;
 				32'bXX011111111111111111111111111111: encoding_output = 5'd29;
@@ -175,6 +194,7 @@ always_comb begin
 			endcase			
 		end
 	end
+*/
 end
 
 

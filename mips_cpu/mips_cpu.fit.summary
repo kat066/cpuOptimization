@@ -1,12 +1,12 @@
-Fitter Status : Successful - Mon Jun 07 12:31:12 2021
+Fitter Status : Successful - Tue Jun 08 01:03:37 2021
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : mips_cpu
 Top-level Entity Name : mips_cpu
 Family : Cyclone V
 Device : 5CSEMA5F31C6
 Timing Models : Final
-Logic utilization (in ALMs) : 4,007 / 32,070 ( 12 % )
-Total registers : 4369
+Logic utilization (in ALMs) : 3,272 / 32,070 ( 10 % )
+Total registers : 3530
 Total pins : 109 / 457 ( 24 % )
 Total virtual pins : 0
 Total block memory bits : 80,032 / 4,065,280 ( 2 % )

@@ -65,8 +65,9 @@ always_comb begin
 		out.rw_addr = mips_core_pkg::MipsReg'(0);
 	end
 	else begin
-		out.rw_addr = register_Map_Table.MapTable[free_list_index];
-		free_list[free_list_index] = 0;
+		register_Map_Table.MapTable[decoded.rw_addr]=mips_core_pkg::MipsReg'(free_list_index);
+        out.rw_addr = mips_core_pkg::MipsReg'(free_list_index);
+        free_list[free_list_index] = 0;
 	end
 
 	free_list_out = free_list;

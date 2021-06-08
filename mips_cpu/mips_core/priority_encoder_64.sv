@@ -23,9 +23,31 @@ module priority_encoder_64 #(parameter HIGH_PRIORITY = 0, parameter SIGNAL = 1) 
 int i;
 
 always_comb begin
+	encoding_output = 0;
+	
+	if (HIGH_PRIORITY) begin
+		for (int i = 0; i < 64; i++) begin
+			if(data_inputs[i] == SIGNAL) begin
+				encoding_output = i;
+				break;
+			end
+		end	
+	end
+	else begin
+		for (int i = 63; i >= 0; i--) begin
+			if(data_inputs[i] == SIGNAL) begin
+				encoding_output = i;
+				break;
+			end
+		end		
+	end
+
+
+	/*
+	packed_data_inputs[63:0] = { << {data_inputs[63:0]}};
 	if (HIGH_PRIORITY) begin
 		if (SIGNAL) begin
-			casex(data_inputs)
+			casex(packed_data_inputs)
 				64'b1XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX: encoding_output = 6'd63;
 				64'b01XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX: encoding_output = 6'd62;
 				64'b001XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX: encoding_output = 6'd61;
@@ -94,7 +116,7 @@ always_comb begin
 			endcase
 		end
 		else begin
-			casex(data_inputs)
+			casex(packed_data_inputs)
 				64'b0XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX: encoding_output = 6'd63;
 				64'b10XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX: encoding_output = 6'd62;
 				64'b110XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX: encoding_output = 6'd61;
@@ -165,7 +187,7 @@ always_comb begin
 	end
 	else begin
 		if (SIGNAL) begin
-			casex(data_inputs)
+			casex(packed_data_inputs)
 				64'b1000000000000000000000000000000000000000000000000000000000000000: encoding_output = 6'd63;
 				64'bX100000000000000000000000000000000000000000000000000000000000000: encoding_output = 6'd62;
 				64'bXX10000000000000000000000000000000000000000000000000000000000000: encoding_output = 6'd61;
@@ -234,7 +256,7 @@ always_comb begin
 			endcase	
 		end
 		else begin
-			casex(data_inputs)
+			casex(packed_data_inputs)
 				64'b0111111111111111111111111111111111111111111111111111111111111111: encoding_output = 6'd63;
 				64'bX011111111111111111111111111111111111111111111111111111111111111: encoding_output = 6'd62;
 				64'bXX01111111111111111111111111111111111111111111111111111111111111: encoding_output = 6'd61;
@@ -303,6 +325,7 @@ always_comb begin
 			endcase			
 		end
 	end
+	*/
 end
 
 endmodule

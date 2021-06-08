@@ -140,142 +140,142 @@
 ###### MIF file copy and HDL compilation commands for IPUTF cores 
 # 
 # 
-# vlog -sv "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv" -work error_adapter_0                      
+# vlog -sv "C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv" -work error_adapter_0                      
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:27:36 on Jun 07,2021
-# vlog -reportprogress 300 -sv C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv -work error_adapter_0 
+# Start time: 01:13:17 on Jun 08,2021
+# vlog -reportprogress 300 -sv C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv -work error_adapter_0 
 # -- Compiling module sdram_mm_interconnect_0_avalon_st_adapter_error_adapter_0
 # 
 # Top level modules:
 # 	sdram_mm_interconnect_0_avalon_st_adapter_error_adapter_0
-# End time: 21:27:37 on Jun 07,2021, Elapsed time: 0:00:01
+# End time: 01:13:17 on Jun 08,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog     "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_avalon_st_adapter.v"                  -work avalon_st_adapter                    
+# vlog     "C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_avalon_st_adapter.v"                  -work avalon_st_adapter                    
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:27:37 on Jun 07,2021
-# vlog -reportprogress 300 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_avalon_st_adapter.v -work avalon_st_adapter 
+# Start time: 01:13:18 on Jun 08,2021
+# vlog -reportprogress 300 C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_avalon_st_adapter.v -work avalon_st_adapter 
 # -- Compiling module sdram_mm_interconnect_0_avalon_st_adapter
 # 
 # Top level modules:
 # 	sdram_mm_interconnect_0_avalon_st_adapter
-# End time: 21:27:37 on Jun 07,2021, Elapsed time: 0:00:00
+# End time: 01:13:18 on Jun 08,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_width_adapter.sv"                               -work sdram_controller_s1_rsp_width_adapter
+# vlog -sv "C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_width_adapter.sv"                               -work sdram_controller_s1_rsp_width_adapter
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:27:37 on Jun 07,2021
-# vlog -reportprogress 300 -sv C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_width_adapter.sv -work sdram_controller_s1_rsp_width_adapter 
+# Start time: 01:13:18 on Jun 08,2021
+# vlog -reportprogress 300 -sv C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_width_adapter.sv -work sdram_controller_s1_rsp_width_adapter 
 # -- Compiling module altera_merlin_width_adapter
 # 
 # Top level modules:
 # 	altera_merlin_width_adapter
-# End time: 21:27:37 on Jun 07,2021, Elapsed time: 0:00:00
+# End time: 01:13:18 on Jun 08,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_address_alignment.sv"                           -work sdram_controller_s1_rsp_width_adapter
+# vlog -sv "C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_address_alignment.sv"                           -work sdram_controller_s1_rsp_width_adapter
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:27:37 on Jun 07,2021
-# vlog -reportprogress 300 -sv C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_address_alignment.sv -work sdram_controller_s1_rsp_width_adapter 
+# Start time: 01:13:18 on Jun 08,2021
+# vlog -reportprogress 300 -sv C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_address_alignment.sv -work sdram_controller_s1_rsp_width_adapter 
 # -- Compiling module altera_merlin_address_alignment
 # 
 # Top level modules:
 # 	altera_merlin_address_alignment
-# End time: 21:27:37 on Jun 07,2021, Elapsed time: 0:00:00
+# End time: 01:13:18 on Jun 08,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_uncompressor.sv"                          -work sdram_controller_s1_rsp_width_adapter
+# vlog -sv "C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_uncompressor.sv"                          -work sdram_controller_s1_rsp_width_adapter
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:27:37 on Jun 07,2021
-# vlog -reportprogress 300 -sv C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_uncompressor.sv -work sdram_controller_s1_rsp_width_adapter 
+# Start time: 01:13:18 on Jun 08,2021
+# vlog -reportprogress 300 -sv C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_uncompressor.sv -work sdram_controller_s1_rsp_width_adapter 
 # -- Compiling module altera_merlin_burst_uncompressor
 # 
 # Top level modules:
 # 	altera_merlin_burst_uncompressor
-# End time: 21:27:37 on Jun 07,2021, Elapsed time: 0:00:00
+# End time: 01:13:18 on Jun 08,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_rsp_mux.sv"                           -work rsp_mux                              
+# vlog -sv "C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_rsp_mux.sv"                           -work rsp_mux                              
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:27:37 on Jun 07,2021
-# vlog -reportprogress 300 -sv C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_rsp_mux.sv -work rsp_mux 
+# Start time: 01:13:18 on Jun 08,2021
+# vlog -reportprogress 300 -sv C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_rsp_mux.sv -work rsp_mux 
 # -- Compiling module sdram_mm_interconnect_0_rsp_mux
 # 
 # Top level modules:
 # 	sdram_mm_interconnect_0_rsp_mux
-# End time: 21:27:37 on Jun 07,2021, Elapsed time: 0:00:00
+# End time: 01:13:18 on Jun 08,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_arbitrator.sv"                                  -work rsp_mux                              
+# vlog -sv "C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_arbitrator.sv"                                  -work rsp_mux                              
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:27:37 on Jun 07,2021
-# vlog -reportprogress 300 -sv C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_arbitrator.sv -work rsp_mux 
+# Start time: 01:13:18 on Jun 08,2021
+# vlog -reportprogress 300 -sv C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_arbitrator.sv -work rsp_mux 
 # -- Compiling module altera_merlin_arbitrator
 # -- Compiling module altera_merlin_arb_adder
 # 
 # Top level modules:
 # 	altera_merlin_arbitrator
-# End time: 21:27:37 on Jun 07,2021, Elapsed time: 0:00:00
+# End time: 01:13:18 on Jun 08,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_rsp_demux.sv"                         -work rsp_demux                            
+# vlog -sv "C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_rsp_demux.sv"                         -work rsp_demux                            
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:27:37 on Jun 07,2021
-# vlog -reportprogress 300 -sv C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_rsp_demux.sv -work rsp_demux 
+# Start time: 01:13:18 on Jun 08,2021
+# vlog -reportprogress 300 -sv C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_rsp_demux.sv -work rsp_demux 
 # -- Compiling module sdram_mm_interconnect_0_rsp_demux
 # 
 # Top level modules:
 # 	sdram_mm_interconnect_0_rsp_demux
-# End time: 21:27:37 on Jun 07,2021, Elapsed time: 0:00:00
+# End time: 01:13:18 on Jun 08,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_cmd_mux.sv"                           -work cmd_mux                              
+# vlog -sv "C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_cmd_mux.sv"                           -work cmd_mux                              
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:27:38 on Jun 07,2021
-# vlog -reportprogress 300 -sv C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_cmd_mux.sv -work cmd_mux 
+# Start time: 01:13:18 on Jun 08,2021
+# vlog -reportprogress 300 -sv C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_cmd_mux.sv -work cmd_mux 
 # -- Compiling module sdram_mm_interconnect_0_cmd_mux
 # 
 # Top level modules:
 # 	sdram_mm_interconnect_0_cmd_mux
-# End time: 21:27:38 on Jun 07,2021, Elapsed time: 0:00:00
+# End time: 01:13:18 on Jun 08,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_arbitrator.sv"                                  -work cmd_mux                              
+# vlog -sv "C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_arbitrator.sv"                                  -work cmd_mux                              
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:27:38 on Jun 07,2021
-# vlog -reportprogress 300 -sv C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_arbitrator.sv -work cmd_mux 
+# Start time: 01:13:18 on Jun 08,2021
+# vlog -reportprogress 300 -sv C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_arbitrator.sv -work cmd_mux 
 # -- Compiling module altera_merlin_arbitrator
 # -- Compiling module altera_merlin_arb_adder
 # 
 # Top level modules:
 # 	altera_merlin_arbitrator
-# End time: 21:27:38 on Jun 07,2021, Elapsed time: 0:00:00
+# End time: 01:13:18 on Jun 08,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_cmd_demux.sv"                         -work cmd_demux                            
+# vlog -sv "C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_cmd_demux.sv"                         -work cmd_demux                            
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:27:38 on Jun 07,2021
-# vlog -reportprogress 300 -sv C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_cmd_demux.sv -work cmd_demux 
+# Start time: 01:13:19 on Jun 08,2021
+# vlog -reportprogress 300 -sv C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_cmd_demux.sv -work cmd_demux 
 # -- Compiling module sdram_mm_interconnect_0_cmd_demux
 # 
 # Top level modules:
 # 	sdram_mm_interconnect_0_cmd_demux
-# End time: 21:27:38 on Jun 07,2021, Elapsed time: 0:00:00
+# End time: 01:13:19 on Jun 08,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter.sv"                               -work sdram_controller_s1_burst_adapter    
+# vlog -sv "C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter.sv"                               -work sdram_controller_s1_burst_adapter    
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:27:38 on Jun 07,2021
-# vlog -reportprogress 300 -sv C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter.sv -work sdram_controller_s1_burst_adapter 
+# Start time: 01:13:19 on Jun 08,2021
+# vlog -reportprogress 300 -sv C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter.sv -work sdram_controller_s1_burst_adapter 
 # -- Compiling module altera_merlin_burst_adapter
 # 
 # Top level modules:
 # 	altera_merlin_burst_adapter
-# End time: 21:27:38 on Jun 07,2021, Elapsed time: 0:00:00
+# End time: 01:13:19 on Jun 08,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_uncmpr.sv"                        -work sdram_controller_s1_burst_adapter    
+# vlog -sv "C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_uncmpr.sv"                        -work sdram_controller_s1_burst_adapter    
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:27:38 on Jun 07,2021
-# vlog -reportprogress 300 -sv C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_uncmpr.sv -work sdram_controller_s1_burst_adapter 
+# Start time: 01:13:19 on Jun 08,2021
+# vlog -reportprogress 300 -sv C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_uncmpr.sv -work sdram_controller_s1_burst_adapter 
 # -- Compiling module altera_merlin_burst_adapter_uncompressed_only
 # 
 # Top level modules:
 # 	altera_merlin_burst_adapter_uncompressed_only
-# End time: 21:27:38 on Jun 07,2021, Elapsed time: 0:00:00
+# End time: 01:13:19 on Jun 08,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_13_1.sv"                          -work sdram_controller_s1_burst_adapter    
+# vlog -sv "C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_13_1.sv"                          -work sdram_controller_s1_burst_adapter    
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:27:38 on Jun 07,2021
-# vlog -reportprogress 300 -sv C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_13_1.sv -work sdram_controller_s1_burst_adapter 
+# Start time: 01:13:19 on Jun 08,2021
+# vlog -reportprogress 300 -sv C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_13_1.sv -work sdram_controller_s1_burst_adapter 
 # -- Compiling module altera_merlin_burst_adapter_burstwrap_increment
 # -- Compiling module altera_merlin_burst_adapter_adder
 # -- Compiling module altera_merlin_burst_adapter_subtractor
@@ -284,982 +284,689 @@
 # 
 # Top level modules:
 # 	altera_merlin_burst_adapter_13_1
-# End time: 21:27:38 on Jun 07,2021, Elapsed time: 0:00:00
+# End time: 01:13:19 on Jun 08,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv"                           -work sdram_controller_s1_burst_adapter    
+# vlog -sv "C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv"                           -work sdram_controller_s1_burst_adapter    
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:27:38 on Jun 07,2021
-# vlog -reportprogress 300 -sv C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv -work sdram_controller_s1_burst_adapter 
+# Start time: 01:13:19 on Jun 08,2021
+# vlog -reportprogress 300 -sv C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv -work sdram_controller_s1_burst_adapter 
 # -- Compiling module altera_merlin_burst_adapter_new
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(500): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(501): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(502): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(503): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(504): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(505): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(506): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(507): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(508): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(509): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(511): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(512): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(513): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(514): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(515): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(516): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(517): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(518): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(519): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(520): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(521): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(522): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(523): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(526): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(527): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(614): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(615): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(616): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(617): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(618): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(619): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(620): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(621): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(622): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(623): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(624): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(625): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(746): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(762): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(860): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(861): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(862): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(863): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(864): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(865): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(866): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(867): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(900): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(901): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(902): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(903): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(940): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(942): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(945): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(947): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1040): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1041): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1042): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1043): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1044): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1045): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1046): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1047): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1048): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1049): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1084): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1085): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1086): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1087): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1088): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1089): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1104): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1106): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1206): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1207): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1208): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1209): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1210): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1211): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1212): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1213): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1214): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1215): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1216): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1256): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1257): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1258): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1259): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1260): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1261): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1291): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1294): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(500): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(501): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(502): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(503): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(504): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(505): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(506): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(507): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(508): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(509): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(511): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(512): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(513): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(514): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(515): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(516): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(517): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(518): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(519): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(520): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(521): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(522): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(523): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(526): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(527): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(614): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(615): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(616): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(617): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(618): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(619): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(620): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(621): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(622): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(623): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(624): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(625): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(746): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(762): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(860): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(861): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(862): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(863): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(864): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(865): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(866): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(867): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(900): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(901): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(902): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(903): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(940): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(942): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(945): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(947): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1040): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1041): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1042): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1043): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1044): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1045): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1046): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1047): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1048): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1049): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1084): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1085): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1086): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1087): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1088): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1089): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1104): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1106): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1206): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1207): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1208): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1209): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1210): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1211): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1212): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1213): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1214): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1215): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1216): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1256): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1257): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1258): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1259): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1260): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1261): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1291): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1294): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
 # 
 # Top level modules:
 # 	altera_merlin_burst_adapter_new
-# End time: 21:27:39 on Jun 07,2021, Elapsed time: 0:00:01
+# End time: 01:13:19 on Jun 08,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 92
-# vlog -sv "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_incr_burst_converter.sv"                               -work sdram_controller_s1_burst_adapter    
+# vlog -sv "C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_incr_burst_converter.sv"                               -work sdram_controller_s1_burst_adapter    
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:27:39 on Jun 07,2021
-# vlog -reportprogress 300 -sv C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_incr_burst_converter.sv -work sdram_controller_s1_burst_adapter 
+# Start time: 01:13:19 on Jun 08,2021
+# vlog -reportprogress 300 -sv C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_incr_burst_converter.sv -work sdram_controller_s1_burst_adapter 
 # -- Compiling module altera_incr_burst_converter
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_incr_burst_converter.sv(266): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_incr_burst_converter.sv(268): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_incr_burst_converter.sv(283): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_incr_burst_converter.sv(285): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_incr_burst_converter.sv(266): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_incr_burst_converter.sv(268): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_incr_burst_converter.sv(283): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_incr_burst_converter.sv(285): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
 # 
 # Top level modules:
 # 	altera_incr_burst_converter
-# End time: 21:27:39 on Jun 07,2021, Elapsed time: 0:00:00
+# End time: 01:13:20 on Jun 08,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 4
-# vlog -sv "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_wrap_burst_converter.sv"                               -work sdram_controller_s1_burst_adapter    
+# vlog -sv "C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_wrap_burst_converter.sv"                               -work sdram_controller_s1_burst_adapter    
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:27:39 on Jun 07,2021
-# vlog -reportprogress 300 -sv C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_wrap_burst_converter.sv -work sdram_controller_s1_burst_adapter 
+# Start time: 01:13:20 on Jun 08,2021
+# vlog -reportprogress 300 -sv C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_wrap_burst_converter.sv -work sdram_controller_s1_burst_adapter 
 # -- Compiling module altera_wrap_burst_converter
 # 
 # Top level modules:
 # 	altera_wrap_burst_converter
-# End time: 21:27:39 on Jun 07,2021, Elapsed time: 0:00:00
+# End time: 01:13:20 on Jun 08,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_default_burst_converter.sv"                            -work sdram_controller_s1_burst_adapter    
+# vlog -sv "C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_default_burst_converter.sv"                            -work sdram_controller_s1_burst_adapter    
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:27:39 on Jun 07,2021
-# vlog -reportprogress 300 -sv C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_default_burst_converter.sv -work sdram_controller_s1_burst_adapter 
+# Start time: 01:13:20 on Jun 08,2021
+# vlog -reportprogress 300 -sv C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_default_burst_converter.sv -work sdram_controller_s1_burst_adapter 
 # -- Compiling module altera_default_burst_converter
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_default_burst_converter.sv(102): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_default_burst_converter.sv(102): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
 # 
 # Top level modules:
 # 	altera_default_burst_converter
-# End time: 21:27:39 on Jun 07,2021, Elapsed time: 0:00:00
+# End time: 01:13:20 on Jun 08,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
-# vlog -sv "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_address_alignment.sv"                           -work sdram_controller_s1_burst_adapter    
+# vlog -sv "C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_address_alignment.sv"                           -work sdram_controller_s1_burst_adapter    
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:27:39 on Jun 07,2021
-# vlog -reportprogress 300 -sv C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_address_alignment.sv -work sdram_controller_s1_burst_adapter 
+# Start time: 01:13:20 on Jun 08,2021
+# vlog -reportprogress 300 -sv C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_address_alignment.sv -work sdram_controller_s1_burst_adapter 
 # -- Compiling module altera_merlin_address_alignment
 # 
 # Top level modules:
 # 	altera_merlin_address_alignment
-# End time: 21:27:39 on Jun 07,2021, Elapsed time: 0:00:00
+# End time: 01:13:20 on Jun 08,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_avalon_st_pipeline_stage.sv"                           -work sdram_controller_s1_burst_adapter    
+# vlog -sv "C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_avalon_st_pipeline_stage.sv"                           -work sdram_controller_s1_burst_adapter    
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:27:39 on Jun 07,2021
-# vlog -reportprogress 300 -sv C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_avalon_st_pipeline_stage.sv -work sdram_controller_s1_burst_adapter 
+# Start time: 01:13:20 on Jun 08,2021
+# vlog -reportprogress 300 -sv C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_avalon_st_pipeline_stage.sv -work sdram_controller_s1_burst_adapter 
 # -- Compiling module altera_avalon_st_pipeline_stage
 # 
 # Top level modules:
 # 	altera_avalon_st_pipeline_stage
-# End time: 21:27:39 on Jun 07,2021, Elapsed time: 0:00:00
+# End time: 01:13:20 on Jun 08,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_avalon_st_pipeline_base.v"                             -work sdram_controller_s1_burst_adapter    
+# vlog -sv "C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_avalon_st_pipeline_base.v"                             -work sdram_controller_s1_burst_adapter    
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:27:39 on Jun 07,2021
-# vlog -reportprogress 300 -sv C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_avalon_st_pipeline_base.v -work sdram_controller_s1_burst_adapter 
+# Start time: 01:13:20 on Jun 08,2021
+# vlog -reportprogress 300 -sv C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_avalon_st_pipeline_base.v -work sdram_controller_s1_burst_adapter 
 # -- Compiling module altera_avalon_st_pipeline_base
 # 
 # Top level modules:
 # 	altera_avalon_st_pipeline_base
-# End time: 21:27:40 on Jun 07,2021, Elapsed time: 0:00:01
+# End time: 01:13:20 on Jun 08,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_router_003.sv"                        -work router_003                           
+# vlog -sv "C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_router_003.sv"                        -work router_003                           
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:27:40 on Jun 07,2021
-# vlog -reportprogress 300 -sv C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_router_003.sv -work router_003 
+# Start time: 01:13:20 on Jun 08,2021
+# vlog -reportprogress 300 -sv C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_router_003.sv -work router_003 
 # -- Compiling module sdram_mm_interconnect_0_router_003_default_decode
 # -- Compiling module sdram_mm_interconnect_0_router_003
 # 
 # Top level modules:
 # 	sdram_mm_interconnect_0_router_003
-# End time: 21:27:40 on Jun 07,2021, Elapsed time: 0:00:00
+# End time: 01:13:20 on Jun 08,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_router.sv"                            -work router                               
+# vlog -sv "C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_router.sv"                            -work router                               
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:27:40 on Jun 07,2021
-# vlog -reportprogress 300 -sv C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_router.sv -work router 
+# Start time: 01:13:20 on Jun 08,2021
+# vlog -reportprogress 300 -sv C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_router.sv -work router 
 # -- Compiling module sdram_mm_interconnect_0_router_default_decode
 # -- Compiling module sdram_mm_interconnect_0_router
 # 
 # Top level modules:
 # 	sdram_mm_interconnect_0_router
-# End time: 21:27:40 on Jun 07,2021, Elapsed time: 0:00:00
+# End time: 01:13:20 on Jun 08,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog     "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_avalon_sc_fifo.v"                                      -work sdram_controller_s1_agent_rsp_fifo   
+# vlog     "C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_avalon_sc_fifo.v"                                      -work sdram_controller_s1_agent_rsp_fifo   
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:27:40 on Jun 07,2021
-# vlog -reportprogress 300 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_avalon_sc_fifo.v -work sdram_controller_s1_agent_rsp_fifo 
+# Start time: 01:13:20 on Jun 08,2021
+# vlog -reportprogress 300 C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_avalon_sc_fifo.v -work sdram_controller_s1_agent_rsp_fifo 
 # -- Compiling module altera_avalon_sc_fifo
 # 
 # Top level modules:
 # 	altera_avalon_sc_fifo
-# End time: 21:27:40 on Jun 07,2021, Elapsed time: 0:00:00
+# End time: 01:13:20 on Jun 08,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_slave_agent.sv"                                 -work sdram_controller_s1_agent            
+# vlog -sv "C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_slave_agent.sv"                                 -work sdram_controller_s1_agent            
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:27:40 on Jun 07,2021
-# vlog -reportprogress 300 -sv C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_slave_agent.sv -work sdram_controller_s1_agent 
+# Start time: 01:13:20 on Jun 08,2021
+# vlog -reportprogress 300 -sv C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_slave_agent.sv -work sdram_controller_s1_agent 
 # -- Compiling module altera_merlin_slave_agent
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_slave_agent.sv(618): (vlog-2186) SystemVerilog testbench feature
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_slave_agent.sv(618): (vlog-2186) SystemVerilog testbench feature
 # (randomization, coverage or assertion) detected in the design.
 # These features are only supported in Questasim.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_slave_agent.sv(488): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_slave_agent.sv(489): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_slave_agent.sv(490): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_slave_agent.sv(491): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_slave_agent.sv(34): (vlog-2186) SystemVerilog testbench feature
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_slave_agent.sv(488): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_slave_agent.sv(489): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_slave_agent.sv(490): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_slave_agent.sv(491): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_slave_agent.sv(34): (vlog-2186) SystemVerilog testbench feature
 # (randomization, coverage or assertion) detected in the design.
 # These features are only supported in Questasim.
 # 
 # Top level modules:
 # 	altera_merlin_slave_agent
-# End time: 21:27:40 on Jun 07,2021, Elapsed time: 0:00:00
+# End time: 01:13:20 on Jun 08,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 6
-# vlog -sv "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_uncompressor.sv"                          -work sdram_controller_s1_agent            
+# vlog -sv "C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_uncompressor.sv"                          -work sdram_controller_s1_agent            
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:27:40 on Jun 07,2021
-# vlog -reportprogress 300 -sv C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_uncompressor.sv -work sdram_controller_s1_agent 
+# Start time: 01:13:20 on Jun 08,2021
+# vlog -reportprogress 300 -sv C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_uncompressor.sv -work sdram_controller_s1_agent 
 # -- Compiling module altera_merlin_burst_uncompressor
 # 
 # Top level modules:
 # 	altera_merlin_burst_uncompressor
-# End time: 21:27:40 on Jun 07,2021, Elapsed time: 0:00:00
+# End time: 01:13:20 on Jun 08,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_master_agent.sv"                                -work d_cache_read_avalon_master_agent     
+# vlog -sv "C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_master_agent.sv"                                -work d_cache_read_avalon_master_agent     
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:27:40 on Jun 07,2021
-# vlog -reportprogress 300 -sv C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_master_agent.sv -work d_cache_read_avalon_master_agent 
+# Start time: 01:13:20 on Jun 08,2021
+# vlog -reportprogress 300 -sv C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_master_agent.sv -work d_cache_read_avalon_master_agent 
 # -- Compiling module altera_merlin_master_agent
 # 
 # Top level modules:
 # 	altera_merlin_master_agent
-# End time: 21:27:40 on Jun 07,2021, Elapsed time: 0:00:00
+# End time: 01:13:21 on Jun 08,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# vlog -sv "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_slave_translator.sv"                            -work sdram_controller_s1_translator       
+# vlog -sv "C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_slave_translator.sv"                            -work sdram_controller_s1_translator       
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:27:40 on Jun 07,2021
-# vlog -reportprogress 300 -sv C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_slave_translator.sv -work sdram_controller_s1_translator 
+# Start time: 01:13:21 on Jun 08,2021
+# vlog -reportprogress 300 -sv C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_slave_translator.sv -work sdram_controller_s1_translator 
 # -- Compiling module altera_merlin_slave_translator
 # 
 # Top level modules:
 # 	altera_merlin_slave_translator
-# End time: 21:27:40 on Jun 07,2021, Elapsed time: 0:00:00
+# End time: 01:13:21 on Jun 08,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_master_translator.sv"                           -work d_cache_read_avalon_master_translator
+# vlog -sv "C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_master_translator.sv"                           -work d_cache_read_avalon_master_translator
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:27:40 on Jun 07,2021
-# vlog -reportprogress 300 -sv C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_master_translator.sv -work d_cache_read_avalon_master_translator 
+# Start time: 01:13:21 on Jun 08,2021
+# vlog -reportprogress 300 -sv C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_merlin_master_translator.sv -work d_cache_read_avalon_master_translator 
 # -- Compiling module altera_merlin_master_translator
 # 
 # Top level modules:
 # 	altera_merlin_master_translator
-# End time: 21:27:41 on Jun 07,2021, Elapsed time: 0:00:01
+# End time: 01:13:21 on Jun 08,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog     "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_reset_controller.v"                                    -work rst_controller                       
+# vlog     "C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_reset_controller.v"                                    -work rst_controller                       
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:27:41 on Jun 07,2021
-# vlog -reportprogress 300 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_reset_controller.v -work rst_controller 
+# Start time: 01:13:21 on Jun 08,2021
+# vlog -reportprogress 300 C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_reset_controller.v -work rst_controller 
 # -- Compiling module altera_reset_controller
 # 
 # Top level modules:
 # 	altera_reset_controller
-# End time: 21:27:41 on Jun 07,2021, Elapsed time: 0:00:00
+# End time: 01:13:21 on Jun 08,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog     "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_reset_synchronizer.v"                                  -work rst_controller                       
+# vlog     "C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_reset_synchronizer.v"                                  -work rst_controller                       
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:27:41 on Jun 07,2021
-# vlog -reportprogress 300 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_reset_synchronizer.v -work rst_controller 
+# Start time: 01:13:21 on Jun 08,2021
+# vlog -reportprogress 300 C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/altera_reset_synchronizer.v -work rst_controller 
 # -- Compiling module altera_reset_synchronizer
 # 
 # Top level modules:
 # 	altera_reset_synchronizer
-# End time: 21:27:41 on Jun 07,2021, Elapsed time: 0:00:00
+# End time: 01:13:21 on Jun 08,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog     "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0.v"                                    -work mm_interconnect_0                    
+# vlog     "C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0.v"                                    -work mm_interconnect_0                    
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:27:41 on Jun 07,2021
-# vlog -reportprogress 300 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0.v -work mm_interconnect_0 
+# Start time: 01:13:21 on Jun 08,2021
+# vlog -reportprogress 300 C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0.v -work mm_interconnect_0 
 # -- Compiling module sdram_mm_interconnect_0
 # 
 # Top level modules:
 # 	sdram_mm_interconnect_0
-# End time: 21:27:41 on Jun 07,2021, Elapsed time: 0:00:00
+# End time: 01:13:21 on Jun 08,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog     "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_sdram_controller.v"                                     -work sdram_controller                     
+# vlog     "C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/sdram_sdram_controller.v"                                     -work sdram_controller                     
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:27:41 on Jun 07,2021
-# vlog -reportprogress 300 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_sdram_controller.v -work sdram_controller 
+# Start time: 01:13:21 on Jun 08,2021
+# vlog -reportprogress 300 C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/sdram_sdram_controller.v -work sdram_controller 
 # -- Compiling module sdram_sdram_controller_input_efifo_module
 # -- Compiling module sdram_sdram_controller
 # 
 # Top level modules:
 # 	sdram_sdram_controller
-# End time: 21:27:41 on Jun 07,2021, Elapsed time: 0:00:00
+# End time: 01:13:21 on Jun 08,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog     "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_sdram_controller_test_component.v"                      -work sdram_controller                     
+# vlog     "C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/sdram_sdram_controller_test_component.v"                      -work sdram_controller                     
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:27:41 on Jun 07,2021
-# vlog -reportprogress 300 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_sdram_controller_test_component.v -work sdram_controller 
+# Start time: 01:13:21 on Jun 08,2021
+# vlog -reportprogress 300 C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/sdram_sdram_controller_test_component.v -work sdram_controller 
 # -- Compiling module sdram_sdram_controller_test_component_ram_module
 # -- Compiling module sdram_sdram_controller_test_component
 # 
 # Top level modules:
 # 	sdram_sdram_controller_test_component
-# End time: 21:27:41 on Jun 07,2021, Elapsed time: 0:00:00
+# End time: 01:13:21 on Jun 08,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog     "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_pll_0.vo"                                               -work pll_0                                
+# vlog     "C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/sdram_pll_0.vo"                                               -work pll_0                                
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:27:41 on Jun 07,2021
-# vlog -reportprogress 300 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_pll_0.vo -work pll_0 
+# Start time: 01:13:21 on Jun 08,2021
+# vlog -reportprogress 300 C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/sdram_pll_0.vo -work pll_0 
 # -- Compiling module sdram_pll_0
 # 
 # Top level modules:
 # 	sdram_pll_0
-# End time: 21:27:41 on Jun 07,2021, Elapsed time: 0:00:00
+# End time: 01:13:21 on Jun 08,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog     "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/custom_master.v"                                              -work d_cache_read                         
+# vlog     "C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/custom_master.v"                                              -work d_cache_read                         
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:27:41 on Jun 07,2021
-# vlog -reportprogress 300 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/custom_master.v -work d_cache_read 
+# Start time: 01:13:21 on Jun 08,2021
+# vlog -reportprogress 300 C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/custom_master.v -work d_cache_read 
 # -- Compiling module custom_master
 # 
 # Top level modules:
 # 	custom_master
-# End time: 21:27:41 on Jun 07,2021, Elapsed time: 0:00:00
+# End time: 01:13:21 on Jun 08,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog     "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/burst_write_master.v"                                         -work d_cache_read                         
+# vlog     "C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/burst_write_master.v"                                         -work d_cache_read                         
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:27:41 on Jun 07,2021
-# vlog -reportprogress 300 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/burst_write_master.v -work d_cache_read 
+# Start time: 01:13:21 on Jun 08,2021
+# vlog -reportprogress 300 C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/burst_write_master.v -work d_cache_read 
 # -- Compiling module burst_write_master
 # 
 # Top level modules:
 # 	burst_write_master
-# End time: 21:27:42 on Jun 07,2021, Elapsed time: 0:00:01
+# End time: 01:13:21 on Jun 08,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog     "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/burst_read_master.v"                                          -work d_cache_read                         
+# vlog     "C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/burst_read_master.v"                                          -work d_cache_read                         
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:27:42 on Jun 07,2021
-# vlog -reportprogress 300 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/burst_read_master.v -work d_cache_read 
+# Start time: 01:13:21 on Jun 08,2021
+# vlog -reportprogress 300 C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/burst_read_master.v -work d_cache_read 
 # -- Compiling module burst_read_master
 # 
 # Top level modules:
 # 	burst_read_master
-# End time: 21:27:42 on Jun 07,2021, Elapsed time: 0:00:00
+# End time: 01:13:21 on Jun 08,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog     "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/write_master.v"                                               -work d_cache_read                         
+# vlog     "C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/write_master.v"                                               -work d_cache_read                         
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:27:42 on Jun 07,2021
-# vlog -reportprogress 300 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/write_master.v -work d_cache_read 
+# Start time: 01:13:21 on Jun 08,2021
+# vlog -reportprogress 300 C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/write_master.v -work d_cache_read 
 # -- Compiling module write_master
 # 
 # Top level modules:
 # 	write_master
-# End time: 21:27:42 on Jun 07,2021, Elapsed time: 0:00:00
+# End time: 01:13:21 on Jun 08,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog     "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/latency_aware_read_master.v"                                  -work d_cache_read                         
+# vlog     "C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/latency_aware_read_master.v"                                  -work d_cache_read                         
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:27:42 on Jun 07,2021
-# vlog -reportprogress 300 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/latency_aware_read_master.v -work d_cache_read 
+# Start time: 01:13:22 on Jun 08,2021
+# vlog -reportprogress 300 C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/submodules/latency_aware_read_master.v -work d_cache_read 
 # -- Compiling module latency_aware_read_master
 # 
 # Top level modules:
 # 	latency_aware_read_master
-# End time: 21:27:42 on Jun 07,2021, Elapsed time: 0:00:00
+# End time: 01:13:22 on Jun 08,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog     "C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/sdram.v"                                                                                                            
+# vlog     "C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/sdram.v"                                                                                                            
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:27:42 on Jun 07,2021
-# vlog -reportprogress 300 C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/sdram/simulation/sdram.v 
+# Start time: 01:13:22 on Jun 08,2021
+# vlog -reportprogress 300 C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/sdram/simulation/sdram.v 
 # -- Compiling module sdram
 # 
 # Top level modules:
 # 	sdram
-# End time: 21:27:42 on Jun 07,2021, Elapsed time: 0:00:00
+# End time: 01:13:22 on Jun 08,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vlog -sv -work work +incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core {C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/cache_bank.sv}
+# vlog -sv -work work +incdir+C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core {C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/cache_bank.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:27:42 on Jun 07,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core" C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/cache_bank.sv 
+# Start time: 01:13:22 on Jun 08,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core" C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/cache_bank.sv 
 # -- Compiling module cache_bank
 # -- Compiling module cache_bank_core
 # 
 # Top level modules:
 # 	cache_bank
-# End time: 21:27:42 on Jun 07,2021, Elapsed time: 0:00:00
+# End time: 01:13:22 on Jun 08,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core {C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/mips_core_pkg.sv}
+# vlog -sv -work work +incdir+C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core {C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/mips_core_pkg.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:27:42 on Jun 07,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core" C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/mips_core_pkg.sv 
+# Start time: 01:13:22 on Jun 08,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core" C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/mips_core_pkg.sv 
 # -- Compiling package mips_core_pkg
 # 
 # Top level modules:
 # 	--none--
-# End time: 21:27:42 on Jun 07,2021, Elapsed time: 0:00:00
+# End time: 01:13:22 on Jun 08,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu {C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_cpu_pkg.sv}
+# vlog -sv -work work +incdir+C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu {C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_cpu_pkg.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:27:42 on Jun 07,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu" C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_cpu_pkg.sv 
+# Start time: 01:13:22 on Jun 08,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu" C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_cpu_pkg.sv 
 # -- Compiling package mips_cpu_pkg
 # 
 # Top level modules:
 # 	--none--
-# End time: 21:27:42 on Jun 07,2021, Elapsed time: 0:00:00
+# End time: 01:13:22 on Jun 08,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core {C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/priority_encoder.sv}
+# vlog -sv -work work +incdir+C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core {C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:27:42 on Jun 07,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core" C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/priority_encoder.sv 
-# -- Compiling package priority_encoder_sv_unit
+# Start time: 01:13:22 on Jun 08,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core" C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv 
+# -- Compiling package priority_encoder_64_sv_unit
 # -- Importing package mips_cpu_pkg
 # -- Importing package mips_core_pkg
-# -- Compiling module priority_encoder
-# 
-# Top level modules:
-# 	priority_encoder
-# End time: 21:27:42 on Jun 07,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core {C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/llsc_module.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:27:42 on Jun 07,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core" C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/llsc_module.sv 
-# -- Compiling package llsc_module_sv_unit
-# -- Importing package mips_cpu_pkg
-# -- Importing package mips_core_pkg
-# -- Compiling interface llsc_input_ifc
-# -- Compiling interface llsc_output_ifc
-# -- Compiling module llsc_module
-# 
-# Top level modules:
-# 	llsc_module
-# End time: 21:27:42 on Jun 07,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core {C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/mips_core_interfaces.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:27:42 on Jun 07,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core" C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/mips_core_interfaces.sv 
-# -- Compiling package mips_core_interfaces_sv_unit
-# -- Importing package mips_cpu_pkg
-# -- Importing package mips_core_pkg
-# -- Compiling interface load_pc_ifc
-# -- Compiling interface pc_ifc
-# -- Compiling interface cache_output_ifc
-# -- Compiling interface branch_decoded_ifc
-# -- Compiling interface alu_pass_through_ifc
-# -- Compiling interface branch_result_ifc
-# -- Compiling interface d_cache_pass_through_ifc
-# -- Compiling interface write_back_ifc
-# -- Compiling interface hazard_control_ifc
-# -- Compiling interface issue_ifc
-# 
-# Top level modules:
-# 	--none--
-# End time: 21:27:42 on Jun 07,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu {C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/pass_done_interface.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:27:43 on Jun 07,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu" C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/pass_done_interface.sv 
-# -- Compiling package pass_done_interface_sv_unit
-# -- Importing package mips_cpu_pkg
-# -- Compiling interface pass_done_ifc
-# 
-# Top level modules:
-# 	--none--
-# End time: 21:27:43 on Jun 07,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu {C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/memory_interfaces.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:27:43 on Jun 07,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu" C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/memory_interfaces.sv 
-# -- Compiling package memory_interfaces_sv_unit
-# -- Importing package mips_cpu_pkg
-# -- Compiling interface mem_write_ifc
-# -- Compiling interface mem_read_ifc
-# 
-# Top level modules:
-# 	--none--
-# End time: 21:27:43 on Jun 07,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core {C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/i_cache.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:27:43 on Jun 07,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core" C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/i_cache.sv 
-# -- Compiling package i_cache_sv_unit
-# -- Importing package mips_cpu_pkg
-# -- Importing package mips_core_pkg
-# -- Compiling module i_cache
-# 
-# Top level modules:
-# 	i_cache
-# End time: 21:27:43 on Jun 07,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core {C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/fetch_unit.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:27:43 on Jun 07,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core" C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/fetch_unit.sv 
-# -- Compiling package fetch_unit_sv_unit
-# -- Importing package mips_cpu_pkg
-# -- Importing package mips_core_pkg
-# -- Compiling module fetch_unit
-# 
-# Top level modules:
-# 	fetch_unit
-# End time: 21:27:43 on Jun 07,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core {C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/decoder.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:27:43 on Jun 07,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core" C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/decoder.sv 
-# -- Compiling package decoder_sv_unit
-# -- Importing package mips_cpu_pkg
-# -- Importing package mips_core_pkg
-# -- Compiling interface decoder_output_ifc
-# -- Compiling module decoder
-# 
-# Top level modules:
-# 	decoder
-# End time: 21:27:43 on Jun 07,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core {C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/d_cache.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:27:43 on Jun 07,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core" C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/d_cache.sv 
-# -- Compiling package d_cache_sv_unit
-# -- Importing package mips_cpu_pkg
-# -- Importing package mips_core_pkg
-# -- Compiling interface d_cache_input_ifc
-# -- Compiling module d_cache
-# 
-# Top level modules:
-# 	d_cache
-# End time: 21:27:43 on Jun 07,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core {C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/branch_controller.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:27:43 on Jun 07,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core" C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/branch_controller.sv 
-# -- Compiling package branch_controller_sv_unit
-# -- Importing package mips_cpu_pkg
-# -- Importing package mips_core_pkg
-# -- Compiling module branch_controller
-# -- Compiling module branch_predictor_always_not_taken
-# -- Compiling module branch_predictor_always_taken
-# -- Compiling module branch_predictor_backward_taken_forward_not_taken
-# -- Compiling module branch_predictor_2bit
-# 
-# Top level modules:
-# 	branch_controller
-# 	branch_predictor_always_not_taken
-# 	branch_predictor_always_taken
-# 	branch_predictor_2bit
-# End time: 21:27:43 on Jun 07,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core {C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/alu.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:27:43 on Jun 07,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core" C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/alu.sv 
-# -- Compiling package alu_sv_unit
-# -- Importing package mips_cpu_pkg
-# -- Importing package mips_core_pkg
-# -- Compiling interface alu_input_ifc
-# -- Compiling interface alu_output_ifc
-# -- Compiling module alu
-# 
-# Top level modules:
-# 	alu
-# End time: 21:27:43 on Jun 07,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core {C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/pipeline_registers.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:27:43 on Jun 07,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core" C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/pipeline_registers.sv 
-# -- Compiling package pipeline_registers_sv_unit
-# -- Importing package mips_cpu_pkg
-# -- Importing package mips_core_pkg
-# -- Compiling module pr_i2d
-# -- Compiling module pr_d2e
-# -- Compiling module pr_e2m
-# -- Compiling module pr_m2w
-# 
-# Top level modules:
-# 	pr_i2d
-# 	pr_d2e
-# 	pr_e2m
-# 	pr_m2w
-# End time: 21:27:43 on Jun 07,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core {C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/hazard_controller.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:27:43 on Jun 07,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core" C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/hazard_controller.sv 
-# -- Compiling package hazard_controller_sv_unit
-# -- Importing package mips_cpu_pkg
-# -- Importing package mips_core_pkg
-# -- Compiling module hazard_controller
-# 
-# Top level modules:
-# 	hazard_controller
-# End time: 21:27:44 on Jun 07,2021, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core {C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/instruction_queue.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:27:44 on Jun 07,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core" C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/instruction_queue.sv 
-# -- Compiling package instruction_queue_sv_unit
-# -- Importing package mips_cpu_pkg
-# -- Importing package mips_core_pkg
-# -- Compiling interface instruction_Queue_ifc
-# -- Compiling module instruction_Queue
-# 
-# Top level modules:
-# 	instruction_Queue
-# End time: 21:27:44 on Jun 07,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core {C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/register_map_table.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:27:44 on Jun 07,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core" C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/register_map_table.sv 
-# -- Compiling package register_map_table_sv_unit
-# -- Importing package mips_cpu_pkg
-# -- Importing package mips_core_pkg
-# -- Compiling interface register_Map_Table_ifc
-# -- Compiling interface register_Map_Table_Pairing_ifc
-# -- Compiling module register_Map_Table
-# 
-# Top level modules:
-# 	register_Map_Table
-# End time: 21:27:44 on Jun 07,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core {C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/active_list.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:27:44 on Jun 07,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core" C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/active_list.sv 
-# -- Compiling package active_list_sv_unit
-# -- Importing package mips_cpu_pkg
-# -- Importing package mips_core_pkg
-# -- Compiling interface active_List_Commit_ifc
-# -- Compiling interface active_List_ifc
-# -- Compiling module active_List
-# 
-# Top level modules:
-# 	active_List
-# End time: 21:27:44 on Jun 07,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core {C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/reg_file.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:27:44 on Jun 07,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core" C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/reg_file.sv 
-# -- Compiling package reg_file_sv_unit
-# -- Importing package mips_cpu_pkg
-# -- Importing package mips_core_pkg
-# -- Compiling interface reg_file_output_ifc
-# -- Compiling module reg_file
-# 
-# Top level modules:
-# 	reg_file
-# End time: 21:27:44 on Jun 07,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core {C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/glue_circuits.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:27:44 on Jun 07,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core" C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/glue_circuits.sv 
-# -- Compiling package glue_circuits_sv_unit
-# -- Importing package mips_cpu_pkg
-# -- Importing package mips_core_pkg
-# -- Compiling module decode_stage_glue
-# -- Compiling module ex_stage_glue
-# -- Compiling module mem_stage_glue
-# 
-# Top level modules:
-# 	decode_stage_glue
-# 	ex_stage_glue
-# 	mem_stage_glue
-# End time: 21:27:44 on Jun 07,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core {C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/forward_unit.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:27:44 on Jun 07,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core" C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/forward_unit.sv 
-# -- Compiling package forward_unit_sv_unit
-# -- Importing package mips_cpu_pkg
-# -- Importing package mips_core_pkg
-# -- Compiling module forward_unit
-# 
-# Top level modules:
-# 	forward_unit
-# End time: 21:27:44 on Jun 07,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core {C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/mips_core.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:27:44 on Jun 07,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core" C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/mips_core.sv 
-# -- Compiling package mips_core_sv_unit
-# -- Importing package mips_cpu_pkg
-# -- Importing package mips_core_pkg
-# -- Compiling module mips_core
-# 
-# Top level modules:
-# 	mips_core
-# End time: 21:27:44 on Jun 07,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu {C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_cpu.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:27:44 on Jun 07,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu" C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_cpu.sv 
-# -- Compiling package mips_cpu_sv_unit
-# -- Importing package mips_cpu_pkg
-# -- Compiling module mips_cpu
-# 
-# Top level modules:
-# 	mips_cpu
-# End time: 21:27:44 on Jun 07,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# 
-do C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/wave.do
-do C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/fast_testbench.do
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:28:09 on Jun 07,2021
-# vlog -reportprogress 300 -work work ../../fast_testbench.sv 
-# -- Compiling package fast_testbench_sv_unit
-# -- Importing package mips_cpu_pkg
-# -- Compiling module fast_testbench
-# 
-# Top level modules:
-# 	fast_testbench
-# End time: 21:28:09 on Jun 07,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:28:09 on Jun 07,2021
-# vlog -reportprogress 300 -work work ../../fast_sdram.sv 
-# -- Compiling package fast_sdram_sv_unit
-# -- Importing package mips_cpu_pkg
-# -- Compiling module fast_sdram
-# 
-# Top level modules:
-# 	fast_sdram
-# End time: 21:28:10 on Jun 07,2021, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# vsim -t ns -L altera_mf_ver fast_testbench 
-# Start time: 21:28:10 on Jun 07,2021
-# Loading sv_std.std
-# Loading work.mips_cpu_pkg
-# Loading work.fast_testbench_sv_unit
-# Loading work.fast_testbench
-# Loading work.memory_interfaces_sv_unit
-# Loading work.mem_read_ifc
-# Loading work.mem_write_ifc
-# Loading work.pass_done_interface_sv_unit
-# Loading work.pass_done_ifc
-# Loading work.mips_core_pkg
-# Loading work.mips_core_sv_unit
-# Loading work.mips_core
-# Loading work.decoder_sv_unit
-# Loading work.decoder_output_ifc
-# Loading work.register_map_table_sv_unit
-# Loading work.register_Map_Table_Pairing_ifc
-# Loading work.active_list_sv_unit
-# Loading work.active_List_Commit_ifc
-# Loading work.mips_core_interfaces_sv_unit
-# Loading work.pc_ifc
-# Loading work.cache_output_ifc
-# Loading work.reg_file_sv_unit
-# Loading work.reg_file_output_ifc
-# Loading work.branch_decoded_ifc
-# Loading work.alu_sv_unit
-# Loading work.alu_input_ifc
-# Loading work.alu_pass_through_ifc
-# Loading work.alu_output_ifc
-# Loading work.llsc_module_sv_unit
-# Loading work.llsc_input_ifc
-# Loading work.branch_result_ifc
-# Loading work.d_cache_sv_unit
-# Loading work.d_cache_input_ifc
-# Loading work.d_cache_pass_through_ifc
-# Loading work.llsc_output_ifc
-# Loading work.write_back_ifc
-# Loading work.hazard_control_ifc
-# Loading work.load_pc_ifc
-# Loading work.fetch_unit_sv_unit
-# Loading work.fetch_unit
-# Loading work.i_cache_sv_unit
-# Loading work.i_cache
-# Loading work.cache_bank
-# Loading work.cache_bank_core
-# Loading work.pipeline_registers_sv_unit
-# Loading work.pr_i2d
-# Loading work.decoder
-# Loading work.register_Map_Table
-# Loading work.register_Map_Table_ifc
-# Loading work.priority_encoder_sv_unit
-# Loading work.priority_encoder
-# Loading work.instruction_queue_sv_unit
-# Loading work.instruction_Queue
-# Loading work.instruction_Queue_ifc
-# Loading work.active_List
-# Loading work.active_List_ifc
-# Loading work.reg_file
-# Loading work.forward_unit_sv_unit
-# Loading work.forward_unit
-# Loading work.glue_circuits_sv_unit
-# Loading work.decode_stage_glue
-# Loading work.pr_d2e
-# Loading work.alu
-# Loading work.llsc_module
-# Loading work.ex_stage_glue
-# Loading work.pr_e2m
-# Loading work.d_cache
-# Loading work.mem_stage_glue
-# Loading work.pr_m2w
-# Loading work.hazard_controller_sv_unit
-# Loading work.hazard_controller
-# Loading work.branch_controller_sv_unit
-# Loading work.branch_controller
-# Loading work.branch_predictor_backward_taken_forward_not_taken
-# Loading work.fast_sdram_sv_unit
-# Loading work.fast_sdram
-# Loading altera_mf_ver.scfifo
-# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'iread_fifo'.  Expected 13, found 8.
-#    Time: 0 ns  Iteration: 0  Instance: /fast_testbench/FAST_SDRAM/iread_fifo File: ../../fast_sdram.sv Line: 66
-# ** Warning: (vsim-3722) ../../fast_sdram.sv(66): [TFMPC] - Missing connection for port 'sclr'.
-# ** Warning: (vsim-3722) ../../fast_sdram.sv(66): [TFMPC] - Missing connection for port 'eccstatus'.
-# ** Warning: (vsim-3722) ../../fast_sdram.sv(66): [TFMPC] - Missing connection for port 'usedw'.
-# ** Warning: (vsim-3722) ../../fast_sdram.sv(66): [TFMPC] - Missing connection for port 'almost_full'.
-# ** Warning: (vsim-3722) ../../fast_sdram.sv(66): [TFMPC] - Missing connection for port 'almost_empty'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'dread_fifo'.  Expected 13, found 8.
-#    Time: 0 ns  Iteration: 0  Instance: /fast_testbench/FAST_SDRAM/dread_fifo File: ../../fast_sdram.sv Line: 88
-# ** Warning: (vsim-3722) ../../fast_sdram.sv(88): [TFMPC] - Missing connection for port 'sclr'.
-# ** Warning: (vsim-3722) ../../fast_sdram.sv(88): [TFMPC] - Missing connection for port 'eccstatus'.
-# ** Warning: (vsim-3722) ../../fast_sdram.sv(88): [TFMPC] - Missing connection for port 'usedw'.
-# ** Warning: (vsim-3722) ../../fast_sdram.sv(88): [TFMPC] - Missing connection for port 'almost_full'.
-# ** Warning: (vsim-3722) ../../fast_sdram.sv(88): [TFMPC] - Missing connection for port 'almost_empty'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'dwrite_fifo'.  Expected 13, found 8.
-#    Time: 0 ns  Iteration: 0  Instance: /fast_testbench/FAST_SDRAM/dwrite_fifo File: ../../fast_sdram.sv Line: 110
-# ** Warning: (vsim-3722) ../../fast_sdram.sv(110): [TFMPC] - Missing connection for port 'sclr'.
-# ** Warning: (vsim-3722) ../../fast_sdram.sv(110): [TFMPC] - Missing connection for port 'eccstatus'.
-# ** Warning: (vsim-3722) ../../fast_sdram.sv(110): [TFMPC] - Missing connection for port 'usedw'.
-# ** Warning: (vsim-3722) ../../fast_sdram.sv(110): [TFMPC] - Missing connection for port 'almost_full'.
-# ** Warning: (vsim-3722) ../../fast_sdram.sv(110): [TFMPC] - Missing connection for port 'almost_empty'.
-do C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/fast_testbench.do
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:29:32 on Jun 07,2021
-# vlog -reportprogress 300 -work work ../../fast_testbench.sv 
-# -- Compiling package fast_testbench_sv_unit
-# -- Importing package mips_cpu_pkg
-# -- Compiling module fast_testbench
-# 
-# Top level modules:
-# 	fast_testbench
-# End time: 21:29:32 on Jun 07,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:29:32 on Jun 07,2021
-# vlog -reportprogress 300 -work work ../../fast_sdram.sv 
-# -- Compiling package fast_sdram_sv_unit
-# -- Importing package mips_cpu_pkg
-# -- Compiling module fast_sdram
-# 
-# Top level modules:
-# 	fast_sdram
-# End time: 21:29:32 on Jun 07,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 21:29:34 on Jun 07,2021, Elapsed time: 0:01:24
-# Errors: 0, Warnings: 18
-# vsim -t ns -L altera_mf_ver fast_testbench 
-# Start time: 21:29:34 on Jun 07,2021
-# Loading sv_std.std
-# Loading work.mips_cpu_pkg
-# Loading work.fast_testbench_sv_unit
-# Loading work.fast_testbench
-# Loading work.memory_interfaces_sv_unit
-# Loading work.mem_read_ifc
-# Loading work.mem_write_ifc
-# Loading work.pass_done_interface_sv_unit
-# Loading work.pass_done_ifc
-# Loading work.mips_core_pkg
-# Loading work.mips_core_sv_unit
-# Loading work.mips_core
-# Loading work.decoder_sv_unit
-# Loading work.decoder_output_ifc
-# Loading work.register_map_table_sv_unit
-# Loading work.register_Map_Table_Pairing_ifc
-# Loading work.active_list_sv_unit
-# Loading work.active_List_Commit_ifc
-# Loading work.mips_core_interfaces_sv_unit
-# Loading work.pc_ifc
-# Loading work.cache_output_ifc
-# Loading work.reg_file_sv_unit
-# Loading work.reg_file_output_ifc
-# Loading work.branch_decoded_ifc
-# Loading work.alu_sv_unit
-# Loading work.alu_input_ifc
-# Loading work.alu_pass_through_ifc
-# Loading work.alu_output_ifc
-# Loading work.llsc_module_sv_unit
-# Loading work.llsc_input_ifc
-# Loading work.branch_result_ifc
-# Loading work.d_cache_sv_unit
-# Loading work.d_cache_input_ifc
-# Loading work.d_cache_pass_through_ifc
-# Loading work.llsc_output_ifc
-# Loading work.write_back_ifc
-# Loading work.hazard_control_ifc
-# Loading work.load_pc_ifc
-# Loading work.fetch_unit_sv_unit
-# Loading work.fetch_unit
-# Loading work.i_cache_sv_unit
-# Loading work.i_cache
-# Loading work.cache_bank
-# Loading work.cache_bank_core
-# Loading work.pipeline_registers_sv_unit
-# Loading work.pr_i2d
-# Loading work.decoder
-# Loading work.register_Map_Table
-# Loading work.register_Map_Table_ifc
-# Loading work.priority_encoder_sv_unit
-# Loading work.priority_encoder
-# Loading work.instruction_queue_sv_unit
-# Loading work.instruction_Queue
-# Loading work.instruction_Queue_ifc
-# Loading work.active_List
-# Loading work.active_List_ifc
-# Loading work.reg_file
-# Loading work.forward_unit_sv_unit
-# Loading work.forward_unit
-# Loading work.glue_circuits_sv_unit
-# Loading work.decode_stage_glue
-# Loading work.pr_d2e
-# Loading work.alu
-# Loading work.llsc_module
-# Loading work.ex_stage_glue
-# Loading work.pr_e2m
-# Loading work.d_cache
-# Loading work.mem_stage_glue
-# Loading work.pr_m2w
-# Loading work.hazard_controller_sv_unit
-# Loading work.hazard_controller
-# Loading work.branch_controller_sv_unit
-# Loading work.branch_controller
-# Loading work.branch_predictor_backward_taken_forward_not_taken
-# Loading work.fast_sdram_sv_unit
-# Loading work.fast_sdram
-# Loading altera_mf_ver.scfifo
-# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'iread_fifo'.  Expected 13, found 8.
-#    Time: 0 ns  Iteration: 0  Instance: /fast_testbench/FAST_SDRAM/iread_fifo File: ../../fast_sdram.sv Line: 66
-# ** Warning: (vsim-3722) ../../fast_sdram.sv(66): [TFMPC] - Missing connection for port 'sclr'.
-# ** Warning: (vsim-3722) ../../fast_sdram.sv(66): [TFMPC] - Missing connection for port 'eccstatus'.
-# ** Warning: (vsim-3722) ../../fast_sdram.sv(66): [TFMPC] - Missing connection for port 'usedw'.
-# ** Warning: (vsim-3722) ../../fast_sdram.sv(66): [TFMPC] - Missing connection for port 'almost_full'.
-# ** Warning: (vsim-3722) ../../fast_sdram.sv(66): [TFMPC] - Missing connection for port 'almost_empty'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'dread_fifo'.  Expected 13, found 8.
-#    Time: 0 ns  Iteration: 0  Instance: /fast_testbench/FAST_SDRAM/dread_fifo File: ../../fast_sdram.sv Line: 88
-# ** Warning: (vsim-3722) ../../fast_sdram.sv(88): [TFMPC] - Missing connection for port 'sclr'.
-# ** Warning: (vsim-3722) ../../fast_sdram.sv(88): [TFMPC] - Missing connection for port 'eccstatus'.
-# ** Warning: (vsim-3722) ../../fast_sdram.sv(88): [TFMPC] - Missing connection for port 'usedw'.
-# ** Warning: (vsim-3722) ../../fast_sdram.sv(88): [TFMPC] - Missing connection for port 'almost_full'.
-# ** Warning: (vsim-3722) ../../fast_sdram.sv(88): [TFMPC] - Missing connection for port 'almost_empty'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'dwrite_fifo'.  Expected 13, found 8.
-#    Time: 0 ns  Iteration: 0  Instance: /fast_testbench/FAST_SDRAM/dwrite_fifo File: ../../fast_sdram.sv Line: 110
-# ** Warning: (vsim-3722) ../../fast_sdram.sv(110): [TFMPC] - Missing connection for port 'sclr'.
-# ** Warning: (vsim-3722) ../../fast_sdram.sv(110): [TFMPC] - Missing connection for port 'eccstatus'.
-# ** Warning: (vsim-3722) ../../fast_sdram.sv(110): [TFMPC] - Missing connection for port 'usedw'.
-# ** Warning: (vsim-3722) ../../fast_sdram.sv(110): [TFMPC] - Missing connection for port 'almost_full'.
-# ** Warning: (vsim-3722) ../../fast_sdram.sv(110): [TFMPC] - Missing connection for port 'almost_empty'.
-# WARNING: No extended dataflow license exists
-# End time: 21:43:05 on Jun 07,2021, Elapsed time: 0:13:31
-# Errors: 0, Warnings: 18
+# -- Compiling module priority_encoder_64
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(29): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(30): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(31): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(32): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(33): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(34): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(35): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(36): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(37): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(38): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(39): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(40): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(41): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(42): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(43): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(44): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(45): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(46): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(47): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(48): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(49): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(50): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(51): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(52): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(53): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(54): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(55): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(56): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(57): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(58): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(59): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(60): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(61): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(62): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(63): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(64): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(65): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(66): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(67): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(68): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(69): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(70): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(71): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(72): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(73): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(74): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(75): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(76): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(77): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(78): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(79): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(80): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(81): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(82): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(83): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(84): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(85): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(86): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(87): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(88): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(89): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(90): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(91): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(92): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(98): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(99): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(100): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(101): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(102): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(103): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(104): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(105): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(106): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(107): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(108): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(109): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(110): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(111): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(112): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(113): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(114): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(115): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(116): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(117): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(118): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(119): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(120): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(121): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(122): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(123): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(124): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(125): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(126): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(127): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(128): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(129): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(130): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(131): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(132): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(133): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(134): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(135): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(136): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(137): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(138): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(139): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(140): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(141): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(142): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(143): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(144): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(145): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(146): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(147): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(148): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(149): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(150): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(151): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(152): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(153): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(154): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(155): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(156): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(157): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(158): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(159): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(160): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(161): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(169): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(170): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(171): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(172): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(173): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(174): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(175): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(176): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(177): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(178): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(179): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(180): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(181): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(182): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(183): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(184): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(185): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(186): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(187): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(188): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(189): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(190): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(191): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(192): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(193): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(194): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(195): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(196): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(197): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(198): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(199): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(200): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(201): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(202): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(203): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(204): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(205): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(206): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(207): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(208): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(209): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(210): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(211): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(212): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(213): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(214): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(215): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(216): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(217): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(218): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(219): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(220): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(221): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(222): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(223): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(224): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(225): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(226): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(227): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(228): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(229): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(230): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(231): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(232): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(238): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(239): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(240): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(241): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(242): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(243): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(244): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(245): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(246): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(247): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(248): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(249): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(250): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(251): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(252): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(253): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(254): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(255): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(256): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(257): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(258): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(259): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(260): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(261): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(262): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(263): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(264): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(265): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(266): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(267): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(268): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(269): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(270): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(271): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(272): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(273): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(274): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(275): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(276): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(277): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(278): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(279): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(280): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(281): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(282): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(283): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(284): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(285): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(286): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(287): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(288): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(289): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(290): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(291): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(292): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(293): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(294): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(295): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(296): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(297): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(298): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(299): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(300): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# ** Error (suppressible): C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core/priority_encoder_64.sv(301): (vlog-2998) Case item comparison:  Cannot mix packed and unpacked types in this operation.
+# End time: 01:13:22 on Jun 08,2021, Elapsed time: 0:00:00
+# Errors: 256, Warnings: 0
+# ** Error: C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./mips_cpu_run_msim_rtl_systemverilog.do line 102
+# C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -sv -work work +incdir+C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu/mips_core {C:/Users/CSE_148_Project_Files/cpuOptimization/mips_cpu..."
