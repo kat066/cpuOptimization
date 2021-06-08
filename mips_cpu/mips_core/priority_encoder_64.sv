@@ -16,7 +16,7 @@
  * 
  */
 module priority_encoder_64 #(parameter HIGH_PRIORITY = 0, parameter SIGNAL = 1) (
-	input data_inputs[63:0],
+	input data_inputs1[64],input data_inputs2[64],
 	output logic [5:0] encoding_output
 );
 
@@ -24,7 +24,7 @@ module priority_encoder_64 #(parameter HIGH_PRIORITY = 0, parameter SIGNAL = 1) 
 always_comb begin
 	encoding_output = 0;
 	for (int i = 0; i<64; i++) begin
-		if(data_inputs[i] == SIGNAL) begin
+		if(data_inputs1[i] == SIGNAL & data_inputs2[i] == SIGNAL) begin
 			encoding_output = i;
 			break;
 		end

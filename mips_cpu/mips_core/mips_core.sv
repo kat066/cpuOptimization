@@ -157,7 +157,7 @@ module mips_core (
 	// ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 	register_Map_Table REGISTER_MAP_TABLE(
 		.rst_n,
-		.free_register(active_Commit.reg_addr),
+		.active_Commit,
 		.decoded(dec_decoder_output),
 		.out(register_map_output),
 		.free_list_out(free_list),

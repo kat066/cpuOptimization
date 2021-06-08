@@ -114,11 +114,11 @@ vlog -sv -work work +incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_c
 vlog -sv -work work +incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core {C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/pipeline_registers.sv}
 vlog -sv -work work +incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core {C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/hazard_controller.sv}
 vlog -sv -work work +incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core {C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/instruction_queue.sv}
-vlog -sv -work work +incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core {C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/register_map_table.sv}
-vlog -sv -work work +incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core {C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/active_list.sv}
 vlog -sv -work work +incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core {C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/reg_file.sv}
 vlog -sv -work work +incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core {C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/glue_circuits.sv}
 vlog -sv -work work +incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core {C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/forward_unit.sv}
-vlog -sv -work work +incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core {C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/mips_core.sv}
 vlog -sv -work work +incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu {C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_cpu.sv}
+vlog -sv -work work +incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core {C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/mips_core.sv}
+vlog -sv -work work +incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core {C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/register_map_table.sv}
+vlog -sv -work work +incdir+C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core {C:/Users/blade/Desktop/Baseline_v2.3/mips_cpu/mips_core/active_list.sv}
 
